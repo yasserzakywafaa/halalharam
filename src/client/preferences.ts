@@ -1,7 +1,6 @@
 export const THEME_STORAGE_KEY = 'themePreference'
 export const LANGUAGE_STORAGE_KEY = 'languagePreference'
 export const HOW_THIS_WORKS_STORAGE_KEY = 'howThisWorksDismissed'
-export const PLAIN_EXPLANATIONS_STORAGE_KEY = 'plainExplanationsPreference'
 
 import type { Direction, Locale } from '../../lib/types.ts'
 
@@ -91,28 +90,6 @@ export function readHowThisWorksDismissed(): boolean {
 export function writeHowThisWorksDismissed(): void {
   try {
     localStorage.setItem(HOW_THIS_WORKS_STORAGE_KEY, '1')
-  } catch {
-    // Ignore quota / private-mode.
-  }
-}
-
-/** Missing or unknown values default ON for first-time visitors. */
-export function parsePlainExplanationsPreference(stored: string | null | undefined): boolean {
-  if (stored === '0' || stored === 'false' || stored === 'off') return false
-  return true
-}
-
-export function readPlainExplanationsPreference(): boolean {
-  try {
-    return parsePlainExplanationsPreference(localStorage.getItem(PLAIN_EXPLANATIONS_STORAGE_KEY))
-  } catch {
-    return true
-  }
-}
-
-export function writePlainExplanationsPreference(enabled: boolean): void {
-  try {
-    localStorage.setItem(PLAIN_EXPLANATIONS_STORAGE_KEY, enabled ? '1' : '0')
   } catch {
     // Ignore quota / private-mode.
   }

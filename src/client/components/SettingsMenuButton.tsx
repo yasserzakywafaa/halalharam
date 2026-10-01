@@ -1,6 +1,6 @@
 import { useState, type MouseEvent, type ReactNode } from 'react'
 import type { Locale } from '../../../lib/types.ts'
-import { Box, FormControlLabel, Switch, Typography } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import { RefreshOutlined, Settings } from '@mui/icons-material'
 import Menu from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
@@ -8,7 +8,7 @@ import { useTheme } from '@mui/material/styles'
 import { useTranslation } from 'react-i18next'
 import { LanguageSwitcher } from '@yasserzakywafaa/client-core/web/i18n'
 import { ThemeSwitcher } from '@yasserzakywafaa/client-core/web'
-import { useColorMode, useLocale, usePlainExplanations } from '../providers.tsx'
+import { useColorMode, useLocale } from '../providers.tsx'
 
 /**
  * Same gear menu as aodit / talepod / the boilerplate SettingsMenuButton.
@@ -19,15 +19,13 @@ export default function SettingsMenuButton({ children }: { children?: ReactNode 
   const { t } = useTranslation('common')
   const { themePreference, setThemePreference } = useColorMode()
   const { setLanguage } = useLocale()
-  const { plainExplanations, setPlainExplanations } = usePlainExplanations()
   const muiTheme = useTheme()
   const [element, setElement] = useState<HTMLElement | null>(null)
   const isOpen = Boolean(element)
   const dark = muiTheme.palette.mode === 'dark'
   const accentColor = muiTheme.palette.primary.main
-  const menuFg = dark ? '#FFFFFF' : '#14241E'
+  const menuFg = dark ? '#FFFFFF' : '#111729'
   const iconFg = dark ? '#E4ECF8' : accentColor
-  const helpId = 'plain-explanations-help'
 
   const buttonHoverStylePrimary = {
     '&:hover': {
@@ -108,61 +106,6 @@ export default function SettingsMenuButton({ children }: { children?: ReactNode 
           styles={{ ...buttonHoverStylePrimary }}
           onLanguageChange={handleOnLanguageChange}
         />
-
-        <Box
-          component="li"
-          sx={{
-            listStyle: 'none',
-            px: 2,
-            py: 1.1,
-            display: 'block',
-          }}
-          onClick={(event) => event.stopPropagation()}
-          onKeyDown={(event) => event.stopPropagation()}
-        >
-          <FormControlLabel
-            sx={{
-              mx: 0,
-              alignItems: 'flex-start',
-              width: '100%',
-              gap: 1,
-              '& .MuiFormControlLabel-label': { flex: 1, minWidth: 0 },
-            }}
-            control={
-              <Switch
-                checked={plainExplanations}
-                onChange={(event) => setPlainExplanations(event.target.checked)}
-                color="primary"
-                size="small"
-                slotProps={{
-                  input: {
-                    'aria-label': t('settings.plainExplanations'),
-                    'aria-describedby': helpId,
-                  },
-                }}
-                sx={{ mt: 0.15 }}
-              />
-            }
-            label={
-              <Typography variant="body1" sx={{ color: menuFg, lineHeight: 1.35 }}>
-                {t('settings.plainExplanations')}
-              </Typography>
-            }
-          />
-          <Typography
-            id={helpId}
-            variant="caption"
-            sx={{
-              display: 'block',
-              color: dark ? 'rgba(255,255,255,0.72)' : 'rgba(20,36,30,0.68)',
-              lineHeight: 1.4,
-              mt: 0.25,
-              ps: 6,
-            }}
-          >
-            {t('settings.plainExplanationsHelp')}
-          </Typography>
-        </Box>
 
         <MenuItem sx={{ ...buttonHoverStylePrimary, color: menuFg, py: 1.25 }} onClick={handleOnRefreshClick}>
           <RefreshOutlined fontSize="medium" sx={{ mr: 1.5, color: iconFg }} />

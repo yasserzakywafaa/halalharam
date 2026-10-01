@@ -2,10 +2,10 @@ import { Box, Chip, Link, Stack, Tooltip, Typography, type ChipProps } from '@mu
 import OpenInNewIcon from '@mui/icons-material/OpenInNew'
 import { useTranslation } from 'react-i18next'
 import Kicker from './Kicker.tsx'
-import { useLocale, usePlainExplanations } from '../providers.tsx'
+import { useLocale } from '../providers.tsx'
 import { FONT_MONO, useVerdictColors } from '../theme.ts'
 import BidiText, { BidiChipLabel } from './BidiText.tsx'
-import { knownVerdict, shouldShowVerdictGloss } from '../verdictGloss.ts'
+import { knownVerdict } from '../verdictGloss.ts'
 import type { Citation, Position, SourcePath, VerdictResponse } from '../../../lib/types.ts'
 
 const VERDICT_GLOSS_ID = 'verdict-status-gloss'
@@ -266,13 +266,11 @@ function PositionCard({ position }: { position: Position }) {
 export default function VerdictCard({ result }: { result: VerdictResponse }) {
   const { t } = useTranslation()
   const { direction } = useLocale()
-  const { plainExplanations } = usePlainExplanations()
   const verdictColors = useVerdictColors()
   const verdictKey = knownVerdict(result.verdict)
   const tone = verdictColors[verdictKey] || verdictColors.unclear
   const showConflict = result.conflict && result.positions?.length >= 2
   const pct = Math.round((result.confidence || 0) * 100)
-  const showGloss = shouldShowVerdictGloss(plainExplanations)
 
   return (
     <Box
@@ -303,7 +301,7 @@ export default function VerdictCard({ result }: { result: VerdictResponse }) {
           <Box aria-hidden="true" sx={{ width: 12, height: 12, borderRadius: '50%', bgcolor: tone.main, flexShrink: 0 }} />
           <Tooltip title={t(`verdict.chipHint.${verdictKey}`)} describeChild enterDelay={150} enterTouchDelay={0} leaveDelay={0}>
             <Typography
-              aria-describedby={showGloss ? VERDICT_GLOSS_ID : undefined}
+              aria-describedby={VERDICT_GLOSS_ID}
               sx={{
                 fontSize: { xs: 34, sm: 42, md: 48 },
                 lineHeight: 1.05,
@@ -318,11 +316,9 @@ export default function VerdictCard({ result }: { result: VerdictResponse }) {
             </Typography>
           </Tooltip>
         </Stack>
-        {showGloss ? (
-          <Typography id={VERDICT_GLOSS_ID} sx={{ mt: 0.75, fontSize: 15, lineHeight: 1.5, maxWidth: '62ch', color: tone.ink }}>
-            {t(`verdict.gloss.${verdictKey}`)}
-          </Typography>
-        ) : null}
+        <Typography id={VERDICT_GLOSS_ID} sx={{ mt: 0.75, fontSize: 15, lineHeight: 1.5, maxWidth: '62ch', color: tone.ink }}>
+          {t(`verdict.gloss.${verdictKey}`)}
+        </Typography>
         <BidiText component="h2" variant="h2" sx={{ mt: 1.5, fontSize: { xs: 21, md: 25 }, overflowWrap: 'break-word', color: tone.ink }}>
           {result.title}
         </BidiText>

@@ -14,7 +14,7 @@ import type { CodedError, VerdictResponse } from '../../../lib/types.ts'
 import VerdictCard from '../components/VerdictCard.tsx'
 import { fetchHealth, fetchVerdict, isVerdictNetworkFailure } from '../verdictClient.ts'
 import { useLocale } from '../providers.tsx'
-import { NavLink, useRoute } from '../route.tsx'
+import { useRoute } from '../route.tsx'
 import { queueScrollToVerdict, VERDICT_ID } from '../scrollToVerdict.ts'
 import { isInsideOverlay, searchFieldEscapeAction, shouldFocusSearchOnSlash } from '../searchKeys.ts'
 
@@ -568,16 +568,6 @@ export default function HomePage() {
             {t('disclaimer.short')}
           </Typography>
         </Stack>
-
-        <Box data-print-hide="" sx={{ mt: 2.75, maxWidth: 640 }}>
-          <Typography sx={{ fontWeight: 700, fontSize: 15, mb: 0.6 }}>{t('how.title')}</Typography>
-          <Typography variant="caption" color="text.secondary" component="p" sx={{ lineHeight: 1.6, m: 0 }}>
-            {t('how.body')}
-          </Typography>
-          <NavLink to="/about" sx={{ display: 'inline-block', mt: 1 }}>
-            {t('how.more')}
-          </NavLink>
-        </Box>
       </Box>
 
       <Stack data-print-hide="" spacing={2} sx={{ position: { md: 'sticky' }, top: { md: 80 }, minWidth: 0 }}>

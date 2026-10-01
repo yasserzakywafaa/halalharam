@@ -1,6 +1,6 @@
 import { Box } from '@mui/material'
 
-/** An eight-point star (two turned squares), the classic marker for a section of reference text. */
+/** An open book on a lapis tile: a reference you read, with a source on each page. */
 export default function BrandMark({ size = 28 }: { size?: number }) {
   return (
     <Box
@@ -9,9 +9,15 @@ export default function BrandMark({ size = 28 }: { size?: number }) {
       aria-hidden="true"
       sx={{ width: size, height: size, display: 'block', flexShrink: 0, color: 'primary.main' }}
     >
-      <rect x="7" y="7" width="18" height="18" rx="1.5" fill="currentColor" />
-      <rect x="7" y="7" width="18" height="18" rx="1.5" fill="currentColor" transform="rotate(45 16 16)" />
-      <circle cx="16" cy="16" r="4.2" fill="none" stroke="var(--brand-mark-hole, var(--page-bg))" strokeWidth="2" />
+      <rect width="32" height="32" rx="8" fill="currentColor" />
+      <path
+        d="M16 10.4c-2.2-1.5-4.8-2-7.6-1.8v12.8c2.8-.2 5.4.3 7.6 1.8 2.2-1.5 4.8-2 7.6-1.8V8.6c-2.8-.2-5.4.3-7.6 1.8Z"
+        fill="none"
+        stroke="var(--brand-mark-ink, var(--page-bg))"
+        strokeWidth="1.9"
+        strokeLinejoin="round"
+      />
+      <path d="M16 10.4v12.8" stroke="var(--brand-mark-ink, var(--page-bg))" strokeWidth="1.9" strokeLinecap="round" />
     </Box>
   )
 }

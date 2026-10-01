@@ -118,7 +118,7 @@ export const messages = {
       back: 'Back to lookup',
       localTitle: 'On this device',
       localBody:
-        'Theme, language, and the plain-explanations preference are saved in this browser under themePreference, languagePreference, and plainExplanationsPreference. They are not sent to an account server.',
+        'Theme and language are saved in this browser under themePreference and languagePreference. They are not sent to an account server.',
       lookupTitle: 'Lookups',
       lookupBody:
         'The text you search is sent to this site’s /api/verdict. A curated seed match is answered from that file. If nothing matches, the query may be sent to OpenRouter so a model can draft a cited summary.',
@@ -233,8 +233,6 @@ export const messages = {
       themeSystem: 'System',
       language: 'Language',
       refreshApp: 'Refresh App',
-      plainExplanations: 'Plain explanations',
-      plainExplanationsHelp: 'A one-line meaning under Halal, Haram, and Unclear. The Islamic terms stay on the chips.',
     },
   },
   ar: {
@@ -349,7 +347,7 @@ export const messages = {
       back: 'العودة إلى البحث',
       localTitle: 'على هذا الجهاز',
       localBody:
-        'يُحفظ المظهر واللغة وتفضيل الشروح المبسّطة في هذا المتصفح تحت themePreference و languagePreference و plainExplanationsPreference. لا تُرسل إلى خادم حسابات.',
+        'يُحفظ المظهر واللغة في هذا المتصفح تحت themePreference و languagePreference. لا تُرسل إلى خادم حسابات.',
       lookupTitle: 'عمليات البحث',
       lookupBody:
         'النص الذي تبحث عنه يُرسل إلى /api/verdict في هذا الموقع. ما يطابق المدونة المحرَّرة يُجاب من ذلك الملف. إن لم يوجد تطابق فقد يُرسل السؤال إلى OpenRouter ليصوغ النموذج ملخصًا مع مصادر.',
@@ -463,8 +461,6 @@ export const messages = {
       themeSystem: 'النظام',
       language: 'اللغة',
       refreshApp: 'تحديث التطبيق',
-      plainExplanations: 'شروح مبسّطة',
-      plainExplanationsHelp: 'سطر واحد يوضح المعنى تحت حلال وحرام وغير واضح. تبقى المصطلحات الإسلامية على الشرائح.',
     },
   },
   de: {
@@ -587,7 +583,7 @@ export const messages = {
       back: 'Zurück zur Suche',
       localTitle: 'Auf diesem Gerät',
       localBody:
-        'Darstellung, Sprache und die Einstellung für einfache Erklärungen werden in diesem Browser unter themePreference, languagePreference und plainExplanationsPreference gespeichert. Sie gehen an keinen Kontoserver.',
+        'Darstellung und Sprache werden in diesem Browser unter themePreference und languagePreference gespeichert. Sie gehen an keinen Kontoserver.',
       lookupTitle: 'Suchen',
       lookupBody:
         'Der Suchtext geht an /api/verdict dieser Seite. Ein Treffer im kuratierten Bestand wird aus dieser Datei beantwortet. Ohne Treffer kann die Anfrage an OpenRouter gehen, damit ein Modell eine belegte Zusammenfassung entwirft.',
@@ -702,8 +698,6 @@ export const messages = {
       themeSystem: 'System',
       language: 'Sprache',
       refreshApp: 'App aktualisieren',
-      plainExplanations: 'Einfache Erklärungen',
-      plainExplanationsHelp: 'Eine Zeile unter Halal, Haram und Unklar. Die islamischen Begriffe bleiben auf den Chips.',
     },
   },
   fr: {
@@ -826,7 +820,7 @@ export const messages = {
       back: 'Retour à la recherche',
       localTitle: 'Sur cet appareil',
       localBody:
-        'Le thème, la langue et la préférence d’explications simples sont enregistrés dans ce navigateur sous themePreference, languagePreference et plainExplanationsPreference. Ils ne sont pas envoyés à un serveur de comptes.',
+        'Le thème et la langue sont enregistrés dans ce navigateur sous themePreference et languagePreference. Ils ne sont pas envoyés à un serveur de comptes.',
       lookupTitle: 'Recherches',
       lookupBody:
         'Le texte cherché est envoyé à /api/verdict de ce site. Une correspondance du fonds curaté est répondue depuis ce fichier. Sans correspondance, la requête peut être envoyée à OpenRouter pour qu’un modèle rédige un résumé cité.',
@@ -941,8 +935,6 @@ export const messages = {
       themeSystem: 'Système',
       language: 'Langue',
       refreshApp: 'Actualiser l’application',
-      plainExplanations: 'Explications simples',
-      plainExplanationsHelp: 'Une ligne sous Halal, Haram et Incertain. Les termes islamiques restent sur les pastilles.',
     },
   },
 }

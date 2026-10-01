@@ -144,13 +144,8 @@ test('offline copy is not the no-key or rate-limit message', () => {
   }
 })
 
-test('plain-explanation settings and verdict gloss exist in every locale', () => {
+test('verdict gloss exists in every locale', () => {
   for (const locale of LOCALES) {
-    const settings = messages[locale].settings
-    assert.equal(typeof settings.plainExplanations, 'string', locale)
-    assert.ok(settings.plainExplanations.trim().length > 0, locale)
-    assert.equal(typeof settings.plainExplanationsHelp, 'string', locale)
-    assert.ok(settings.plainExplanationsHelp.trim().length > 8, locale)
     const verdict = messages[locale].verdict
     for (const key of ['halal', 'haram', 'unclear'] as const) {
       assert.equal(typeof verdict.gloss[key], 'string', `${locale} gloss.${key}`)
@@ -158,8 +153,6 @@ test('plain-explanation settings and verdict gloss exist in every locale', () =>
     }
   }
 
-  assert.equal(messages.en.settings.plainExplanations, 'Plain explanations')
-  assert.match(messages.en.settings.plainExplanationsHelp, /Halal/)
   assert.equal(messages.en.verdict.gloss.halal, 'Permitted in Islam (per the sources below).')
   assert.equal(messages.en.verdict.gloss.haram, 'Not permitted in Islam (per the sources below).')
   assert.equal(messages.en.verdict.gloss.unclear, 'Islamic authorities disagree. Both sides are listed.')
@@ -168,9 +161,9 @@ test('plain-explanation settings and verdict gloss exist in every locale', () =>
   assert.match(messages.en.status.failedBody, /Try a shorter term, or ask a scholar/)
   assert.match(messages.en.search.aiFailBody, /named Islamic sources/)
   assert.match(messages.en.search.aiFailBody, /Try again/)
-  assert.match(messages.ar.settings.plainExplanations, /شروح/)
-  assert.match(messages.de.settings.plainExplanations, /Erklärungen/)
-  assert.match(messages.fr.settings.plainExplanations, /Explications/)
-  assert.match(messages.en.privacy.localBody, /plainExplanationsPreference/)
+  for (const locale of LOCALES) {
+    assert.equal('plainExplanations' in messages[locale].settings, false, locale)
+    assert.doesNotMatch(messages[locale].privacy.localBody, /plainExplanations/, locale)
+  }
 })
 

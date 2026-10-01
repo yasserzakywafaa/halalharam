@@ -14,11 +14,9 @@ import {
   applyDocumentChrome,
   languageMeta,
   readLanguage,
-  readPlainExplanationsPreference,
   readThemePreference,
   resolveColorMode,
   writeLanguage,
-  writePlainExplanationsPreference,
   writeThemePreference,
   type ColorMode,
   type ThemePreference,
@@ -43,11 +41,6 @@ export interface LocaleValue {
   setLanguage: (next: Locale) => void
 }
 
-export interface PlainExplanationsValue {
-  plainExplanations: boolean
-  setPlainExplanations: (next: boolean) => void
-}
-
 const ColorModeContext = createContext<ColorModeValue>({
   themePreference: 'system',
   mode: 'light',
@@ -60,21 +53,12 @@ const LocaleContext = createContext<LocaleValue>({
   setLanguage: () => {},
 })
 
-const PlainExplanationsContext = createContext<PlainExplanationsValue>({
-  plainExplanations: true,
-  setPlainExplanations: () => {},
-})
-
 export function useColorMode(): ColorModeValue {
   return useContext(ColorModeContext)
 }
 
 export function useLocale(): LocaleValue {
   return useContext(LocaleContext)
-}
-
-export function usePlainExplanations(): PlainExplanationsValue {
-  return useContext(PlainExplanationsContext)
 }
 
 /**
@@ -114,8 +98,6 @@ export default function AppProviders({
 }: AppProvidersProps) {
   const [themePreference, setThemePreferenceState] = useState<ThemePreference>(initialThemePreference)
   const [language, setLanguageState] = useState<Locale>(initialLanguage)
-  // Defaults on the server and on the hydration pass; synced from the browser right after.
-  const [plainExplanations, setPlainExplanationsState] = useState(true)
   const [systemDark, setSystemDark] = useState(false)
   const [i18n] = useState(() => createI18n(initialLanguage))
   const [initialDirection] = useState(() => languageMeta(initialLanguage).dir)
@@ -132,7 +114,6 @@ export default function AppProviders({
       writeThemePreference(storedTheme)
       setThemePreferenceState(storedTheme)
     }
-    setPlainExplanationsState(readPlainExplanationsPreference())
 
     const media = window.matchMedia('(prefers-color-scheme: dark)')
     setSystemDark(media.matches)
@@ -178,29 +159,16 @@ export default function AppProviders({
     [language, direction],
   )
 
-  const plainExplanationsValue = useMemo<PlainExplanationsValue>(
-    () => ({
-      plainExplanations,
-      setPlainExplanations: (next) => {
-        writePlainExplanationsPreference(next)
-        setPlainExplanationsState(Boolean(next))
-      },
-    }),
-    [plainExplanations],
-  )
-
   return (
     <AppRouterCacheProvider options={emotionOptions[initialDirection]}>
       <EmotionDirection initialDirection={initialDirection} direction={direction}>
         <I18nextProvider i18n={i18n}>
           <ColorModeContext.Provider value={colorMode}>
             <LocaleContext.Provider value={locale}>
-              <PlainExplanationsContext.Provider value={plainExplanationsValue}>
-                <ThemeProvider theme={theme}>
-                  <CssBaseline />
-                  <ErrorBoundary>{children}</ErrorBoundary>
-                </ThemeProvider>
-              </PlainExplanationsContext.Provider>
+              <ThemeProvider theme={theme}>
+                <CssBaseline />
+                <ErrorBoundary>{children}</ErrorBoundary>
+              </ThemeProvider>
             </LocaleContext.Provider>
           </ColorModeContext.Provider>
         </I18nextProvider>

@@ -60,7 +60,7 @@ export default function SiteHeader() {
               minHeight: 44,
               color: 'inherit',
               borderRadius: 1,
-              '--brand-mark-hole': 'var(--page-bg)',
+              '--brand-mark-ink': 'var(--page-bg)',
               '&:focus-visible': { outline: '3px solid var(--focus-ring)', outlineOffset: 3 },
             }}
           >
