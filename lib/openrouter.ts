@@ -138,8 +138,7 @@ function userPrompt(query: string, locale: unknown, { retry = false }: { retry?:
 export function getOpenRouterConfig(): { apiKey: string; model: string; referer: string } {
   const apiKey = String(process.env.OPENROUTER_API_KEY || '').trim()
   const model = String(process.env.OPENROUTER_MODEL || '').trim() || DEFAULT_MODEL
-  const referer =
-    String(process.env.OPENROUTER_HTTP_REFERER || '').trim() || 'https://halalharam.vercel.app'
+  const referer = 'https://halalharam.vercel.app'
   return { apiKey, model, referer }
 }
 
