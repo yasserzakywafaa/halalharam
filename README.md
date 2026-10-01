@@ -1,4 +1,4 @@
-# Halal or Haram (`halalharam`)
+# Halal-Haram (`halalharam`)
 
 Instant **halal / haram / unclear** verdicts with **cited sources**. Every result names **according to whom**. This app never claims one universal ruling for all Muslims.
 

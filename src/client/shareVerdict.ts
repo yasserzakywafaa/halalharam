@@ -52,7 +52,7 @@ export function buildVerdictShare({
   const clipboard = [text, url].filter(Boolean).join('\n\n')
 
   return {
-    title: headline || subject || 'Halal or Haram',
+    title: headline || subject || 'Halal-Haram',
     text,
     url,
     clipboard,

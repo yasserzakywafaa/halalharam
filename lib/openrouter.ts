@@ -55,7 +55,7 @@ interface CompletionArgs {
 
 type SendOutcome = { ok: true; result: ChatResult } | { ok: false; status: number }
 
-const APP_TITLE = 'Halal or Haram'
+const APP_TITLE = 'Halal-Haram'
 const DEFAULT_MODEL = 'nvidia/nemotron-3-ultra-550b-a55b:free'
 /** Must stay below api/verdict.js / vercel.json maxDuration (60s) with room for the handler backup. */
 export const REQUEST_BUDGET_MS = 55_000
@@ -81,7 +81,7 @@ export function buildSystemPrompt(locale?: unknown): string {
   const resolved = resolveLocale(locale)
   const language = languageName(resolved)
 
-  return `You are a cautious Islamic research assistant for a consumer web app called "Halal or Haram".
+  return `You are a cautious Islamic research assistant for a consumer web app called "Halal-Haram".
 
 Rules you MUST follow:
 - Never claim one universal ruling for all Muslims. Always name the authority ("according to whom").

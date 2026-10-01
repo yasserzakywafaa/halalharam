@@ -1,9 +1,9 @@
 export const messages = {
   en: {
-    brand: 'Halal or Haram',
+    brand: 'Halal-Haram',
     brandLine: 'Cited · not a fatwa mill',
     seo: {
-      title: 'Halal or Haram · cited lookup',
+      title: 'Halal-Haram · cited lookup',
       description:
         'Look up halal (permitted in Islam), haram (not permitted), or unclear (scholars disagree) with named scholars and fatwa bodies. When sources disagree, both sides stay on the page. Cited, not a fatwa mill.',
     },
@@ -102,7 +102,7 @@ export const messages = {
     },
     about: {
       title: 'A cited lookup, not a fatwa.',
-      lead: 'Halal or Haram is a reference desk. It reports published positions of named authorities. It is not a fatwa mill, and it is not a substitute for a qualified scholar.',
+      lead: 'Halal-Haram is a reference desk. It reports published positions of named authorities. It is not a fatwa mill, and it is not a substitute for a qualified scholar.',
       sourcesTitle: 'Named sources',
       sourcesLead:
         'The starter library cites these texts and desks. Each link is the site those citations already use, not a separate ruling.',
@@ -232,10 +232,10 @@ export const messages = {
     },
   },
   ar: {
-    brand: 'حلال أم حرام',
+    brand: 'حلال-حرام',
     brandLine: 'موثّق · ليست مطحنة فتاوى',
     seo: {
-      title: 'حلال أم حرام · بحث موثّق',
+      title: 'حلال-حرام · بحث موثّق',
       description:
         'ابحث عن حلال (مباح في الإسلام) أو حرام (غير مباح) أو غير واضح (اختلف العلماء) مع أسماء العلماء ودور الإفتاء. إذا اختلفت المصادر يبقى الطرفان. موثّق، وليست مطحنة فتاوى.',
     },
@@ -328,7 +328,7 @@ export const messages = {
     },
     about: {
       title: 'بحث موثّق، وليس فتوى.',
-      lead: '«حلال أم حرام» مكتب مراجع. يعرض مواقف منشورة لجهات مسمّاة. ليس مطحنة فتاوى، وليس بديلًا عن عالم مؤهّل.',
+      lead: '«حلال-حرام» مكتب مراجع. يعرض مواقف منشورة لجهات مسمّاة. ليس مطحنة فتاوى، وليس بديلًا عن عالم مؤهّل.',
       sourcesTitle: 'المصادر المسمّاة',
       sourcesLead: 'تستشهد مجموعة البداية بهذه النصوص والجهات. كل رابط هو موقع تلك الاستشهادات فعلًا، وليس حكمًا منفصلًا.',
       notTitle: 'ما ليس هذا الموقع',
@@ -456,10 +456,10 @@ export const messages = {
     },
   },
   de: {
-    brand: 'Halal oder Haram',
+    brand: 'Halal-Haram',
     brandLine: 'Belegt · keine Fatwa-Mühle',
     seo: {
-      title: 'Halal oder Haram · belegtes Nachschlagen',
+      title: 'Halal-Haram · belegtes Nachschlagen',
       description:
         'Halal (im Islam erlaubt), Haram (nicht erlaubt) oder unklar (Gelehrte sind uneins) nachschlagen, mit benannten Gelehrten und Fatwa-Stellen. Wenn Quellen widersprechen, bleiben beide Seiten auf der Seite. Belegt, keine Fatwa-Mühle.',
     },
@@ -559,7 +559,7 @@ export const messages = {
     },
     about: {
       title: 'Ein belegtes Nachschlagen, keine Fatwa.',
-      lead: 'Halal oder Haram ist ein Nachschlagewerk. Es gibt veröffentlichte Positionen benannter Autoritäten wieder. Es ist keine Fatwa-Mühle und kein Ersatz für einen qualifizierten Gelehrten.',
+      lead: 'Halal-Haram ist ein Nachschlagewerk. Es gibt veröffentlichte Positionen benannter Autoritäten wieder. Es ist keine Fatwa-Mühle und kein Ersatz für einen qualifizierten Gelehrten.',
       sourcesTitle: 'Benannte Quellen',
       sourcesLead:
         'Der Startbestand zitiert diese Texte und Stellen. Jeder Link ist die Website, die jene Belege bereits nutzen, kein eigenes Urteil.',
@@ -689,10 +689,10 @@ export const messages = {
     },
   },
   fr: {
-    brand: 'Halal ou Haram',
+    brand: 'Halal-Haram',
     brandLine: 'Cité · pas un moulin à fatwas',
     seo: {
-      title: 'Halal ou Haram · recherche citée',
+      title: 'Halal-Haram · recherche citée',
       description:
         'Recherchez halal (permis en islam), haram (non permis) ou incertain (les savants divergent) avec des savants et des instances de fatwa nommés. Si les sources divergent, les deux avis restent sur la page. Cité, pas un moulin à fatwas.',
     },
@@ -792,7 +792,7 @@ export const messages = {
     },
     about: {
       title: 'Une recherche citée, pas une fatwa.',
-      lead: 'Halal ou Haram est un bureau de référence. Il rapporte des positions publiées d’autorités nommées. Ce n’est pas un moulin à fatwas, et cela ne remplace pas un savant qualifié.',
+      lead: 'Halal-Haram est un bureau de référence. Il rapporte des positions publiées d’autorités nommées. Ce n’est pas un moulin à fatwas, et cela ne remplace pas un savant qualifié.',
       sourcesTitle: 'Sources nommées',
       sourcesLead:
         'Le fonds de départ cite ces textes et ces instances. Chaque lien est le site que ces citations utilisent déjà, pas un avis distinct.',

@@ -1,6 +1,6 @@
 {
-  "name": "Halal or Haram",
-  "short_name": "Halal or Haram",
+  "name": "Halal-Haram",
+  "short_name": "Halal-Haram",
   "description": "Cited halal, haram, or unclear lookup. Named authorities. Both sides when they disagree.",
   "start_url": "/",
   "scope": "/",
