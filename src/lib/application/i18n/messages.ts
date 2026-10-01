@@ -51,6 +51,9 @@ export const messages = {
       errorBody: 'Check the connection and try again. Nothing here was saved as a ruling.',
       retry: 'Try again',
       notARuling: 'This is not a ruling.',
+      outOfScopeTitle: 'Not a halal/haram question',
+      outOfScopeBody:
+        'This tool only answers whether something is halal or haram in Islam. Try a food, ingredient, drink, product, or practice, like “gelatin” or “interest on savings”.',
     },
     empty: {
       title: 'A curated reference desk',
@@ -287,6 +290,9 @@ export const messages = {
       errorBody: 'تحقق من الاتصال ثم أعد المحاولة. لم يُحفظ شيء هنا كحكم.',
       retry: 'أعد المحاولة',
       notARuling: 'هذه ليست حكمًا.',
+      outOfScopeTitle: 'ليس سؤالًا عن الحلال والحرام',
+      outOfScopeBody:
+        'هذه الأداة تجيب فقط عن حكم الشيء في الإسلام. جرّب طعامًا أو مكوّنًا أو مشروبًا أو منتجًا أو عملًا، مثل «الجيلاتين» أو «الربا».',
     },
     empty: {
       title: 'مكتب مراجع محرَّر',
@@ -515,6 +521,9 @@ export const messages = {
       errorBody: 'Verbindung prüfen und erneut versuchen. Hier wurde nichts als Urteil gespeichert.',
       retry: 'Erneut versuchen',
       notARuling: 'Das ist kein Urteil.',
+      outOfScopeTitle: 'Keine Halal/Haram-Frage',
+      outOfScopeBody:
+        'Dieses Werkzeug beantwortet nur, ob etwas im Islam halal oder haram ist. Versuchen Sie ein Lebensmittel, eine Zutat, ein Getränk, ein Produkt oder eine Handlung, etwa „Gelatine“ oder „Zinsen“.',
     },
     empty: {
       title: 'Ein kuratierter Schreibtisch',
@@ -752,6 +761,9 @@ export const messages = {
       errorBody: 'Vérifiez la connexion et réessayez. Rien ici n’a été enregistré comme avis.',
       retry: 'Réessayer',
       notARuling: 'Ceci n’est pas un avis.',
+      outOfScopeTitle: 'Ce n’est pas une question halal/haram',
+      outOfScopeBody:
+        'Cet outil répond seulement à la question : est-ce halal ou haram en islam ? Essayez un aliment, un ingrédient, une boisson, un produit ou une pratique, comme « gélatine » ou « intérêts ».',
     },
     empty: {
       title: 'Un bureau de référence curaté',

@@ -8,6 +8,8 @@ import {
   resolveLocale,
 } from '../../utils/locale.ts'
 import { localizedAppDisclaimer } from './localize.ts'
+import { cleanQuery, screenQuery } from './inputGuard.ts'
+import { outOfScopeDraft } from './outOfScope.ts'
 import type {
   CodedError,
   DraftVerdict,
@@ -34,7 +36,7 @@ export async function getVerdict(
 ): Promise<VerdictResponse | VerdictErrorPayload> {
   const locale = resolveLocale(options.locale)
   const copy = localeCopy(locale)
-  const query = String(rawQuery || '').trim()
+  const query = cleanQuery(rawQuery)
   if (query.length < 2) {
     return {
       error: copy.queryTooShort,
@@ -48,6 +50,12 @@ export async function getVerdict(
       status: 400,
       locale,
     }
+  }
+
+  const screen = screenQuery(rawQuery)
+  if (!screen.ok) {
+    console.warn('[verdict] query rejected by input guard', screen.reason)
+    return finalize(query, outOfScopeDraft(query, locale), locale)
   }
 
   const seeded = matchSeed(query, locale)
@@ -116,7 +124,9 @@ function unavailableResult(
 function finalize(originalQuery: string, result: DraftVerdict, locale: Locale): VerdictResponse {
   const confidence = Number(result.confidence) || 0
   const conflict = Boolean(result.conflict)
+  const outOfScope = result.outOfScope === true
   const lowConfidence =
+    outOfScope ||
     result.verdict === 'unclear' ||
     conflict ||
     confidence < LOW_CONFIDENCE_THRESHOLD ||
@@ -132,6 +142,7 @@ function finalize(originalQuery: string, result: DraftVerdict, locale: Locale): 
     conflict,
     sourcePath: result.sourcePath,
     unavailableReason: result.unavailableReason || null,
+    outOfScope,
     seedId: result.seedId || null,
     model: result.model || null,
     locale: result.locale || locale,

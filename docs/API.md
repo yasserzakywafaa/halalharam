@@ -20,7 +20,7 @@ JSON body: `{ "query": "gelatin", "locale": "ar" }`.
 
 ### Response (200)
 
-`verdict` (`halal` | `haram` | `unclear`), `confidence`, `lowConfidence`, `conflict`, `positions[]`, `sourcePath` (`seed` | `ai` | `unavailable`), `unavailableReason` (`no_api_key` | `ai_error` | `ai_rate_limited` | null), `locale`, `accordingTo`, `sources[]`, `disclaimer`.
+`verdict` (`halal` | `haram` | `unclear`), `confidence`, `lowConfidence`, `conflict`, `positions[]`, `sourcePath` (`seed` | `ai` | `unavailable` | `guard`), `unavailableReason` (`no_api_key` | `ai_error` | `ai_rate_limited` | null), `outOfScope` (boolean), `locale`, `accordingTo`, `sources[]`, `disclaimer`.
 
 When named sources disagree, `conflict` is `true`, `verdict` is `unclear`, and `positions[]` lists each side with its own citations.
 
@@ -36,3 +36,12 @@ Service status, the configured model, `openRouterKeyPresent` (never the key itse
 ## Old paths
 
 `/api/verdict` and `/api/health` permanently redirect (308) to the `/api/v1/` paths, so existing callers keep working.
+
+### Out-of-scope and unsafe input
+
+Queries that are not halal/haram questions return `200` with `outOfScope: true`, `verdict: "unclear"`, `confidence: 0` and no sources. Show a notice, never a ruling.
+
+- `sourcePath: "guard"`: rejected before any lookup by `src/lib/server/verdict/inputGuard.ts` (prompt-injection phrasing, links, code, keyboard mash).
+- `sourcePath: "ai"`: the model returned `scope: "out"`, refused without citations, or echoed its system prompt.
+
+The query is sent to the model inside `<user_query>` tags with delimiter characters stripped, and the system prompt treats it as data only.

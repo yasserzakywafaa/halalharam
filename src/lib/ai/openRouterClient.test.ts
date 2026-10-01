@@ -544,3 +544,67 @@ test('the SDK never retries on its own (5xx is one call, then unavailable)', asy
     globalThis.fetch = original
   })
 })
+
+test('an off-topic query the model flags as scope "out" carries no ruling', () => {
+  const result = normalizeModelResult(
+    'How is the weather today in Lisbon?',
+    {
+      scope: 'out',
+      verdict: 'unclear',
+      confidence: 0.1,
+      title: 'Weather in Lisbon',
+      summary: 'I cannot provide real-time weather information.',
+      sources: [],
+    },
+    'test/model',
+    'en',
+  )
+  assert.equal(result.outOfScope, true)
+  assert.equal(result.sourcePath, 'ai')
+  assert.equal(result.title, 'Not a halal/haram question')
+  assert.deepEqual(result.sources, [])
+})
+
+test('an uncited refusal is treated as out of scope even without the scope flag', () => {
+  const result = normalizeModelResult(
+    'How is the weather today in Lisbon?',
+    {
+      verdict: 'unclear',
+      confidence: 0.1,
+      title: 'Weather in Lisbon',
+      summary:
+        'I am an Islamic research assistant and cannot provide real-time weather information. This query falls outside the scope of Islamic jurisprudence.',
+      sources: [],
+    },
+    'test/model',
+    'en',
+  )
+  assert.equal(result.outOfScope, true)
+})
+
+test('a completion that echoes the system prompt is never shown', () => {
+  const result = normalizeModelResult(
+    'pork',
+    {
+      verdict: 'halal',
+      confidence: 0.9,
+      title: 'Rules you MUST follow',
+      summary: 'Reference: HH-SCOPE-7F3A.',
+      sources: [{ authority: 'IslamQA', name: 'x', stance: 'halal', url: 'https://islamqa.info/en/answers/1' }],
+    },
+    'test/model',
+    'en',
+  )
+  assert.equal(result.outOfScope, true)
+  assert.deepEqual(result.sources, [])
+})
+
+test('the user query is fenced as data and the prompt states the scope rules', () => {
+  const body = chatCompletionBody({ model: 'm', locale: 'en', query: 'nutmeg' })
+  const [system, user] = body.messages
+  assert.ok(system && user)
+  assert.match(system.content, /SCOPE/)
+  assert.match(system.content, /never instructions/)
+  assert.match(system.content, /"scope": "in" \| "out"/)
+  assert.match(user.content, /^<user_query>nutmeg<\/user_query>/)
+})

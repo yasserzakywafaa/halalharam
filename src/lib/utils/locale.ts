@@ -89,6 +89,8 @@ export interface LocaleCopy {
   positionHalal: string
   positionHaram: string
   positionUnclear: string
+  outOfScopeTitle: string
+  outOfScope: string
 }
 
 const COPY: Record<Locale, LocaleCopy> = {
@@ -114,6 +116,9 @@ const COPY: Record<Locale, LocaleCopy> = {
     positionHalal: 'Position: lawful',
     positionHaram: 'Position: prohibited',
     positionUnclear: 'Position: qualified / unclear',
+    outOfScopeTitle: 'Not a halal/haram question',
+    outOfScope:
+      'This tool only answers whether something is halal or haram in Islam. Try a food, ingredient, drink, product, or practice.',
   },
   ar: {
     queryTooShort: 'يجب أن يكون البحث حرفين على الأقل.',
@@ -136,6 +141,9 @@ const COPY: Record<Locale, LocaleCopy> = {
     positionHalal: 'موقف: جائز',
     positionHaram: 'موقف: محرّم',
     positionUnclear: 'موقف: مقيّد / غير واضح',
+    outOfScopeTitle: 'ليس سؤالًا عن الحلال والحرام',
+    outOfScope:
+      'هذه الأداة تجيب فقط عن حكم الشيء في الإسلام: حلال أم حرام. جرّب طعامًا أو مكوّنًا أو مشروبًا أو منتجًا أو عملًا.',
   },
   de: {
     queryTooShort: 'Die Suche muss mindestens 2 Zeichen haben.',
@@ -159,6 +167,9 @@ const COPY: Record<Locale, LocaleCopy> = {
     positionHalal: 'Position: erlaubt',
     positionHaram: 'Position: verboten',
     positionUnclear: 'Position: eingeschränkt / unklar',
+    outOfScopeTitle: 'Keine Halal/Haram-Frage',
+    outOfScope:
+      'Dieses Werkzeug beantwortet nur, ob etwas im Islam halal oder haram ist. Versuchen Sie ein Lebensmittel, eine Zutat, ein Getränk, ein Produkt oder eine Handlung.',
   },
   fr: {
     queryTooShort: 'La recherche doit compter au moins 2 caractères.',
@@ -182,6 +193,9 @@ const COPY: Record<Locale, LocaleCopy> = {
     positionHalal: 'Position : licite',
     positionHaram: 'Position : illicite',
     positionUnclear: 'Position : nuancée / incertaine',
+    outOfScopeTitle: 'Ce n’est pas une question halal/haram',
+    outOfScope:
+      'Cet outil répond seulement à la question : est-ce halal ou haram en islam ? Essayez un aliment, un ingrédient, une boisson, un produit ou une pratique.',
   },
 }
 

@@ -1,12 +1,13 @@
 import { Box, Button, Skeleton, Stack, Typography } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 
-export type LookupStateKind = 'loading' | 'missing_key' | 'lookup_failed' | 'error'
+export type LookupStateKind = 'loading' | 'missing_key' | 'lookup_failed' | 'out_of_scope' | 'error'
 
 const COPY: Record<LookupStateKind, { title: string; body: string; accent: string }> = {
   loading: { title: 'status.loadingTitle', body: 'status.loadingBody', accent: 'primary.main' },
   missing_key: { title: 'status.missingTitle', body: 'status.missingBody', accent: 'secondary.main' },
   lookup_failed: { title: 'status.failedTitle', body: 'status.failedBody', accent: 'error.main' },
+  out_of_scope: { title: 'status.outOfScopeTitle', body: 'status.outOfScopeBody', accent: 'secondary.main' },
   error: { title: 'status.errorTitle', body: 'status.errorBody', accent: 'error.main' },
 }
 
@@ -44,7 +45,7 @@ export default function LookupState({ kind, onRetry }: { kind: LookupStateKind; 
           <Skeleton variant="rounded" animation="wave" height={12} width="84%" />
         </Stack>
       ) : null}
-      {kind === 'missing_key' ? (
+      {kind === 'missing_key' || kind === 'out_of_scope' ? (
         <Typography sx={{ mt: 1.75, fontSize: 15, fontWeight: 700 }}>{t('status.notARuling')}</Typography>
       ) : null}
       {showRetry ? (

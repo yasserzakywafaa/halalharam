@@ -49,7 +49,10 @@ function writeQueryParam(value: string) {
   if (next !== current) window.history.replaceState(null, '', next)
 }
 
-function unavailableKind(result: VerdictResponse | null): Extract<LookupStateKind, 'missing_key' | 'lookup_failed'> | null {
+function unavailableKind(
+  result: VerdictResponse | null,
+): Extract<LookupStateKind, 'missing_key' | 'lookup_failed' | 'out_of_scope'> | null {
+  if (result?.outOfScope) return 'out_of_scope'
   if (!result || result.sourcePath !== 'unavailable') return null
   // `missing_key` is a legacy reason some older payloads used.
   if (result.unavailableReason === 'no_api_key' || (result.unavailableReason as string) === 'missing_key') {
@@ -144,7 +147,7 @@ export default function Lookup() {
       const data = await fetchVerdict(next, language, { signal: controller.signal })
       if (seq !== requestSeq.current || controller.signal.aborted) return
       setResult(data)
-      if (data?.sourcePath !== 'unavailable') setPinnedVerdict(true)
+      if (!unavailableKind(data)) setPinnedVerdict(true)
       setFocusToken((token) => token + 1)
     } catch (caught) {
       const err = caught as CodedError
@@ -177,7 +180,7 @@ export default function Lookup() {
         .then((data) => {
           if (seq !== requestSeq.current || controller.signal.aborted) return
           setResult(data)
-          if (data?.sourcePath !== 'unavailable') setPinnedVerdict(true)
+          if (!unavailableKind(data)) setPinnedVerdict(true)
           setFocusToken((token) => token + 1)
         })
         .catch((err) => {

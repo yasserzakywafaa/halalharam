@@ -3,7 +3,8 @@
 export type Locale = 'en' | 'ar' | 'de' | 'fr'
 export type Direction = 'ltr' | 'rtl'
 export type Verdict = 'halal' | 'haram' | 'unclear'
-export type SourcePath = 'seed' | 'ai' | 'unavailable'
+/** `guard`: rejected by the input screen before any lookup. */
+export type SourcePath = 'seed' | 'ai' | 'unavailable' | 'guard'
 export type UnavailableReason = 'no_api_key' | 'ai_error' | 'ai_rate_limited'
 
 export interface Citation {
@@ -68,6 +69,8 @@ export interface DraftVerdict {
   seedId?: string | null
   model?: string | null
   locale: Locale
+  /** True when the query is not a halal/haram question (or tried to steer the model). No ruling is shown. */
+  outOfScope?: boolean
 }
 
 /** What `/api/v1/verdict` and the `lookupVerdict` server action return on success. */
@@ -80,6 +83,8 @@ export interface VerdictResponse {
   conflict: boolean
   sourcePath: SourcePath
   unavailableReason: UnavailableReason | null
+  /** True when the query is not a halal/haram question. The page shows a notice, never a ruling. */
+  outOfScope: boolean
   seedId: string | null
   model: string | null
   locale: Locale
