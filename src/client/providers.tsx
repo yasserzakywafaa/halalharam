@@ -23,7 +23,6 @@ import {
   type ColorMode,
   type ThemePreference,
 } from './preferences.ts'
-import { ensureArabicFont } from './fonts.ts'
 import ErrorBoundary from './components/ErrorBoundary.tsx'
 import { createI18n } from './i18n/index.ts'
 
@@ -150,7 +149,6 @@ export default function AppProviders({
 
   useEffect(() => {
     applyDocumentChrome({ language, direction, mode })
-    if (language === 'ar') ensureArabicFont()
     if (i18n.language !== language) {
       i18n.changeLanguage(language)
     }

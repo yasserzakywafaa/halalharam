@@ -3,7 +3,7 @@ import OpenInNewIcon from '@mui/icons-material/OpenInNew'
 import { useTranslation } from 'react-i18next'
 import Kicker from './Kicker.tsx'
 import { useLocale, usePlainExplanations } from '../providers.tsx'
-import { useVerdictColors } from '../theme.ts'
+import { FONT_MONO, useVerdictColors } from '../theme.ts'
 import BidiText, { BidiChipLabel } from './BidiText.tsx'
 import { knownVerdict, shouldShowVerdictGloss } from '../verdictGloss.ts'
 import type { Citation, Position, SourcePath, VerdictResponse } from '../../../lib/types.ts'
@@ -100,39 +100,45 @@ function SourceList({ sources }: { sources: Citation[] }) {
             key={`${source.url}-${source.name}-${index}`}
             sx={{
               display: 'grid',
-              gridTemplateColumns: '2.25rem minmax(0, 1fr)',
-              gap: 1.1,
-              py: 1.35,
+              gridTemplateColumns: '2rem minmax(0, 1fr)',
+              gap: 1,
+              py: 1.5,
             }}
           >
             <Typography
               sx={{
-                fontFamily: 'Fraunces, "Noto Naskh Arabic", Georgia, serif',
-                fontSize: 16,
-                color: 'text.secondary',
-                lineHeight: 1.4,
+                fontFamily: FONT_MONO,
+                fontSize: 12.5,
+                color: 'primary.main',
+                lineHeight: 1.9,
                 fontVariantNumeric: 'tabular-nums',
               }}
             >
-              {String(index + 1).padStart(2, '0')}
+              [{index + 1}]
             </Typography>
             <Box>
               <Stack direction="row" spacing={0.75} useFlexGap sx={{ flexWrap: 'wrap', mb: 0.6 }}>
                 {source.authority ? (
-                  <Chip size="small" variant="outlined" label={<BidiChipLabel>{source.authority}</BidiChipLabel>} />
+                  <Chip
+                    size="small"
+                    variant="outlined"
+                    label={<BidiChipLabel>{source.authority}</BidiChipLabel>}
+                    sx={{ maxWidth: '100%', height: 'auto', '& .MuiChip-label': { whiteSpace: 'normal', lineHeight: 1.35, py: 0.4 } }}
+                  />
                 ) : null}
                 {source.stance ? <VerdictStanceChip verdict={source.stance} /> : null}
               </Stack>
-              <BidiText sx={{ fontWeight: 650, fontSize: 16, overflowWrap: 'anywhere' }}>{source.name}</BidiText>
+              <BidiText sx={{ fontWeight: 600, fontSize: 15.5, lineHeight: 1.4, overflowWrap: 'anywhere' }}>{source.name}</BidiText>
               {source.excerpt ? (
                 <BidiText
                   sx={{
-                    mt: 0.5,
-                    fontFamily: 'Fraunces, "Noto Naskh Arabic", Georgia, serif',
-                    fontStyle: 'italic',
+                    mt: 0.75,
+                    pl: 1.25,
+                    borderLeft: '2px solid',
+                    borderColor: 'divider',
                     color: 'text.secondary',
                     fontSize: 14.5,
-                    lineHeight: 1.55,
+                    lineHeight: 1.6,
                     overflowWrap: 'anywhere',
                   }}
                 >
@@ -183,21 +189,23 @@ function PositionCard({ position }: { position: Position }) {
   return (
     <Box
       sx={{
-        borderRadius: 1,
+        borderRadius: 1.5,
         p: { xs: 1.75, sm: 2 },
         border: '1px solid',
         borderColor: 'divider',
-        bgcolor: 'background.paper',
+        borderTop: '3px solid',
+        borderTopColor: tone.main,
+        bgcolor: 'background.default',
         minWidth: 0,
         height: '100%',
       }}
     >
       <Tooltip title={hint} describeChild enterDelay={150} enterTouchDelay={0} leaveDelay={0}>
-        <Typography sx={{ color: tone.main, fontWeight: 700, fontSize: 13, width: 'fit-content' }}>
+        <Typography sx={{ color: tone.main, fontWeight: 600, fontSize: 13, width: 'fit-content', fontFamily: FONT_MONO, letterSpacing: '0.04em', textTransform: 'uppercase' }}>
           {t(`verdict.${position.stance}`, { defaultValue: position.stance })}
         </Typography>
       </Tooltip>
-      <BidiText sx={{ mt: 0.75, fontWeight: 650, fontSize: 17, lineHeight: 1.35 }}>{position.title}</BidiText>
+      <BidiText sx={{ mt: 0.75, fontWeight: 600, fontSize: 16.5, lineHeight: 1.35 }}>{position.title}</BidiText>
       {position.summary ? (
         <BidiText sx={{ mt: 1, fontSize: 15, lineHeight: 1.6 }}>{position.summary}</BidiText>
       ) : null}
@@ -272,62 +280,102 @@ export default function VerdictCard({ result }: { result: VerdictResponse }) {
       className="folio-in"
       sx={{
         bgcolor: 'background.paper',
-        borderRadius: 1,
+        borderRadius: 2,
         border: '1px solid',
         borderColor: 'divider',
         overflow: 'hidden',
       }}
     >
-      <Box sx={{ px: { xs: 2, sm: 2.75, md: 3.25 }, pt: { xs: 2.25, md: 2.75 }, pb: { xs: 2, md: 2.25 } }}>
+      <Box
+        sx={{
+          px: { xs: 2, sm: 2.75, md: 3.25 },
+          pt: { xs: 2, md: 2.75 },
+          pb: { xs: 2, md: 2.5 },
+          bgcolor: tone.surface,
+          borderBottom: '1px solid',
+          borderColor: 'divider',
+        }}
+      >
         <Typography className="print-only" component="p">
           {t('footer.note')}
         </Typography>
-        <Typography
-          aria-describedby={showGloss ? VERDICT_GLOSS_ID : undefined}
-          sx={{
-            fontFamily: 'Fraunces, "Noto Naskh Arabic", Georgia, serif',
-            fontSize: { xs: 32, sm: 40, md: 48 },
-            lineHeight: 1.15,
-            letterSpacing: direction === 'rtl' ? 0 : '-0.03em',
-            color: tone.main,
-            fontWeight: 650,
-            overflowWrap: 'break-word',
-          }}
-        >
-          {t(`verdict.${result.verdict}`, { defaultValue: result.verdict })}
-        </Typography>
+        <Stack direction="row" spacing={1.25} sx={{ alignItems: 'center' }}>
+          <Box aria-hidden="true" sx={{ width: 12, height: 12, borderRadius: '50%', bgcolor: tone.main, flexShrink: 0 }} />
+          <Tooltip title={t(`verdict.chipHint.${verdictKey}`)} describeChild enterDelay={150} enterTouchDelay={0} leaveDelay={0}>
+            <Typography
+              aria-describedby={showGloss ? VERDICT_GLOSS_ID : undefined}
+              sx={{
+                fontSize: { xs: 34, sm: 42, md: 48 },
+                lineHeight: 1.05,
+                letterSpacing: direction === 'rtl' ? 0 : '-0.035em',
+                color: tone.main,
+                fontWeight: 700,
+                overflowWrap: 'break-word',
+                width: 'fit-content',
+              }}
+            >
+              {t(`verdict.${result.verdict}`, { defaultValue: result.verdict })}
+            </Typography>
+          </Tooltip>
+        </Stack>
         {showGloss ? (
-          <Typography
-            id={VERDICT_GLOSS_ID}
-            color="text.secondary"
-            sx={{ mt: 0.85, fontSize: 15, lineHeight: 1.5, maxWidth: '62ch' }}
-          >
+          <Typography id={VERDICT_GLOSS_ID} sx={{ mt: 0.75, fontSize: 15, lineHeight: 1.5, maxWidth: '62ch', color: tone.ink }}>
             {t(`verdict.gloss.${verdictKey}`)}
           </Typography>
         ) : null}
-        <BidiText component="h2" variant="h2" sx={{ mt: 1.25, fontSize: { xs: 22, md: 26 }, overflowWrap: 'break-word' }}>
+        <BidiText component="h2" variant="h2" sx={{ mt: 1.5, fontSize: { xs: 21, md: 25 }, overflowWrap: 'break-word', color: tone.ink }}>
           {result.title}
         </BidiText>
         {result.query ? (
-          <Typography color="text.secondary" sx={{ mt: 0.75, fontSize: 14.5 }} dir="auto">
+          <Typography sx={{ mt: 0.5, fontSize: 13, fontFamily: FONT_MONO, color: tone.ink, opacity: 0.75 }} dir="auto">
             {t('verdict.searched', { query: result.query })}
           </Typography>
         ) : null}
-        <Stack data-print-hide="" direction="row" spacing={0.75} useFlexGap sx={{ flexWrap: 'wrap', mt: 1.75 }}>
-          <VerdictStanceChip verdict={result.verdict} glossId={showGloss ? VERDICT_GLOSS_ID : undefined} />
-          <Chip size="small" variant="outlined" label={t(sourcePathKey(result.sourcePath))} />
-          <Chip
-            size="small"
-            variant="outlined"
-            label={t('verdict.confidenceChip', { pct })}
-            aria-label={t('verdict.confidence')}
-          />
-          {showConflict ? (
-            <Chip size="small" variant="outlined" label={t('verdict.conflictTitle')} />
-          ) : result.lowConfidence ? (
-            <Chip size="small" variant="outlined" label={t('verdict.lowConfidenceChip')} />
+        <Box
+          data-print-hide=""
+          component="dl"
+          sx={{
+            m: 0,
+            mt: 1.75,
+            display: 'flex',
+            flexWrap: 'wrap',
+            columnGap: 2.5,
+            rowGap: 1,
+            fontSize: 13,
+            color: tone.ink,
+            '& dt': { fontFamily: FONT_MONO, fontSize: 10.5, letterSpacing: direction === 'rtl' ? 0 : '0.08em', textTransform: 'uppercase', opacity: 0.7 },
+            '& dd': { m: 0, mt: 0.25, fontWeight: 600 },
+          }}
+        >
+          <Box>
+            <dt>{t('verdict.sourceLabel')}</dt>
+            <dd>{t(sourcePathKey(result.sourcePath))}</dd>
+          </Box>
+          <Box>
+            <dt>{t('verdict.confidence')}</dt>
+            <Box component="dd" sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+              <Box
+                role="meter"
+                aria-valuemin={0}
+                aria-valuemax={100}
+                aria-valuenow={pct}
+                aria-label={t('verdict.confidence')}
+                sx={{ width: 64, height: 6, borderRadius: 99, bgcolor: 'color-mix(in srgb, currentColor 16%, transparent)', overflow: 'hidden' }}
+              >
+                <Box sx={{ width: `${pct}%`, height: '100%', bgcolor: tone.main, borderRadius: 99 }} />
+              </Box>
+              <Box component="span" sx={{ fontFamily: FONT_MONO, fontVariantNumeric: 'tabular-nums' }}>
+                {pct}%
+              </Box>
+            </Box>
+          </Box>
+          {showConflict || result.lowConfidence ? (
+            <Box>
+              <dt>{t('verdict.noteLabel')}</dt>
+              <dd>{showConflict ? t('verdict.conflictTitle') : t('verdict.lowConfidenceChip')}</dd>
+            </Box>
           ) : null}
-        </Stack>
+        </Box>
       </Box>
 
       <Stack
@@ -335,8 +383,6 @@ export default function VerdictCard({ result }: { result: VerdictResponse }) {
         sx={{
           px: { xs: 2, sm: 2.75, md: 3.25 },
           pb: { xs: 2.5, md: 3 },
-          borderTop: '1px solid',
-          borderColor: 'divider',
           pt: { xs: 2, md: 2.5 },
         }}
       >
@@ -362,11 +408,12 @@ export default function VerdictCard({ result }: { result: VerdictResponse }) {
           </Stack>
           <BidiText
             sx={{
-              mt: 0.55,
-              fontFamily: 'Fraunces, "Noto Naskh Arabic", Georgia, serif',
-              fontStyle: 'italic',
-              fontSize: { xs: 17, md: 19 },
-              lineHeight: 1.45,
+              mt: 0.75,
+              pl: 1.5,
+              borderLeft: '3px solid',
+              borderColor: 'primary.main',
+              fontSize: { xs: 16.5, md: 18 },
+              lineHeight: 1.5,
               fontWeight: 500,
               overflowWrap: 'anywhere',
             }}
@@ -375,7 +422,7 @@ export default function VerdictCard({ result }: { result: VerdictResponse }) {
           </BidiText>
         </Box>
 
-        <BidiText sx={{ fontSize: 16.5, lineHeight: 1.7, overflowWrap: 'anywhere' }}>{result.summary}</BidiText>
+        <BidiText sx={{ fontSize: { xs: 15.5, md: 16.5 }, lineHeight: 1.7, overflowWrap: 'anywhere', maxWidth: '68ch' }}>{result.summary}</BidiText>
 
         {result.caveats?.length ? (
           <Stack spacing={0.55}>
@@ -404,7 +451,7 @@ export default function VerdictCard({ result }: { result: VerdictResponse }) {
           </Box>
         ) : (
           <Box>
-            <Typography variant="h3" sx={{ fontSize: 20, mb: 0.25 }}>
+            <Typography variant="h3" sx={{ fontSize: 18, mb: 0.25 }}>
               {t('verdict.citedSources')}
             </Typography>
             <SourceList sources={result.sources} />

@@ -1,32 +1,17 @@
-import { Box, useTheme } from '@mui/material'
+import { Box } from '@mui/material'
 
-/** Simple ask-mark: the product is a question with sources. */
-export default function BrandMark({ size = 28 }) {
-  const theme = useTheme()
-
+/** An eight-point star (two turned squares), the classic marker for a section of reference text. */
+export default function BrandMark({ size = 28 }: { size?: number }) {
   return (
     <Box
       component="svg"
       viewBox="0 0 32 32"
-      fill="none"
       aria-hidden="true"
-      sx={{
-        width: size,
-        height: size,
-        display: 'block',
-        flexShrink: 0,
-        color: 'primary.main',
-        transform: theme.direction === 'rtl' ? 'scaleX(-1)' : 'none',
-      }}
+      sx={{ width: size, height: size, display: 'block', flexShrink: 0, color: 'primary.main' }}
     >
-      <path
-        d="M10.4 11.3c0-3.6 3-6.5 6.7-6.5 3.55 0 6.4 2.55 6.4 5.95 0 2.25-1.1 3.75-3.25 5.1-1.9 1.2-2.9 2.25-2.9 4.2"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="3.15"
-        strokeLinecap="round"
-      />
-      <circle cx="17.35" cy="24.85" r="2.1" fill="currentColor" />
+      <rect x="7" y="7" width="18" height="18" rx="1.5" fill="currentColor" />
+      <rect x="7" y="7" width="18" height="18" rx="1.5" fill="currentColor" transform="rotate(45 16 16)" />
+      <circle cx="16" cy="16" r="4.2" fill="none" stroke="var(--brand-mark-hole, var(--page-bg))" strokeWidth="2" />
     </Box>
   )
 }

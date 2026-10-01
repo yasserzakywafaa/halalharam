@@ -161,7 +161,6 @@ export default function GlossarySheet() {
                   component="dt"
                   sx={{
                     m: 0,
-                    fontFamily: 'Fraunces, "Noto Naskh Arabic", Georgia, serif',
                     fontWeight: 650,
                     fontSize: 16,
                     lineHeight: 1.3,

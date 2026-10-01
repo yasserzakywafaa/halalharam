@@ -5,7 +5,7 @@ import { publicUrl } from "@/lib/public-pages.ts";
 import { siteMetadata } from "@/lib/site-metadata.ts";
 import AppShell from "@/src/client/AppShell.tsx";
 import AppProviders from "@/src/client/providers.tsx";
-import { LATIN_FONT_STYLESHEET } from "@/src/client/fonts.ts";
+import { FONT_STYLESHEET } from "@/src/client/fonts.ts";
 import {
   LANGUAGE_STORAGE_KEY,
   THEME_STORAGE_KEY,
@@ -60,7 +60,7 @@ export const viewport: Viewport = {
 
 /**
  * Runs before paint: localStorage wins over the cookie (they normally match), resolves
- * "system" against prefers-color-scheme, and loads the Arabic face only when needed.
+ * "system" against prefers-color-scheme.
  */
 const bootScript = `(function () {
   try {
@@ -68,13 +68,6 @@ const bootScript = `(function () {
     var dir = lang === 'ar' ? 'rtl' : 'ltr'
     document.documentElement.lang = lang
     document.documentElement.dir = dir
-    if (lang === 'ar' && !document.head.querySelector('link[data-arabic-font]')) {
-      var font = document.createElement('link')
-      font.rel = 'stylesheet'
-      font.href = 'https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;700&display=swap'
-      font.setAttribute('data-arabic-font', 'true')
-      document.head.appendChild(font)
-    }
     var pref = localStorage.getItem('themePreference') || 'system'
     var mode = pref === 'system'
       ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
@@ -105,7 +98,7 @@ const RootLayout = async ({ children }: Readonly<RootLayoutProps>) => {
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="stylesheet" href={LATIN_FONT_STYLESHEET} />
+        <link rel="stylesheet" href={FONT_STYLESHEET} />
         <script nonce={nonce} dangerouslySetInnerHTML={{ __html: bootScript }} />
       </head>
       <body dir={direction} suppressHydrationWarning>

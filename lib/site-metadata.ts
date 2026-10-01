@@ -12,8 +12,8 @@ export const siteMetadata = {
   name: messages.en.brand,
   title: seo.title,
   description: seo.description,
-  themeColorLight: '#F3EBDA',
-  themeColorDark: '#121A17',
+  themeColorLight: '#F1F3F7',
+  themeColorDark: '#0B0F1D',
   ogImage: {
     url: `${SITE_ORIGIN}/og.png`,
     width: 1200,

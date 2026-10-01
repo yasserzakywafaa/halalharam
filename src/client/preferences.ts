@@ -144,7 +144,7 @@ export function applyDocumentChrome({
   root.dataset.theme = mode
   document.body.dir = direction
   document.body.lang = language
-  const themeColor = mode === 'dark' ? '#121A17' : '#F3EBDA'
+  const themeColor = mode === 'dark' ? '#0B0F1D' : '#F1F3F7'
   let meta = document.querySelector('meta[name="theme-color"]')
   if (!meta) {
     meta = document.createElement('meta')

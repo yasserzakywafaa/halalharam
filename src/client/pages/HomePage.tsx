@@ -1,5 +1,7 @@
 import { useEffect, useMemo, useRef, useState, type FormEvent, type KeyboardEvent } from 'react'
 import { Alert, Box, Button, InputBase, LinearProgress, Snackbar, Stack, Typography, useTheme } from '@mui/material'
+import ArrowForward from '@mui/icons-material/ArrowForward'
+import { FONT_MONO } from '../theme.ts'
 import { useTranslation } from 'react-i18next'
 import AdSlot from '../components/AdSlot.tsx'
 import GlossarySheet from '../components/GlossarySheet.tsx'
@@ -303,7 +305,7 @@ export default function HomePage() {
     <Box
       sx={{
         display: 'grid',
-        gridTemplateColumns: { xs: '1fr', md: 'minmax(0, 1fr) 320px' },
+        gridTemplateColumns: { xs: 'minmax(0, 1fr)', md: 'minmax(0, 1fr) 340px' },
         gap: { xs: 3, md: 5 },
         alignItems: 'start',
       }}
@@ -313,13 +315,14 @@ export default function HomePage() {
           <Typography
             variant="h1"
             sx={{
-              fontSize: { xs: 34, sm: 44, md: showingVerdict || (loading && pinnedVerdict) ? 42 : 56 },
+              fontSize: { xs: 30, sm: 40, md: showingVerdict || (loading && pinnedVerdict) ? 40 : 52 },
               maxWidth: 740,
+              textWrap: 'balance',
             }}
           >
             {showingVerdict || (loading && pinnedVerdict) ? t('hero.titleResult') : t('hero.title')}
           </Typography>
-          <Typography sx={{ mt: 1.5, maxWidth: 540, fontSize: { xs: 16, md: 18 }, lineHeight: 1.6, color: 'text.secondary' }}>
+          <Typography sx={{ mt: 1.25, maxWidth: 560, fontSize: { xs: 15.5, md: 18 }, lineHeight: 1.6, color: 'text.secondary' }}>
             {t('hero.dek')}
           </Typography>
           <GlossarySheet />
@@ -327,50 +330,32 @@ export default function HomePage() {
 
         <AdSlot placement="banner" />
 
-        <Box
-          data-print-hide=""
-          sx={{
-            mt: 2.5,
-            bgcolor: 'background.paper',
-            border: '1px solid',
-            borderColor: 'divider',
-            borderRadius: 1,
-            px: { xs: 1.75, md: 2.25 },
-            pt: 1.5,
-            pb: 1.25,
-          }}
-        >
-          <Stack direction="row" spacing={1} sx={{ alignItems: 'center', justifyContent: 'space-between', mb: 0.5 }}>
+        <Box data-print-hide="" sx={{ mt: { xs: 2, md: 2.5 } }}>
+          <Stack direction="row" spacing={1} sx={{ alignItems: 'center', justifyContent: 'space-between', mb: 0.75, px: 0.25 }}>
             <Typography
               component="label"
               htmlFor="lookup-query"
               sx={{
-                fontSize: 12,
+                fontFamily: FONT_MONO,
+                fontSize: 11.5,
                 lineHeight: 1.4,
                 letterSpacing: rtl ? 0 : '0.08em',
                 textTransform: rtl ? 'none' : 'uppercase',
                 color: 'text.secondary',
-                fontWeight: 700,
               }}
             >
               {t('search.label')}
             </Typography>
             <Typography
               component="span"
-              sx={{
-                display: { xs: 'none', sm: 'inline-flex' },
-                alignItems: 'center',
-                gap: 0.6,
-                fontSize: 12,
-                color: 'text.secondary',
-              }}
+              sx={{ display: { xs: 'none', md: 'inline-flex' }, alignItems: 'center', gap: 0.6, fontSize: 12, color: 'text.secondary' }}
             >
               <Box
                 component="kbd"
                 aria-hidden="true"
                 sx={{
-                  fontFamily: 'inherit',
-                  fontSize: 12,
+                  fontFamily: FONT_MONO,
+                  fontSize: 11.5,
                   lineHeight: 1.2,
                   border: '1px solid',
                   borderColor: 'divider',
@@ -387,15 +372,27 @@ export default function HomePage() {
           </Stack>
           <Box
             component="form"
+            role="search"
             onSubmit={onSubmit}
             sx={{
+              position: 'relative',
               display: 'flex',
-              flexDirection: { xs: 'column', sm: 'row' },
-              alignItems: { xs: 'stretch', sm: 'center' },
-              gap: 1.25,
-              borderBottom: '2px solid',
-              borderColor: 'primary.main',
-              py: 0.5,
+              alignItems: 'center',
+              gap: 1,
+              bgcolor: 'background.paper',
+              border: '1.5px solid',
+              borderColor: 'divider',
+              borderRadius: 999,
+              pl: { xs: 2, md: 2.75 },
+              pr: 0.75,
+              py: 0.75,
+              overflow: 'hidden',
+              boxShadow: (th) => (th.palette.mode === 'dark' ? 'none' : '0 1px 2px rgba(17, 23, 41, 0.04), 0 8px 24px rgba(17, 23, 41, 0.06)'),
+              transition: 'border-color 140ms ease, box-shadow 140ms ease',
+              '&:focus-within': {
+                borderColor: 'primary.main',
+                boxShadow: (th) => `0 0 0 4px color-mix(in srgb, ${th.palette.primary.main} 18%, transparent)`,
+              },
             }}
           >
             <InputBase
@@ -409,64 +406,95 @@ export default function HomePage() {
               inputProps={{
                 maxLength: 200,
                 enterKeyHint: 'search',
+                autoComplete: 'off',
+                autoCapitalize: 'none',
+                spellCheck: false,
                 'aria-label': t('search.aria'),
                 'aria-keyshortcuts': '/',
                 onKeyDown: onSearchKeyDown,
               }}
               sx={{
                 flex: '1 1 auto',
-                fontSize: { xs: 18, md: 22 },
-                py: 0.5,
-                fontFamily: 'Fraunces, "Noto Naskh Arabic", Georgia, serif',
+                minWidth: 0,
+                // 16px minimum keeps iOS Safari from zooming the page on focus.
+                fontSize: { xs: 17, md: 20 },
+                '& input': { py: 1, textOverflow: 'ellipsis' },
               }}
             />
-            <Button type="submit" variant="contained" disabled={!canSearch} sx={{ flexShrink: 0, minHeight: 44 }}>
-              {loading ? t('search.looking') : t('search.submit')}
+            <Button
+              type="submit"
+              variant="contained"
+              disabled={!canSearch}
+              aria-label={loading ? t('search.looking') : t('search.submit')}
+              endIcon={<ArrowForward sx={{ transform: rtl ? 'scaleX(-1)' : 'none' }} />}
+              sx={{
+                flexShrink: 0,
+                minHeight: 46,
+                px: { xs: 1.75, sm: 2.25 },
+                '& .MuiButton-endIcon': { ml: { xs: 0, sm: 1 }, mr: 0 },
+              }}
+            >
+              <Box component="span" sx={{ display: { xs: 'none', sm: 'inline' } }}>
+                {loading ? t('search.looking') : t('search.submit')}
+              </Box>
             </Button>
+            {loading ? (
+              <LinearProgress aria-hidden="true" sx={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: 2 }} />
+            ) : null}
           </Box>
-          {loading ? (
-            <LinearProgress aria-hidden="true" color="secondary" sx={{ mt: 1, height: 2, borderRadius: 99 }} />
-          ) : null}
         </Box>
 
-        <Stack
+        <Box
           data-print-hide=""
           component="ul"
-          direction="row"
-          spacing={1.5}
-          useFlexGap
           aria-label={t('examples.label')}
-          sx={{ flexWrap: 'wrap', mt: 1.75, listStyle: 'none', p: 0, m: 0 }}
+          sx={{
+            display: 'flex',
+            gap: 1,
+            flexWrap: { xs: 'nowrap', md: 'wrap' },
+            overflowX: { xs: 'auto', md: 'visible' },
+            scrollbarWidth: 'none',
+            '&::-webkit-scrollbar': { display: 'none' },
+            // Bleed to the screen edge on phones so the row reads as scrollable.
+            mx: { xs: -2, sm: 0 },
+            px: { xs: 2, sm: 0 },
+            mt: 1.5,
+            mb: 0,
+            py: 0.5,
+            listStyle: 'none',
+          }}
         >
           {EXAMPLES.map((example) => (
-            <Box component="li" key={example.query} sx={{ m: 0 }}>
+            <Box component="li" key={example.query} sx={{ m: 0, flexShrink: 0 }}>
               <Box
                 component="button"
                 type="button"
                 onClick={() => runSearch(example.query)}
                 disabled={loading}
                 sx={{
-                  border: 0,
-                  bgcolor: 'transparent',
-                  color: 'text.secondary',
+                  border: '1px solid',
+                  borderColor: 'divider',
+                  borderRadius: 999,
+                  bgcolor: 'background.paper',
+                  color: 'text.primary',
+                  font: 'inherit',
                   cursor: loading ? 'default' : 'pointer',
                   opacity: loading ? 0.55 : 1,
-                  px: 0.25,
-                  py: 0.75,
-                  minHeight: 44,
-                  fontSize: 15,
-                  textDecoration: 'underline',
-                  textDecorationColor: 'divider',
-                  textUnderlineOffset: 4,
-                  transition: 'color 160ms ease',
-                  '&:hover': { color: loading ? 'text.secondary' : 'primary.main' },
+                  px: 1.5,
+                  minHeight: 40,
+                  fontSize: 14,
+                  whiteSpace: 'nowrap',
+                  transition: 'border-color 140ms ease, color 140ms ease',
+                  '&:hover': loading ? {} : { borderColor: 'primary.main', color: 'primary.main' },
                 }}
               >
                 {t(example.key)}
               </Box>
             </Box>
           ))}
-        </Stack>
+        </Box>
+
+        {!showingVerdict && !loading && !offlineNotice ? <HowThisWorks /> : null}
 
         <Box
           id={VERDICT_ID}
@@ -474,8 +502,8 @@ export default function HomePage() {
           aria-busy={loading || undefined}
           aria-label={t('a11y.results')}
           sx={{
-            mt: 3,
-            scrollMarginTop: '5.5rem',
+            mt: { xs: 2.5, md: 3 },
+            scrollMarginTop: '5rem',
             outline: 'none',
             '&:focus-visible': { outline: 'none' },
           }}
@@ -552,12 +580,11 @@ export default function HomePage() {
         </Box>
       </Box>
 
-      <Stack data-print-hide="" spacing={2} sx={{ position: { md: 'sticky' }, top: { md: 88 }, minWidth: 0 }}>
+      <Stack data-print-hide="" spacing={2} sx={{ position: { md: 'sticky' }, top: { md: 80 }, minWidth: 0 }}>
         <StarterLibrary items={library} onOpen={runSearch} />
         <AdSlot placement="sidebar" />
       </Stack>
 
-      {!showingVerdict && !loading && !offlineNotice ? <HowThisWorks /> : null}
     </Box>
   )
 }
