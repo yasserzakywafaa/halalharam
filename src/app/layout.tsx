@@ -1,22 +1,21 @@
 import type { Metadata, Viewport } from "next";
 import { cookies, headers } from "next/headers";
 
-import { publicUrl } from "@/lib/public-pages.ts";
-import { siteMetadata } from "@/lib/site-metadata.ts";
-import AppShell from "@/src/client/AppShell.tsx";
-import AppProviders from "@/src/client/providers.tsx";
-import { FONT_STYLESHEET } from "@/src/client/fonts.ts";
+import { publicUrl } from "@/src/lib/application/seo/publicPages.ts";
+import { siteMetadata } from "@/src/lib/application/seo/siteMetadata.ts";
+import AppContentClient from "@/src/lib/application/AppContentClient.tsx";
+import AppContextProviders from "@/src/lib/application/AppContextProviders.tsx";
+import { FONT_STYLESHEET } from "@/src/lib/utils/fonts.ts";
 import {
   LANGUAGE_STORAGE_KEY,
   THEME_STORAGE_KEY,
   isLanguageCode,
   isThemeOption,
   languageMeta,
-} from "@/src/client/preferences.ts";
-import "@/src/client/index.css";
+} from "@/src/lib/application/shared/preferences.ts";
 
 // The `lookupVerdict` server action runs inside this function. Keep it above the
-// 55s OpenRouter budget (lib/openrouter.js) so a slow model returns JSON, not a 504.
+// 55s OpenRouter budget (src/lib/ai/openRouterClient.ts) so a slow model returns JSON, not a 504.
 export const maxDuration = 60;
 
 export const metadata: Metadata = {
@@ -25,13 +24,12 @@ export const metadata: Metadata = {
   description: siteMetadata.description,
   applicationName: siteMetadata.name,
   alternates: { canonical: publicUrl('/') },
-  manifest: "/manifest.webmanifest",
   icons: {
     icon: [
-      { url: "/logo.svg?v=4", type: "image/svg+xml" },
-      { url: "/favicon-32.png", type: "image/png", sizes: "32x32" },
+      { url: "/icons/favicon.svg?v=4", type: "image/svg+xml" },
+      { url: "/icons/favicon_32x32.png", type: "image/png", sizes: "32x32" },
     ],
-    apple: "/apple-touch-icon.png",
+    apple: "/icons/apple_touch_icon.png",
   },
   appleWebApp: { capable: true, title: siteMetadata.name },
   other: { "mobile-web-app-capable": "yes" },
@@ -102,9 +100,9 @@ const RootLayout = async ({ children }: Readonly<RootLayoutProps>) => {
         <script nonce={nonce} dangerouslySetInnerHTML={{ __html: bootScript }} />
       </head>
       <body dir={direction} suppressHydrationWarning>
-        <AppProviders initialLanguage={language} initialThemePreference={themePreference}>
-          <AppShell>{children}</AppShell>
-        </AppProviders>
+        <AppContextProviders initialLanguage={language} initialThemePreference={themePreference}>
+          <AppContentClient>{children}</AppContentClient>
+        </AppContextProviders>
       </body>
     </html>
   );

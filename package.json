@@ -10,7 +10,7 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "test": "node --test lib/*.test.ts src/client/*.test.ts src/client/i18n/*.test.ts"
+    "test": "node --test \"src/**/*.test.ts\""
   },
   "engines": {
     "node": ">=22.18"
@@ -40,6 +40,7 @@
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "@types/stylis": "^4.2.7",
+    "sass": "^1.101.0",
     "typescript": "6.0.3"
   }
 }

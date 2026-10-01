@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 Allow: /about
-Allow: /privacy
+Allow: /privacy-policy
 Disallow: /api/
 
 Sitemap: https://halalharam.vercel.app/sitemap.xml

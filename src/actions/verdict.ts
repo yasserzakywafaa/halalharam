@@ -2,14 +2,14 @@
 
 import { headers } from "next/headers";
 
-import { buildHealthPayload } from "@/lib/health.ts";
-import { headerBag, runVerdict } from "@/lib/http.ts";
-import { resolveLocale } from "@/lib/locale.ts";
+import { buildHealthPayload } from "@/src/lib/server/services/healthService.ts";
+import { headerBag, runVerdict } from "@/src/lib/server/services/verdictService.ts";
+import { resolveLocale } from "@/src/lib/utils/locale.ts";
 
 /**
  * Server action behind the search box. Seed first, OpenRouter only on a miss.
  * The OpenRouter key never leaves the server. Shares the soft rate limit and the
- * 55s OpenRouter budget with `GET/POST /api/verdict`.
+ * 55s OpenRouter budget with `GET/POST /api/v1/verdict`.
  *
  * Errors come back as `{ error, status, code? }` (never thrown) so the client can
  * tell a 400 / 429 apart from a network failure.

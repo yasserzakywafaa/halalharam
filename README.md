@@ -6,36 +6,42 @@ Brand line: **Cited · not a fatwa mill**.
 
 This repo is the serverless **Next.js** rewrite of [`halal-or-haram`](https://github.com/yasserzakywafaa/halal-or-haram) (Vite SPA + Vercel functions), bootstrapped from [`nextjs-api-boilerplate`](https://github.com/yasserzakywafaa/nextjs-api-boilerplate). All verdict logic, seed data, translations, UI, and tests were carried over; the transport moved to Next.js server actions and Route Handlers.
 
-## Architecture
+## Project structure
 
+Same layout as [`nextjs-api-boilerplate`](https://github.com/yasserzakywafaa/nextjs-api-boilerplate). Boilerplate features this app does not use (accounts, MongoDB, dashboard, contact form, n8n) are left out.
+
+```text
+src/app/
+  layout.tsx                      <html> (lang/dir/theme from cookies), metadata, CSP-nonced boot script, maxDuration 60
+  page.tsx                        Home (home-only JSON-LD; the lookup UI lives in PageContainer)
+  manifest.ts                     Web app manifest
+  (pages)/about/                  page.tsx + aboutPageContent.tsx
+  (pages)/privacy-policy/         page.tsx + privacyPolicyPageContent.tsx
+  features/Lookup/                Lookup.tsx (search + verdict) and features/ (VerdictCard, StarterLibrary, …)
+  api/v1/verdict/route.ts         GET/POST /api/v1/verdict  (public JSON API)
+  api/v1/health/route.ts          GET /api/v1/health
+src/actions/verdict.ts            Server actions: lookupVerdict, loadHealth (used by the UI)
+src/components/                   ApplicationBar (+ features/SettingsMenuButton), Footer, PageContainer, Logo, ErrorBoundary, ProsePage, AdSlot, shared/
+src/lib/application/              AppContextProviders, AppContentClient, App.scss, routes.ts, router.tsx, i18n/, seo/, shared/ (themes, types, preferences, verdict client)
+src/lib/ai/openRouterClient.ts    OpenRouter SDK client and budget
+src/lib/server/                   verdict/ (matcher, citations, localization), services/ (verdict + health), http/ (rate limit, security headers), data/ (seed rulings)
+src/lib/utils/                    fonts, locale, bidi, share, search keys, test helpers
+src/proxy.ts                      Per-request CSP nonce + share-ready headers
+public/icons/                     Favicon and app icons (boilerplate names)
+docs/API.md                       Public API reference
 ```
-src/app/                  Next.js App Router
-  layout.tsx              <html> (lang/dir/theme from cookies), metadata, CSP-nonced boot script, maxDuration 60
-  page.tsx                Home (adds home-only JSON-LD; the lookup UI lives in the shell)
-  about/ privacy/         Prose documents with their own canonical + title
-  api/verdict/route.ts    GET/POST /api/verdict  (public JSON API)
-  api/health/route.ts     GET /api/health
-src/actions/verdict.ts    Server actions: lookupVerdict, loadHealth  (used by the UI)
-src/proxy.ts              Per-request CSP nonce + share-ready security headers
-src/client/               React + MUI client (ported from web/src): providers, shell, pages, components, i18n
-lib/                      Framework-agnostic domain logic: matcher, OpenRouter client, citations, locale, rate limit, HTTP
-lib/types.ts              Shared domain types (Verdict, Citation, VerdictResponse, HealthPayload, …)
-data/                     Curated, named-authority seed rulings (+ translations)
-```
 
-- The search box calls the **`lookupVerdict` server action** — no client `fetch`, no API URL in the bundle. The OpenRouter key never leaves the server.
-- `/api/verdict` and `/api/health` stay public for API consumers and use the **same** `lib/http.ts` core (rate limit + budget) as the server action.
-- No database. The catalog is `data/seed-rulings.json`; a miss goes to OpenRouter.
-
-### What was dropped from the boilerplate
-
-MongoDB, auth (Google/phone OTP/JWT), dashboard, contact email, n8n webhooks, Twilio, axios store. This product has no accounts and no database, same as the original repo.
+- The search box calls the **`lookupVerdict` server action**. There is no client `fetch` and no API URL in the bundle, so the OpenRouter key never leaves the server.
+- `/api/v1/verdict` and `/api/v1/health` stay public for API consumers and use the **same** core (`src/lib/server/services/verdictService.ts`: rate limit + budget) as the server action.
+- Old paths (`/privacy`, `/api/verdict`, `/api/health`) permanently redirect to the new ones (`next.config.ts`).
+- No database. The catalog is `src/lib/server/data/seed-rulings.json`; a miss goes to OpenRouter.
+- Tests sit next to the code they cover (`*.test.ts`).
 
 ## OpenRouter
 
-Lookup order: curated seed first (fast path). OpenRouter runs only when the seed misses (`lib/openrouter.ts`).
+Lookup order: curated seed first (fast path). OpenRouter runs only when the seed misses (`src/lib/ai/openRouterClient.ts`).
 
-Calls go through the official **`@openrouter/sdk`** (`openRouter.chat.send`). The SDK runs with retries off, and a `beforeRequest` hook keeps `reasoning` exactly `{ enabled: false, effort: "low", exclude: true }` on the wire (the SDK type would otherwise drop `enabled`/`exclude` and switch thinking on). If a 200 response misses a field the SDK's strict schema expects, the raw completion is used. SDK error messages are never surfaced (they can include the upstream body). The budget is unchanged: `AbortController` **and** a `Promise.race` deadline of **55s**, a 57s handler backup, `max_tokens` 2048, reasoning off/low, and **no 429 retries** (HTTP 200 with `sourcePath: "unavailable"`, `unavailableReason: "ai_rate_limited"`). The function `maxDuration` is **60s** (`src/app/layout.tsx` for the server action, `src/app/api/verdict/route.ts` for the API).
+Calls go through the official **`@openrouter/sdk`** (`openRouter.chat.send`). The SDK runs with retries off, and a `beforeRequest` hook keeps `reasoning` exactly `{ enabled: false, effort: "low", exclude: true }` on the wire (the SDK type would otherwise drop `enabled`/`exclude` and switch thinking on). If a 200 response misses a field the SDK's strict schema expects, the raw completion is used. SDK error messages are never surfaced (they can include the upstream body). The budget is unchanged: `AbortController` **and** a `Promise.race` deadline of **55s**, a 57s handler backup, `max_tokens` 2048, reasoning off/low, and **no 429 retries** (HTTP 200 with `sourcePath: "unavailable"`, `unavailableReason: "ai_rate_limited"`). The function `maxDuration` is **60s** (`src/app/layout.tsx` for the server action, `src/app/api/v1/verdict/route.ts` for the API).
 
 Citations must name a scholar, fatwa body, certifier, or primary text. When named sources disagree, both sides are returned and the API does not pick a winner.
 
@@ -44,7 +50,7 @@ Citations must name a scholar, fatwa body, certifier, or primary text. When name
 | Name | Required | Notes |
 | --- | --- | --- |
 | `GITHUB_PACKAGES_TOKEN` | yes, to install | Read token for `@yasserzakywafaa/client-core` (`read:packages`). Set on Vercel too (install step). Not a runtime secret. |
-| `OPENROUTER_API_KEY` | for queries that miss the seed | Server-only. Never `NEXT_PUBLIC_*`. `/api/health` reports `openRouterKeyPresent` and never returns the key. |
+| `OPENROUTER_API_KEY` | for queries that miss the seed | Server-only. Never `NEXT_PUBLIC_*`. `/api/v1/health` reports `openRouterKeyPresent` and never returns the key. |
 | `OPENROUTER_MODEL` | no | Production: `google/gemini-2.5-flash-lite`. Blank falls back to `nvidia/nemotron-3-ultra-550b-a55b:free` (dev only). |
 
 Seed hits (pork, gelatin, alcohol, riba, …) work **without** the key.
@@ -66,27 +72,23 @@ yarn build
 ```
 
 ```bash
-curl -s "http://localhost:1601/api/verdict?q=gelatin&locale=ar"
+curl -s "http://localhost:1601/api/v1/verdict?q=gelatin&locale=ar"
 ```
 
 ## API
 
-`GET /api/verdict?q=pork` · `GET /api/verdict?q=beer&locale=ar` · `POST /api/verdict` with `{ "query": "gelatin", "locale": "ar" }`
-
-`locale` (or `lang`) may be `en`, `ar`, `de`, `fr`; `Accept-Language` is the fallback. Response: `verdict`, `confidence`, `lowConfidence`, `conflict`, `positions[]`, `sourcePath` (`seed` | `ai` | `unavailable`), `unavailableReason` (`no_api_key` | `ai_error` | `ai_rate_limited` | null), `locale`, `accordingTo`, `sources[]`, `disclaimer`.
-
-Soft in-memory limit: about 60 lookups per minute per IP per warm instance (shared by the API and the server action). Over the limit: **429** JSON with `Retry-After` (the server action returns the same payload with `status: 429`).
+See [docs/API.md](docs/API.md).
 
 ## Theme, language, SSR
 
 - Theme (Light/Dark/System) and language (EN/AR/DE/FR, RTL for Arabic) are stored in `localStorage` **and** mirrored to cookies, so the server renders the right `lang`, `dir`, and explicit theme on the first byte. A nonced boot script resolves "System" before paint.
 - RTL uses an emotion cache with `stylis-plugin-rtl`; switching direction at runtime swaps to a client cache (no reload, lookup state kept).
 - The header gear uses `ThemeSwitcher` / `LanguageSwitcher` from `@yasserzakywafaa/client-core`.
-- The home lookup stays mounted across `/about` and `/privacy`, so going back keeps the verdict.
+- The home lookup stays mounted across `/about` and `/privacy-policy`, so going back keeps the verdict.
 
 ## Security headers
 
-`src/proxy.ts` sets, on every response: nonce-based `Content-Security-Policy` (no `script-src 'unsafe-inline'`, OpenRouter never allowed in the browser), `Referrer-Policy`, `X-Content-Type-Options`, `X-Frame-Options: DENY`, and `Permissions-Policy`. Builder + tests: `lib/security-headers.ts`.
+`src/proxy.ts` sets, on every response: nonce-based `Content-Security-Policy` (no `script-src 'unsafe-inline'`, OpenRouter never allowed in the browser), `Referrer-Policy`, `X-Content-Type-Options`, `X-Frame-Options: DENY`, and `Permissions-Policy`. Builder + tests: `src/lib/server/http/securityHeaders.ts`.
 
 ## Deploy (Vercel)
 
