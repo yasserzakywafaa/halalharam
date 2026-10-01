@@ -46,7 +46,7 @@ Citations must name a scholar, fatwa body, certifier, or primary text. When name
 | `GITHUB_PACKAGES_TOKEN` | yes, to install | Read token for `@yasserzakywafaa/client-core` (`read:packages`). Set on Vercel too (install step). Not a runtime secret. |
 | `OPENROUTER_API_KEY` | for queries that miss the seed | Server-only. Never `NEXT_PUBLIC_*`. `/api/health` reports `openRouterKeyPresent` and never returns the key. |
 | `OPENROUTER_MODEL` | no | Production: `google/gemini-2.5-flash-lite`. Blank falls back to `nvidia/nemotron-3-ultra-550b-a55b:free` (dev only). |
-| `OPENROUTER_HTTP_REFERER` | no | Sent as `HTTP-Referer`. Defaults to `https://halal-or-haram.vercel.app`. |
+| `OPENROUTER_HTTP_REFERER` | no | Sent as `HTTP-Referer`. Defaults to `https://halalharam.vercel.app`. |
 
 Seed hits (pork, gelatin, alcohol, riba, …) work **without** the key.
 

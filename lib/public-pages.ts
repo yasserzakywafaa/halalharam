@@ -1,4 +1,4 @@
-export const SITE_ORIGIN = 'https://halal-or-haram.vercel.app'
+export const SITE_ORIGIN = 'https://halalharam.vercel.app'
 
 /** Pages a crawler may treat as documents. No per-item lookup URLs. */
 export const PUBLIC_PATHS = ['/', '/about', '/privacy'] as const

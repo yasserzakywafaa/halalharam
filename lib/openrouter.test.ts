@@ -190,7 +190,7 @@ test('OpenRouter SDK posts to the chat completions URL with the exact wire body'
       assert.equal(seen.method, 'POST')
       assert.equal(seen.headers.get('authorization'), 'Bearer sk-or-test-not-a-real-key')
       assert.equal(seen.headers.get('content-type'), 'application/json')
-      assert.equal(seen.headers.get('http-referer'), 'https://halal-or-haram.vercel.app')
+      assert.equal(seen.headers.get('http-referer'), 'https://halalharam.vercel.app')
       assert.match(seen.headers.get('user-agent') || '', /@openrouter\/sdk/)
       const body = seen.body
       assert.equal(body.stream, false)

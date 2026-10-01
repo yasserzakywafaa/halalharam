@@ -19,7 +19,7 @@ function clean(value: unknown): string {
   return String(value || '').replace(/\s+/g, ' ').trim()
 }
 
-export function verdictShareUrl(query: unknown, origin = 'https://halal-or-haram.vercel.app'): string {
+export function verdictShareUrl(query: unknown, origin = 'https://halalharam.vercel.app'): string {
   const url = new URL('/', origin)
   const q = clean(query)
   if (q) url.searchParams.set('q', q)

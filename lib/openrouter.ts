@@ -139,7 +139,7 @@ export function getOpenRouterConfig(): { apiKey: string; model: string; referer:
   const apiKey = String(process.env.OPENROUTER_API_KEY || '').trim()
   const model = String(process.env.OPENROUTER_MODEL || '').trim() || DEFAULT_MODEL
   const referer =
-    String(process.env.OPENROUTER_HTTP_REFERER || '').trim() || 'https://halal-or-haram.vercel.app'
+    String(process.env.OPENROUTER_HTTP_REFERER || '').trim() || 'https://halalharam.vercel.app'
   return { apiKey, model, referer }
 }
 

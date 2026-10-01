@@ -4,4 +4,4 @@ Allow: /about
 Allow: /privacy
 Disallow: /api/
 
-Sitemap: https://halal-or-haram.vercel.app/sitemap.xml
+Sitemap: https://halalharam.vercel.app/sitemap.xml
