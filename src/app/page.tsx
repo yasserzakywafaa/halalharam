@@ -1,7 +1,7 @@
-import { homeJsonLd } from "@/lib/home-jsonld.js";
+import { homeJsonLd } from "@/lib/home-jsonld.ts";
 
 /**
- * The lookup UI lives in the shared shell (src/client/AppShell.jsx) so it stays
+ * The lookup UI lives in the shared shell (src/client/AppShell.tsx) so it stays
  * mounted across routes. This page only adds the home-only structured data.
  */
 const HomeRoute = () => (

@@ -4,7 +4,7 @@ import {
   STATIC_SECURITY_HEADERS,
   buildContentSecurityPolicy,
   createNonce,
-} from "@/lib/security-headers.js";
+} from "@/lib/security-headers.ts";
 
 /**
  * Share-ready headers on every response, including /api/*.
