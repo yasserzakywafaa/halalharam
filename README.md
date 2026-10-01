@@ -34,7 +34,7 @@ MongoDB, auth (Google/phone OTP/JWT), dashboard, contact email, n8n webhooks, Tw
 
 Lookup order: curated seed first (fast path). OpenRouter runs only when the seed misses (`lib/openrouter.js`).
 
-The OpenRouter call keeps the production-hardened transport from the original repo: `POST https://openrouter.ai/api/v1/chat/completions` with `AbortController` **and** a `Promise.race` deadline of **55s**, a 57s handler backup, `max_tokens` 2048, reasoning off/low, and **no 429 retries** (HTTP 200 with `sourcePath: "unavailable"`, `unavailableReason: "ai_rate_limited"`). The function `maxDuration` is **60s** (`src/app/layout.tsx` for the server action, `src/app/api/verdict/route.ts` for the API).
+Calls go through the official **`@openrouter/sdk`** (`openRouter.chat.send`). The SDK runs with retries off, and a `beforeRequest` hook keeps `reasoning` exactly `{ enabled: false, effort: "low", exclude: true }` on the wire (the SDK type would otherwise drop `enabled`/`exclude` and switch thinking on). If a 200 response misses a field the SDK's strict schema expects, the raw completion is used. SDK error messages are never surfaced (they can include the upstream body). The budget is unchanged: `AbortController` **and** a `Promise.race` deadline of **55s**, a 57s handler backup, `max_tokens` 2048, reasoning off/low, and **no 429 retries** (HTTP 200 with `sourcePath: "unavailable"`, `unavailableReason: "ai_rate_limited"`). The function `maxDuration` is **60s** (`src/app/layout.tsx` for the server action, `src/app/api/verdict/route.ts` for the API).
 
 Citations must name a scholar, fatwa body, certifier, or primary text. When named sources disagree, both sides are returned and the API does not pick a winner.
 
