@@ -3,9 +3,9 @@ import test from 'node:test'
 import { buildVerdictShare, verdictShareUrl } from './shareVerdict.ts'
 
 test('share url carries the lookup query', () => {
-  const url = verdictShareUrl('vanilla extract', 'https://halal-or-haram.vercel.app')
+  const url = verdictShareUrl('vanilla extract', 'https://halalharam.vercel.app')
   const parsed = new URL(url)
-  assert.equal(parsed.origin, 'https://halal-or-haram.vercel.app')
+  assert.equal(parsed.origin, 'https://halalharam.vercel.app')
   assert.equal(parsed.pathname, '/')
   assert.equal(parsed.searchParams.get('q'), 'vanilla extract')
   assert.equal(parsed.hash, '#verdict')

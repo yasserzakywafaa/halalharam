@@ -18,7 +18,7 @@ export const siteMetadata = {
     url: `${SITE_ORIGIN}/og.png`,
     width: 1200,
     height: 630,
-    alt: 'Halal or Haram ask-mark on a cream field. Cited, not a fatwa mill.',
+    alt: 'Halal-Haram ask-mark on a cream field. Cited, not a fatwa mill.',
   },
   ogLocale: 'en_US',
   ogAlternateLocales: ['ar_AR', 'de_DE', 'fr_FR'],
