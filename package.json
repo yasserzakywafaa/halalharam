@@ -1,0 +1,44 @@
+{
+  "name": "halalharam",
+  "version": "2.0.0",
+  "description": "Instant halal / haram / unclear verdicts with cited sources. Next.js App Router + server actions on Vercel.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev --turbopack --port 1601",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test lib/*.test.js src/client/*.test.js src/client/i18n/*.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@emotion/cache": "11.14.0",
+    "@emotion/react": "11.14.0",
+    "@emotion/styled": "11.14.0",
+    "@mui/icons-material": "9.2.0",
+    "@mui/material": "9.2.0",
+    "@mui/material-nextjs": "9.1.1",
+    "@yasserzakywafaa/client-core": "0.9.2",
+    "i18next": "^26.4.2",
+    "i18next-browser-languagedetector": "^8.2.1",
+    "next": "16.2.10",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-i18next": "^17.0.15",
+    "react-router-dom": "7.18.1",
+    "server-only": "^0.0.1",
+    "stylis": "^4.4.0",
+    "stylis-plugin-rtl": "^2.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@types/stylis": "^4.2.7",
+    "typescript": "6.0.3"
+  }
+}

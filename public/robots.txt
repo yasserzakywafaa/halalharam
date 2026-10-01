@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Allow: /about
+Allow: /privacy
+Disallow: /api/
+
+Sitemap: https://halal-or-haram.vercel.app/sitemap.xml

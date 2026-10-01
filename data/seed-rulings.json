@@ -1,0 +1,2363 @@
+{
+  "version": 3,
+  "disclaimer": "These entries summarize published positions of named authorities. They are not a personal fatwa and do not claim one ruling for every school or community. When sources conflict, both sides are shown — this file does not pick a winner.",
+  "items": [
+    {
+      "id": "pork",
+      "aliases": [
+        "pork",
+        "pig",
+        "pigs",
+        "swine",
+        "boar",
+        "bacon",
+        "ham",
+        "lard",
+        "pepperoni",
+        "prosciutto",
+        "pancetta",
+        "salami pork",
+        "pork gelatin",
+        "khinzir",
+        "khinzeer",
+        "خنزير",
+        "لحم الخنزير",
+        "لحم خنزير"
+      ],
+      "verdict": "haram",
+      "confidence": 0.98,
+      "conflict": false,
+      "title": "Pork and swine products",
+      "summary": "Eating pork, bacon, ham, lard, and other swine products is prohibited in the Qur'an. Named contemporary desks treat this as settled.",
+      "accordingTo": "The Qur'an (2:173, 5:3, 6:145, 16:115); IslamQA / Shaykh Muhammad Salih al-Munajjid, fatwa 10528.",
+      "caveats": [
+        "The Qur'an exempts one who is compelled by necessity (e.g. starvation with no lawful alternative), without desire to transgress."
+      ],
+      "sources": [
+        {
+          "authority": "The Qur'an",
+          "name": "Surah al-Ma'idah 5:3",
+          "stance": "haram",
+          "url": "https://quran.com/5/3",
+          "excerpt": "Forbidden to you are carrion, blood, the flesh of swine, and that which has been dedicated to other than Allah..."
+        },
+        {
+          "authority": "The Qur'an",
+          "name": "Surah al-Baqarah 2:173",
+          "stance": "haram",
+          "url": "https://quran.com/2/173",
+          "excerpt": "He has only forbidden to you dead animals, blood, the flesh of swine, and that which has been dedicated to other than Allah."
+        },
+        {
+          "authority": "IslamQA / Shaykh Muhammad Salih al-Munajjid",
+          "name": "Ruling on the najaasah of pork (fatwa 10528)",
+          "stance": "haram",
+          "url": "https://islamqa.info/en/answers/10528",
+          "excerpt": "Pork is haram and it is not permissible to eat it, whether it is the meat, fat or any other part."
+        }
+      ]
+    },
+    {
+      "id": "alcohol",
+      "aliases": [
+        "alcohol",
+        "khamr",
+        "wine",
+        "beer",
+        "whisky",
+        "whiskey",
+        "vodka",
+        "gin",
+        "rum",
+        "tequila",
+        "brandy",
+        "liquor",
+        "intoxicant",
+        "intoxicants",
+        "champagne",
+        "cider alcoholic",
+        "كحول",
+        "خمر",
+        "الخمر",
+        "بيرة",
+        "نبيذ",
+        "مسكر",
+        "مسكرات"
+      ],
+      "verdict": "haram",
+      "confidence": 0.97,
+      "conflict": false,
+      "title": "Alcohol and intoxicants (khamr)",
+      "summary": "Drinking wine and other intoxicants is prohibited. The Qur'an calls khamr an abomination of Satan's handiwork; hadith extend the prohibition to whatever intoxicates.",
+      "accordingTo": "The Qur'an 5:90; Sahih al-Bukhari; IslamQA fatwa 1814.",
+      "caveats": [
+        "Non-intoxicating traces in some foods (e.g. naturally fermented vinegar) are treated separately — search vinegar.",
+        "Medical alcohol used topically or as an unavoidable excipient is a different, school-sensitive discussion.",
+        "Non-alcoholic / 0.0% / alcohol-free beer is a different file — search non-alcoholic beer."
+      ],
+      "sources": [
+        {
+          "authority": "The Qur'an",
+          "name": "Surah al-Ma'idah 5:90",
+          "stance": "haram",
+          "url": "https://quran.com/5/90",
+          "excerpt": "O you who believe! Intoxicants, gambling, stone altars, and divining arrows are abominations of Satan's handiwork, so avoid them..."
+        },
+        {
+          "authority": "Sahih al-Bukhari",
+          "name": "Hadith on khamr (Bukhari 5588)",
+          "stance": "haram",
+          "url": "https://sunnah.com/bukhari:5588",
+          "excerpt": "Collections under this heading record the Prophet's prohibition of khamr and intoxicants."
+        },
+        {
+          "authority": "IslamQA",
+          "name": "Ruling on alcohol (fatwa 1814)",
+          "stance": "haram",
+          "url": "https://islamqa.info/en/answers/1814",
+          "excerpt": "All kinds of intoxicants are haram, whether they are called wine, beer, or anything else."
+        }
+      ]
+    },
+    {
+      "id": "non-alcoholic-beer",
+      "aliases": [
+        "non-alcoholic beer",
+        "non alcoholic beer",
+        "nonalcoholic beer",
+        "alcohol-free beer",
+        "alcohol free beer",
+        "alcoholfree beer",
+        "beer without alcohol",
+        "beer with no alcohol",
+        "beer no alcohol",
+        "zero alcohol beer",
+        "0.0 beer",
+        "0.0% beer",
+        "na beer",
+        "non-alcoholic",
+        "non alcoholic",
+        "alcohol-free",
+        "alcohol free",
+        "بيرة بدون كحول",
+        "بيرة بدون",
+        "بدون كحول",
+        "خال من الكحول",
+        "خالية من الكحول",
+        "بيرة خالية من الكحول",
+        "غير كحولية",
+        "بيرة غير كحولية",
+        "alkoholfrei",
+        "alkoholfreies bier",
+        "sans alcool",
+        "biere sans alcool"
+      ],
+      "verdict": "unclear",
+      "confidence": 0.66,
+      "conflict": true,
+      "title": "Non-alcoholic / alcohol-free beer",
+      "summary": "Named desks do not treat this as ordinary khamr, and they do not speak with one voice. IslamQA (Ibn Uthaymeen) and Islamweb permit a drink that does not intoxicate even in large amounts. Darul Ifta Deoband treats beer as a kind of wine and cites “whatever intoxicates in large amounts, a little of it is haram.” This lookup shows both sides and does not pick a winner.",
+      "accordingTo": "Split: IslamQA fatwa 33763 / Shaykh Ibn Uthaymeen and Islamweb fatwa 87498 (permitted if it cannot intoxicate) versus Darul Ifta, Darul Uloom Deoband, fatwa 1677/1200/L=1432 (not lawful).",
+      "caveats": [
+        "If a large amount of the drink would intoxicate, it is khamr — search alcohol / beer.",
+        "Many supermarket “alcohol-free” beers still list about 0.5% ABV. Check the label; that is not the same as 0.0%.",
+        "Dealcoholized wine that began as khamr is a different, stricter discussion — search vinegar or IslamQA 148690."
+      ],
+      "positions": [
+        {
+          "stance": "halal",
+          "title": "Permissible when it cannot intoxicate",
+          "summary": "IslamQA distinguishes intoxicating beer (khamr, haram) from beer that is not intoxicating because it is free of alcohol or contains only a minuscule amount that cannot intoxicate no matter how much is drunk. Shaykh Ibn Uthaymeen: the Saudi marketplace beer he discussed is halal on that basis. Islamweb: the name “beer” does not by itself make a non-intoxicating drink haram.",
+          "accordingTo": "IslamQA fatwa 33763 (Shaykh Ibn Uthaymeen); Islamweb fatwa 87498",
+          "sources": [
+            {
+              "authority": "IslamQA / Shaykh Muhammad ibn Salih al-Uthaymeen",
+              "name": "Drinking beer: two kinds (fatwa 33763)",
+              "stance": "halal",
+              "url": "https://islamqa.info/en/answers/33763",
+              "excerpt": "The second type is beer that is not intoxicating, either because it is completely free of alcohol, or because it contains a minuscule amount of alcohol that does not reach the level of causing intoxication no matter how much a person drinks of it. The scholars have ruled that this is permissible."
+            },
+            {
+              "authority": "Islamweb",
+              "name": "Drinking non-alcoholic beer (fatwa 87498)",
+              "stance": "halal",
+              "url": "https://www.islamweb.net/en/fatwa/87498/drinking-non-alcoholic-beer",
+              "excerpt": "If the alcohol-free beer you mentioned does not intoxicate then it is lawful to drink it. Calling it beer does not influence the rule as such a drink is originally lawful."
+            }
+          ]
+        },
+        {
+          "stance": "haram",
+          "title": "Treated as beer/wine; a little of what intoxicates in quantity is haram",
+          "summary": "Darul Ifta Deoband: beer is defined as a kind of wine made from barley. If that is what is meant, it is not lawful to drink, and they cite the hadith that whatever intoxicates in large amounts, a little of it is haram. Commercial 0.5% products are the usual problem case under this view.",
+          "accordingTo": "Darul Ifta, Darul Uloom Deoband, fatwa 1677/1200/L=1432",
+          "sources": [
+            {
+              "authority": "Darul Ifta, Darul Uloom Deoband",
+              "name": "Can we drink non-alcoholic beer? (fatwa 1677/1200/L=1432)",
+              "stance": "haram",
+              "url": "https://darulifta-deoband.com/home/en/food-drinks/34880",
+              "excerpt": "According to Firozul Lughat, beer means a kind of wine that is made of barley. If you mean this same beer then it is not lawful to drink. The Prophet ﷺ said: whatever intoxicates in large amounts, a little of it is haram."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "riba",
+      "aliases": [
+        "riba",
+        "interest",
+        "usury",
+        "bank interest",
+        "mortgage interest",
+        "credit card interest",
+        "conventional loan interest",
+        "ربا",
+        "الربا",
+        "فائدة"
+      ],
+      "verdict": "haram",
+      "confidence": 0.96,
+      "conflict": false,
+      "title": "Riba (interest / usury)",
+      "summary": "Charging or paying riba is prohibited in the Qur'an in strong terms. IslamQA treats conventional bank interest as riba.",
+      "accordingTo": "The Qur'an 2:275–279; IslamQA fatwa 1811.",
+      "caveats": [
+        "Some minority contemporary voices debate inflation-adjusted loans or specific banking products; those remain disputed and are not a license for conventional interest.",
+        "Necessity (e.g. no alternative housing finance in some countries) is discussed case-by-case by muftis — not a blanket permissibility."
+      ],
+      "sources": [
+        {
+          "authority": "The Qur'an",
+          "name": "Surah al-Baqarah 2:275",
+          "stance": "haram",
+          "url": "https://quran.com/2/275",
+          "excerpt": "Those who consume interest cannot stand except as one driven to madness by Satan's touch... Allah has permitted trade and forbidden riba."
+        },
+        {
+          "authority": "The Qur'an",
+          "name": "Surah al-Baqarah 2:278–279",
+          "stance": "haram",
+          "url": "https://quran.com/2/278",
+          "excerpt": "Give up what remains of riba, if you are believers. If you do not, then be informed of a war from Allah and His Messenger."
+        },
+        {
+          "authority": "IslamQA",
+          "name": "Riba is haram (fatwa 1811)",
+          "stance": "haram",
+          "url": "https://islamqa.info/en/answers/1811",
+          "excerpt": "Riba is haram, whether it is riba al-nasi'ah or riba al-fadl, and this includes bank interest."
+        }
+      ]
+    },
+    {
+      "id": "gelatin",
+      "aliases": [
+        "gelatin",
+        "gelatine",
+        "e441",
+        "jello",
+        "jelly gelatin",
+        "gummy",
+        "gummies",
+        "marshmallow",
+        "marshmallows",
+        "جيلاتين",
+        "الجيلاتين",
+        "collagen",
+        "collagen peptides",
+        "collagen powder",
+        "collagen supplement",
+        "gelatin capsule",
+        "gelatin capsules",
+        "softgel"
+      ],
+      "verdict": "unclear",
+      "confidence": 0.7,
+      "conflict": true,
+      "title": "Gelatin (and gelatin-based sweets)",
+      "summary": "Named authorities disagree on porcine and non-zabiha gelatin after industrial processing. This lookup shows both sides and does not pick a winner. Fish or certified zabiha gelatin is the overlapping cautious option.",
+      "accordingTo": "Split: IslamQA / Standing Committee treat haram-origin gelatin as prohibited; Dar al-Ifta Egypt treats some industrially transformed gelatin as lawful via istihala.",
+      "caveats": [
+        "If the package says pork gelatin and you follow the Standing Committee view, treat it as haram.",
+        "Halal-certified or fish gelatin avoids the dispute.",
+        "Marshmallows, gummies, and capsules often use porcine gelatin unless labeled otherwise."
+      ],
+      "positions": [
+        {
+          "stance": "haram",
+          "title": "Prohibited when the origin is pork or carrion",
+          "summary": "If gelatin is taken from pigs or from animals not slaughtered Islamically, it remains unlawful. Transformation does not lift the ruling according to this desk and the Saudi Standing Committee as quoted there.",
+          "accordingTo": "IslamQA fatwa 219137, quoting Fatawa al-Lajnah ad-Daimah 22/260",
+          "sources": [
+            {
+              "authority": "IslamQA / Standing Committee (al-Lajnah ad-Daimah)",
+              "name": "Is gelatin halal? (fatwa 219137)",
+              "stance": "haram",
+              "url": "https://islamqa.info/en/answers/219137",
+              "excerpt": "If the gelatin is derived from something haram, such as pork or the skin, bones etc. of pigs, then it is haram. (Fatawa al-Lajnah ad-Daimah, 22/260)"
+            },
+            {
+              "authority": "IslamQA",
+              "name": "Foods produced in the West, such as gelatin (fatwa 210)",
+              "stance": "haram",
+              "url": "https://islamqa.info/en/answers/210",
+              "excerpt": "Gelatin derived from collagen which comes from pigs is haram... The most correct view is that it is haram even if it has been changed."
+            }
+          ]
+        },
+        {
+          "stance": "halal",
+          "title": "Lawful after industrial transformation (istihala)",
+          "summary": "Egypt's Dar al-Ifta permits foods containing gelatin from pigs or unslaughtered animals if the substance has chemically transformed into a new form during manufacture.",
+          "accordingTo": "Dar al-Ifta Egypt, fatwa 6891 (English Mufti, 30 Dec 2014)",
+          "sources": [
+            {
+              "authority": "Dar al-Ifta Egypt",
+              "name": "Eating products made out of gelatin (fatwa 6891)",
+              "stance": "halal",
+              "url": "https://www.dar-alifta.org/en/fatwa/details/6891/what-is-the-ruling-regarding-eating-products-made-out-of-gelatin",
+              "excerpt": "It is prohibited to consume foods from pigs or unslaughtered animals unless the nature of these substances has transformed into another form during industry... In this case, it becomes lawful."
+            },
+            {
+              "authority": "Dar al-Ifta Egypt",
+              "name": "Marshmallow made of gelatin (fatwa 8156)",
+              "stance": "halal",
+              "url": "https://www.dar-alifta.org/en/fatwa/details/8156/is-eating-marshmallow-made-of-gelatin-lawful",
+              "excerpt": "It is legally permissible to consume marshmallows with its processed gelatin as it was transformed through manufacturing from its original nature to a new lawful substance."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "carrion",
+      "aliases": [
+        "carrion",
+        "dead meat",
+        "roadkill",
+        "unslaughtered",
+        "maytah",
+        "ميتة",
+        "الميتة"
+      ],
+      "verdict": "haram",
+      "confidence": 0.97,
+      "conflict": false,
+      "title": "Carrion (maytah) — meat from animals that died unslaughtered",
+      "summary": "Meat from land animals that died without Islamic slaughter is prohibited, grouped in the Qur'an with blood and swine. Fish and locusts are a classical hadith exception.",
+      "accordingTo": "The Qur'an 5:3; Sunan Ibn Majah 3314 on fish and locusts.",
+      "caveats": [
+        "Fish that die in the water are generally permitted (hadith of the sea's purity).",
+        "Necessity (starvation) is an exemption."
+      ],
+      "sources": [
+        {
+          "authority": "The Qur'an",
+          "name": "Surah al-Ma'idah 5:3",
+          "stance": "haram",
+          "url": "https://quran.com/5/3",
+          "excerpt": "Forbidden to you are carrion, blood, the flesh of swine..."
+        },
+        {
+          "authority": "Sunan Ibn Majah",
+          "name": "Two dead things made lawful (Ibn Majah 3314)",
+          "stance": "halal",
+          "url": "https://sunnah.com/ibnmajah:3314",
+          "excerpt": "Two kinds of dead meat have been permitted to us: fish and locusts."
+        }
+      ]
+    },
+    {
+      "id": "blood",
+      "aliases": [
+        "blood",
+        "blood sausage",
+        "black pudding",
+        "blood pudding",
+        "دم",
+        "الدم"
+      ],
+      "verdict": "haram",
+      "confidence": 0.97,
+      "conflict": false,
+      "title": "Consumed flowing blood",
+      "summary": "Drinking or eating flowing blood is prohibited in the Qur'an. Residual blood remaining in slaughtered meat after proper draining is not what this verse targets, according to classical tafsir.",
+      "accordingTo": "The Qur'an 5:3 and 6:145.",
+      "caveats": [
+        "Trace blood remaining in muscle tissue after slaughter is commonly treated as excused."
+      ],
+      "sources": [
+        {
+          "authority": "The Qur'an",
+          "name": "Surah al-An'am 6:145",
+          "stance": "haram",
+          "url": "https://quran.com/6/145",
+          "excerpt": "I do not find in what has been revealed to me anything forbidden to eat except carrion, running blood, the flesh of swine..."
+        },
+        {
+          "authority": "The Qur'an",
+          "name": "Surah al-Ma'idah 5:3",
+          "stance": "haram",
+          "url": "https://quran.com/5/3",
+          "excerpt": "Forbidden to you are carrion, blood, the flesh of swine..."
+        }
+      ]
+    },
+    {
+      "id": "gambling",
+      "aliases": [
+        "gambling",
+        "maisir",
+        "maysir",
+        "casino",
+        "poker",
+        "slots",
+        "sports betting",
+        "betting",
+        "lottery",
+        "roulette",
+        "ميسر",
+        "الميسر",
+        "قمار",
+        "القمار"
+      ],
+      "verdict": "haram",
+      "confidence": 0.96,
+      "conflict": false,
+      "title": "Gambling (maysir)",
+      "summary": "Games of chance for money are prohibited alongside intoxicants in Qur'an 5:90. IslamQA treats lotteries as gambling.",
+      "accordingTo": "The Qur'an 5:90–91; IslamQA fatwa 6476 (lotteries).",
+      "caveats": [
+        "Prize competitions with a skill component and no stake from the player are sometimes distinguished; ask a qualified mufti for a specific product."
+      ],
+      "sources": [
+        {
+          "authority": "The Qur'an",
+          "name": "Surah al-Ma'idah 5:90",
+          "stance": "haram",
+          "url": "https://quran.com/5/90",
+          "excerpt": "Intoxicants, gambling, stone altars, and divining arrows are abominations of Satan's handiwork, so avoid them."
+        },
+        {
+          "authority": "IslamQA",
+          "name": "Are lotteries haram? (fatwa 6476)",
+          "stance": "haram",
+          "url": "https://islamqa.info/en/answers/6476",
+          "excerpt": "Lotteries and raffles are other names for gambling, which is haram according to the Qur'an and Sunnah."
+        }
+      ]
+    },
+    {
+      "id": "dates",
+      "aliases": [
+        "date",
+        "dates",
+        "ajwa",
+        "medjool",
+        "tamr",
+        "تمر",
+        "التمر",
+        "رطب"
+      ],
+      "verdict": "halal",
+      "confidence": 0.99,
+      "conflict": false,
+      "title": "Dates",
+      "summary": "Dates are a wholesome, lawful food mentioned with praise in the Qur'an and Sunnah.",
+      "accordingTo": "The Qur'an 19:25; Sahih al-Bukhari 5445.",
+      "caveats": [],
+      "sources": [
+        {
+          "authority": "The Qur'an",
+          "name": "Surah Maryam 19:25",
+          "stance": "halal",
+          "url": "https://quran.com/19/25",
+          "excerpt": "Shake the trunk of the palm tree toward you, and it will drop upon you ripe, fresh dates."
+        },
+        {
+          "authority": "Sahih al-Bukhari",
+          "name": "The Prophet ate dates (Bukhari 5445)",
+          "stance": "halal",
+          "url": "https://sunnah.com/bukhari:5445",
+          "excerpt": "The Messenger of Allah ﷺ ate dates; they are among the most established lawful foods in the Sunnah."
+        }
+      ]
+    },
+    {
+      "id": "honey",
+      "aliases": [
+        "honey",
+        "عسل",
+        "العسل"
+      ],
+      "verdict": "halal",
+      "confidence": 0.99,
+      "conflict": false,
+      "title": "Honey",
+      "summary": "Honey is described in the Qur'an as a drink of varying colors in which there is healing. It is lawful.",
+      "accordingTo": "The Qur'an 16:69; Sahih al-Bukhari 5684.",
+      "caveats": [
+        "Honey mixed with alcohol or non-halal flavorings follows the mix, not the honey itself."
+      ],
+      "sources": [
+        {
+          "authority": "The Qur'an",
+          "name": "Surah al-Nahl 16:69",
+          "stance": "halal",
+          "url": "https://quran.com/16/69",
+          "excerpt": "From their bellies comes a drink of varying colors, in which there is healing for people."
+        },
+        {
+          "authority": "Sahih al-Bukhari",
+          "name": "Healing with honey (Bukhari 5684)",
+          "stance": "halal",
+          "url": "https://sunnah.com/bukhari:5684",
+          "excerpt": "The Prophet ﷺ recommended honey as a remedy; it is treated as a lawful food and medicine in the Sunnah."
+        }
+      ]
+    },
+    {
+      "id": "coffee-tea",
+      "aliases": [
+        "coffee",
+        "tea",
+        "qahwa",
+        "espresso",
+        "latte",
+        "caffeine",
+        "قهوة",
+        "القهوة",
+        "شاي",
+        "الشاي"
+      ],
+      "verdict": "halal",
+      "confidence": 0.93,
+      "conflict": false,
+      "title": "Coffee and tea",
+      "summary": "Plain coffee and tea are lawful beverages according to named contemporary muftis. They are stimulants, not khamr.",
+      "accordingTo": "IslamQA fatwa 9237 (Shaykh Abd-Allah ibn Jibreen); Askimam / Mufti Ebrahim Desai; Islamweb fatwa 84417.",
+      "caveats": [
+        "Coffee drinks that contain alcohol, bacon flavor, or gelatin-based foams follow those ingredients.",
+        "Excess that harms a particular person may be avoided for health, which is a different question from khamr."
+      ],
+      "sources": [
+        {
+          "authority": "IslamQA / Shaykh Abd-Allah ibn Jibreen",
+          "name": "Ruling on consuming caffeine (fatwa 9237)",
+          "stance": "halal",
+          "url": "https://islamqa.info/en/answers/9237",
+          "excerpt": "There are permissible drinks which do not cause harm, such as coffee and tea, which usually do not cause harm and are usually drunk for relaxation, so there is nothing wrong with drinking them."
+        },
+        {
+          "authority": "Askimam / Mufti Ebrahim Desai",
+          "name": "Is coffee an appropriate drink for a Muslim?",
+          "stance": "halal",
+          "url": "https://islamqa.org/hanafi/askimam/12783/is-coffee-an-appropriate-drink-for-a-muslim/",
+          "excerpt": "It is not prohibited to drink coffee."
+        },
+        {
+          "authority": "Islamweb",
+          "name": "Drinking drinks with caffeine (fatwa 84417)",
+          "stance": "halal",
+          "url": "https://www.islamweb.net/en/fatwa/84417/drinking-drinks-with-caffeine",
+          "excerpt": "There is no harm in drinking tea or coffee... coffee does not contain anything that causes drunkenness."
+        }
+      ]
+    },
+    {
+      "id": "fish",
+      "aliases": [
+        "fish",
+        "salmon",
+        "tuna",
+        "cod",
+        "tilapia",
+        "سمك",
+        "السمك"
+      ],
+      "verdict": "halal",
+      "confidence": 0.9,
+      "conflict": false,
+      "title": "Fish",
+      "summary": "Scaled fish is lawful without slaughter in the four Sunni schools, based on hadith declaring the sea lawful. Shellfish is a different, disputed file — search shrimp.",
+      "accordingTo": "Sunan Abi Dawud 83; IslamQA fatwa 19161.",
+      "caveats": [
+        "This entry is for ordinary fish (salmon, tuna, etc.), not shellfish."
+      ],
+      "sources": [
+        {
+          "authority": "Sunan Abi Dawud",
+          "name": "The water of the sea is pure (Abi Dawud 83)",
+          "stance": "halal",
+          "url": "https://sunnah.com/abudawud:83",
+          "excerpt": "Its water is purifying and its dead (fish) are lawful."
+        },
+        {
+          "authority": "IslamQA",
+          "name": "Seafood (fatwa 19161)",
+          "stance": "halal",
+          "url": "https://islamqa.info/en/answers/19161",
+          "excerpt": "All fish are permissible; there is a well-known difference regarding other sea creatures."
+        }
+      ]
+    },
+    {
+      "id": "shrimp",
+      "aliases": [
+        "shrimp",
+        "prawn",
+        "prawns",
+        "lobster",
+        "crab",
+        "shellfish",
+        "calamari",
+        "squid",
+        "oyster",
+        "mussel",
+        "clams",
+        "روبيان",
+        "الروبيان",
+        "جمبري",
+        "قشريات"
+      ],
+      "verdict": "unclear",
+      "confidence": 0.68,
+      "conflict": true,
+      "title": "Shellfish (shrimp, crab, lobster, etc.)",
+      "summary": "Schools disagree. This page shows both positions and does not pick a winner. Shrimp is often treated as fish in Hanafi manuals; crab, lobster, and squid typically are not.",
+      "accordingTo": "IslamQA fatwa 19161 (generally lawful sea creatures) versus the Hanafi school via SeekersGuidance / Shaykh Faraz Rabbani and Mufti Taqi Usmani (only samak / fish).",
+      "caveats": [
+        "If you follow Shafi'i, Maliki, or Hanbali fiqh, shrimp and most sea creatures are typically lawful.",
+        "If you follow Hanafi fiqh, shrimp is often permitted as fish; lobster, crab, and squid generally are not."
+      ],
+      "positions": [
+        {
+          "stance": "halal",
+          "title": "Generally lawful sea creatures",
+          "summary": "IslamQA's relied view is that sea creatures are permissible, including shrimp and crab, with limited exceptions such as crocodiles in some discussions.",
+          "accordingTo": "IslamQA fatwa 19161",
+          "sources": [
+            {
+              "authority": "IslamQA",
+              "name": "Seafood other than fish (fatwa 19161)",
+              "stance": "halal",
+              "url": "https://islamqa.info/en/answers/19161",
+              "excerpt": "The more correct view is that all sea creatures are permissible, including shrimp and crab, with some exceptions such as crocodiles in some views."
+            }
+          ]
+        },
+        {
+          "stance": "haram",
+          "title": "Hanafi: only fish (samak); other sea animals excluded",
+          "summary": "In the Hanafi school, lawful seafood is what the Arabs counted as fish. Shaykh Faraz Rabbani: shrimp is permitted on the soundest view; scampi-as-lobster is not. Mufti Taqi Usmani notes a stricter scientific classification some Hanafis used to prohibit shrimp.",
+          "accordingTo": "SeekersGuidance / Shaykh Faraz Rabbani; Mufti Taqi Usmani, Takmila Fath al-Mulhim, as cited on SeekersGuidance",
+          "sources": [
+            {
+              "authority": "SeekersGuidance / Shaykh Faraz Rabbani",
+              "name": "Is it permissible to eat shrimp?",
+              "stance": "unclear",
+              "url": "https://seekersguidance.org/answers/hanafi-fiqh/is-eat-permitted-to-eat-shrimp/",
+              "excerpt": "In the Hanafi school it is permitted to eat shrimp according to the soundest position... Other produce of the sea is not permitted. If scampi refers to a lobster dish, it would not be permitted."
+            },
+            {
+              "authority": "SeekersGuidance / Mufti Taqi Usmani",
+              "name": "What is the ruling of eating shrimp?",
+              "stance": "unclear",
+              "url": "https://seekersguidance.org/answers/education/what-is-the-ruling-of-eating-shrimp/",
+              "excerpt": "Those who took the scientific approach have considered shrimp prohibited, and those who took what the people customarily understood to be fish allowed it. There is no doubt that it is permissible according to the other three Imams."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vinegar",
+      "aliases": [
+        "vinegar",
+        "apple cider vinegar",
+        "wine vinegar",
+        "balsamic",
+        "خل",
+        "الخل"
+      ],
+      "verdict": "unclear",
+      "confidence": 0.78,
+      "conflict": true,
+      "title": "Vinegar",
+      "summary": "Vinegar that fully turned from wine by itself is widely treated as lawful. Named authorities disagree when a person deliberately turns wine into vinegar. Both sides are shown.",
+      "accordingTo": "Sahih Muslim 2051 (vinegar as a condiment) versus IslamQA fatwa 10196 (split on deliberate conversion).",
+      "caveats": [
+        "If the liquid still intoxicates, it is wine, not vinegar."
+      ],
+      "positions": [
+        {
+          "stance": "halal",
+          "title": "Completed vinegar is a lawful condiment",
+          "summary": "A hadith in Sahih Muslim praises vinegar. When wine has fully become vinegar, the intoxicant is gone.",
+          "accordingTo": "Sahih Muslim 2051",
+          "sources": [
+            {
+              "authority": "Sahih Muslim",
+              "name": "Vinegar as a condiment (Muslim 2051)",
+              "stance": "halal",
+              "url": "https://sunnah.com/muslim:2051a",
+              "excerpt": "What a good condiment vinegar is."
+            }
+          ]
+        },
+        {
+          "stance": "haram",
+          "title": "Deliberately converting wine is disputed / often disallowed",
+          "summary": "IslamQA: if wine turns into vinegar by itself, it is permissible; scholars differed if a person turns it into vinegar by human action.",
+          "accordingTo": "IslamQA fatwa 10196",
+          "sources": [
+            {
+              "authority": "IslamQA",
+              "name": "Wine vinegar (fatwa 10196)",
+              "stance": "unclear",
+              "url": "https://islamqa.info/en/answers/10196",
+              "excerpt": "If wine turns into vinegar by itself, it is permissible; scholars differed if it is turned into vinegar by human action."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vanilla-extract",
+      "aliases": [
+        "vanilla extract",
+        "vanilla essence",
+        "pure vanilla",
+        "فانيليا",
+        "خلاصة الفانيليا"
+      ],
+      "verdict": "unclear",
+      "confidence": 0.62,
+      "conflict": true,
+      "title": "Vanilla extract",
+      "summary": "US-style pure vanilla extract is typically vanilla in about 35% alcohol. Named desks do not speak with one voice. Alcohol-free vanilla avoids the dispute.",
+      "accordingTo": "IslamQA fatwa 177030 (permissible if no intoxicating trace) versus IslamQA fatwa 249339 / 59899 on not adding khamr and on food where alcohol remains.",
+      "caveats": [
+        "Alcohol-free vanilla flavoring or vanilla powder avoids the dispute.",
+        "Imitation vanilla may still contain alcohol — read the label."
+      ],
+      "positions": [
+        {
+          "stance": "halal",
+          "title": "Permissible when alcohol leaves no intoxicating trace",
+          "summary": "IslamQA 177030 allows eating vanilla prepared with alcohol because alcohol is not treated as physically impure there, and it leaves no intoxicating effect in the vanilla.",
+          "accordingTo": "IslamQA fatwa 177030",
+          "sources": [
+            {
+              "authority": "IslamQA",
+              "name": "Is vanilla extract halal? (fatwa 177030)",
+              "stance": "halal",
+              "url": "https://islamqa.info/en/answers/177030",
+              "excerpt": "Eating vanilla is permissible even though it was mixed with alcohol during preparation... the one who consumes it does not become intoxicated and no effect of alcohol is seen when eating it."
+            }
+          ]
+        },
+        {
+          "stance": "haram",
+          "title": "Do not add intoxicants to food; remaining alcohol is prohibited",
+          "summary": "IslamQA later stressed it is not permissible to deliberately add alcohol to food. If the essence of alcohol remains (taste, smell, or intoxicating potential), the food is haram. Bottled 35% extract is the cautious problem case.",
+          "accordingTo": "IslamQA fatwas 249339 and 59899",
+          "sources": [
+            {
+              "authority": "IslamQA",
+              "name": "Adding a small amount of alcohol to food (fatwa 249339)",
+              "stance": "haram",
+              "url": "https://islamqa.info/en/answers/249339",
+              "excerpt": "Alcohol is an intoxicant and subject to the same rulings as wine, so it is not permissible to deliberately add it to food, medicine, or anything else."
+            },
+            {
+              "authority": "IslamQA",
+              "name": "Alcohol in food and cosmetics (fatwa 59899)",
+              "stance": "haram",
+              "url": "https://islamqa.info/en/answers/59899",
+              "excerpt": "If the effect of alcohol in medicine and food is clear, it is haram to add it and it is haram to use these foods."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cheese-rennet",
+      "aliases": [
+        "cheese",
+        "rennet",
+        "animal rennet",
+        "parmesan",
+        "pecorino",
+        "جبن",
+        "الجبن",
+        "منفحة"
+      ],
+      "verdict": "unclear",
+      "confidence": 0.66,
+      "conflict": true,
+      "title": "Cheese and animal rennet",
+      "summary": "Cheese itself is lawful. The dispute is the enzyme: porcine rennet is rejected; non-zabiha calf rennet is a madhhab split. Microbial or labeled halal/vegetarian rennet avoids it.",
+      "accordingTo": "IslamQA fatwa 2191 versus SeekersGuidance Hanafi answers on classical leniency for rennet of a lawful species.",
+      "caveats": [
+        "Parmesan and many European PDO cheeses often use animal rennet.",
+        "Kosher cheese uses similar slaughter rules to Judaism, not identical to zabiha."
+      ],
+      "positions": [
+        {
+          "stance": "haram",
+          "title": "Requires Islamic slaughter; porcine or carrion rennet is out",
+          "summary": "IslamQA: rennet from an animal slaughtered Islamically is permissible; porcine or non-slaughtered sources are not, according to this view.",
+          "accordingTo": "IslamQA fatwa 2191",
+          "sources": [
+            {
+              "authority": "IslamQA",
+              "name": "Cheese made with rennet (fatwa 2191)",
+              "stance": "haram",
+              "url": "https://islamqa.info/en/answers/2191",
+              "excerpt": "If rennet is from an animal slaughtered Islamically, it is permissible; porcine or non-slaughtered sources are not, according to this view."
+            }
+          ]
+        },
+        {
+          "stance": "halal",
+          "title": "Hanafi leniency on rennet of a lawful species",
+          "summary": "Classical Hanafi fiqh is comparatively lenient on rennet from a dead animal that is otherwise a lawful species. SeekersGuidance documents this as a named school position — not a universal ruling.",
+          "accordingTo": "SeekersGuidance (Hanafi fiqh)",
+          "sources": [
+            {
+              "authority": "SeekersGuidance (Hanafi)",
+              "name": "Cheese with animal rennet",
+              "stance": "halal",
+              "url": "https://seekersguidance.org/answers/hanafi-fiqh/is-it-permissible-to-eat-cheese-if-one-is-unsure-of-the-rennet-used/",
+              "excerpt": "Classical Hanafi fiqh is comparatively lenient on rennet from a dead animal that is otherwise a lawful species."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "music",
+      "aliases": [
+        "music",
+        "listening to music",
+        "songs",
+        "musical instruments",
+        "موسيقى",
+        "الموسيقى",
+        "غناء"
+      ],
+      "verdict": "unclear",
+      "confidence": 0.55,
+      "conflict": true,
+      "title": "Music",
+      "summary": "This is a well-known internal disagreement. Named desks issue opposite conclusions. This page shows both and does not pick a winner.",
+      "accordingTo": "IslamQA fatwa 5000 (instruments prohibited) versus Dar al-Ifta Egypt fatwa 22265 (some music and songs permitted with conditions).",
+      "caveats": [
+        "Lyrics that promote indecency or shirk are condemned even by scholars who allow instruments.",
+        "Nasheed without instruments is widely treated as safer ground — still check the named desk you follow."
+      ],
+      "positions": [
+        {
+          "stance": "haram",
+          "title": "Musical instruments prohibited",
+          "summary": "IslamQA treats musical instruments as haram, with a limited exception for the daff in some contexts, and cites hadith used for that prohibition.",
+          "accordingTo": "IslamQA fatwa 5000; Sahih al-Bukhari 5590 as used by this desk",
+          "sources": [
+            {
+              "authority": "IslamQA",
+              "name": "Ruling on music (fatwa 5000)",
+              "stance": "haram",
+              "url": "https://islamqa.info/en/answers/5000",
+              "excerpt": "Musical instruments are haram according to this desk, with the exception of the daff in limited contexts."
+            },
+            {
+              "authority": "Sahih al-Bukhari",
+              "name": "Hadith of wind instruments / singing girls (Bukhari 5590)",
+              "stance": "haram",
+              "url": "https://sunnah.com/bukhari:5590",
+              "excerpt": "A narration used by those who prohibit musical instruments; its interpretation is disputed by the other side."
+            }
+          ]
+        },
+        {
+          "stance": "halal",
+          "title": "Permitted with conditions on content and setting",
+          "summary": "Egypt's Dar al-Ifta: some kinds of songs and music are permissible to hear and some are not. Patriotic and religious songs, and music that brings joy on lawful occasions, are allowed if they avoid vulgarity, mixing, and anything prohibited such as alcohol.",
+          "accordingTo": "Dar al-Ifta Egypt, fatwa 22265",
+          "sources": [
+            {
+              "authority": "Dar al-Ifta Egypt",
+              "name": "Listening to music and songs (fatwa 22265)",
+              "stance": "halal",
+              "url": "https://www.dar-alifta.org/en/fatwa/details/22265/listening-to-music-and-songs",
+              "excerpt": "Some kinds of songs and music are permissible to hear and some are not... Patriotic and religious songs, as well as music that brings joy during feasts and special occasions, are permissible."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zabiha-meat",
+      "aliases": [
+        "zabiha",
+        "halal meat",
+        "halal chicken",
+        "halal beef",
+        "islamic slaughter",
+        "ذبيحة",
+        "لحم حلال"
+      ],
+      "verdict": "halal",
+      "confidence": 0.95,
+      "conflict": false,
+      "title": "Properly slaughtered (zabiha) meat of lawful animals",
+      "summary": "Meat of cattle, sheep, goats, and similarly lawful land animals is permitted when slaughtered according to Islamic requirements. Unlabeled supermarket meat of the People of the Book is a different, disputed file.",
+      "accordingTo": "The Qur'an 5:3; IslamQA on the conditions of slaughter.",
+      "caveats": [
+        "Pork remains haram even if a Christian or Jew slaughters it.",
+        "Search people of the book meat for the 5:5 supermarket disagreement."
+      ],
+      "sources": [
+        {
+          "authority": "The Qur'an",
+          "name": "Surah al-Ma'idah 5:3",
+          "stance": "halal",
+          "url": "https://quran.com/5/3",
+          "excerpt": "Lawful to you are livestock, except what is recited to you..."
+        },
+        {
+          "authority": "IslamQA",
+          "name": "Meat of the People of the Book (fatwa 10346)",
+          "stance": "halal",
+          "url": "https://islamqa.info/en/answers/10346",
+          "excerpt": "Meat of Jews and Christians is discussed as permissible if they slaughter in the manner of slaughter and do not dedicate it to other than Allah — industrial practice is a separate question."
+        }
+      ]
+    },
+    {
+      "id": "kitabi-meat",
+      "aliases": [
+        "people of the book meat",
+        "ahl al kitab meat",
+        "supermarket meat",
+        "kitabi meat",
+        "christian slaughter",
+        "kosher meat unlabeled",
+        "أهل الكتاب",
+        "لحم أهل الكتاب"
+      ],
+      "verdict": "unclear",
+      "confidence": 0.6,
+      "conflict": true,
+      "title": "Meat of the People of the Book / unlabeled supermarket meat",
+      "summary": "Qur'an 5:5 makes the food of the People of the Book lawful. Named contemporary desks disagree about whether Western industrial slaughter meets that verse. Both sides are shown.",
+      "accordingTo": "The Qur'an 5:5 versus IslamQA fatwa 10346 on conditions many slaughterhouses do not meet.",
+      "caveats": [
+        "This is not about pork, which remains haram regardless of who slaughters it."
+      ],
+      "positions": [
+        {
+          "stance": "halal",
+          "title": "The verse itself makes their food lawful",
+          "summary": "A plain reading of 5:5: the food of those who were given the Scripture is lawful for you. Those who rely on the verse without extra industrial conditions treat kitabi slaughter as sufficient.",
+          "accordingTo": "The Qur'an 5:5",
+          "sources": [
+            {
+              "authority": "The Qur'an",
+              "name": "Surah al-Ma'idah 5:5",
+              "stance": "halal",
+              "url": "https://quran.com/5/5",
+              "excerpt": "The food of those who were given the Scripture is lawful for you, and your food is lawful for them."
+            }
+          ]
+        },
+        {
+          "stance": "haram",
+          "title": "Only if slaughter conditions are actually met",
+          "summary": "IslamQA: meat of Jews and Christians is permissible if they slaughter in the manner of slaughter and do not dedicate it to other than Allah; industrial practice is often questioned.",
+          "accordingTo": "IslamQA fatwa 10346",
+          "sources": [
+            {
+              "authority": "IslamQA",
+              "name": "Meat of the People of the Book (fatwa 10346)",
+              "stance": "haram",
+              "url": "https://islamqa.info/en/answers/10346",
+              "excerpt": "Meat of Jews and Christians is permissible if they slaughter in the manner of slaughter and do not dedicate it to other than Allah; industrial practice is often questioned."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "donkey",
+      "aliases": [
+        "donkey",
+        "domestic donkey",
+        "donkey meat",
+        "حمار",
+        "لحم الحمار"
+      ],
+      "verdict": "haram",
+      "confidence": 0.93,
+      "conflict": false,
+      "title": "Domestic donkey meat",
+      "summary": "Domestic donkeys were prohibited in authentic hadith at Khaybar.",
+      "accordingTo": "Sahih al-Bukhari 4219.",
+      "caveats": [
+        "This is about eating; keeping a donkey as a work animal is permitted."
+      ],
+      "sources": [
+        {
+          "authority": "Sahih al-Bukhari",
+          "name": "Prohibition of domestic donkeys (Bukhari 4219)",
+          "stance": "haram",
+          "url": "https://sunnah.com/bukhari:4219",
+          "excerpt": "The Prophet ﷺ forbade the meat of domestic donkeys on the day of Khaybar."
+        }
+      ]
+    },
+    {
+      "id": "fast-food-generic",
+      "aliases": [
+        "mcdonalds",
+        "burger king",
+        "kfc",
+        "fast food",
+        "ماكدونالدز",
+        "كنتاكي"
+      ],
+      "verdict": "unclear",
+      "confidence": 0.5,
+      "conflict": false,
+      "title": "Generic fast-food chains",
+      "summary": "A chain name is not a ruling. Chicken or beef sandwiches depend on slaughter method, shared fryers, alcohol in buns or sauces, and local franchise practice. Named certifiers (JAKIM, IFANCA) apply to specific outlets, not a global brand.",
+      "accordingTo": "IslamQA fatwa 12654; check local marks from bodies such as JAKIM or IFANCA.",
+      "caveats": [
+        "Always verify the specific restaurant, country, and menu item.",
+        "Fish items may still be cooked in pork-contaminated oil."
+      ],
+      "sources": [
+        {
+          "authority": "IslamQA",
+          "name": "Eating in non-Muslim restaurants (fatwa 12654)",
+          "stance": "unclear",
+          "url": "https://islamqa.info/en/answers/12654",
+          "excerpt": "Permissibility depends on the actual meat, slaughter, and contamination — not the brand name."
+        },
+        {
+          "authority": "JAKIM (Department of Islamic Development Malaysia)",
+          "name": "Malaysia Halal certification directory",
+          "stance": "unclear",
+          "url": "https://www.halal.gov.my",
+          "excerpt": "A named national certifying body. A JAKIM mark applies to a specific certified outlet or product, not to every franchise worldwide."
+        },
+        {
+          "authority": "IFANCA",
+          "name": "Islamic Food and Nutrition Council of America",
+          "stance": "unclear",
+          "url": "https://ifanca.org",
+          "excerpt": "A named certifying body used in North America. Look up the specific product or restaurant; the brand name alone is not a fatwa."
+        }
+      ]
+    },
+    {
+      "id": "alcohol-free-beer",
+      "aliases": [
+        "alcohol free beer",
+        "non alcoholic beer",
+        "non alcoholic wine",
+        "non alcoholic cider",
+        "alcohol free wine",
+        "alcohol free cider",
+        "alcohol free",
+        "non alcoholic",
+        "dealcoholized beer",
+        "de alcoholized beer",
+        "zero alcohol beer",
+        "zero alcohol",
+        "0 0 beer",
+        "0 5 beer",
+        "0 alcohol beer",
+        "near beer",
+        "halal beer",
+        "malt beverage non alcoholic"
+      ],
+      "verdict": "unclear",
+      "confidence": 0.64,
+      "conflict": true,
+      "title": "Alcohol-free beer, wine, and cider",
+      "summary": "A 0.0% or 'non-alcoholic' label is not the same ruling as intoxicating beer. Named desks disagree about trace alcohol and about drinks made to imitate khamr. Both sides are shown. Ordinary beer, wine, and cider remain the intoxicant entry.",
+      "accordingTo": "Split: IslamQA fatwa 33763 (Shaykh Ibn Uthaymeen: non-intoxicating beer is permissible) and SeekersGuidance on 0% non-wine alcohol, versus SeekersGuidance / Shaykh Irshaad Sedick (trace alcohol in beer is unlawful, and de-alcoholized beer stays impure).",
+      "caveats": [
+        "If the drink still intoxicates in a large amount, it is khamr on every side of this split.",
+        "Search beer or wine for ordinary intoxicants. This entry is only the alcohol-free label."
+      ],
+      "positions": [
+        {
+          "stance": "halal",
+          "title": "Permissible when it cannot intoxicate",
+          "summary": "IslamQA, quoting Shaykh Ibn Uthaymeen: beer that is free of alcohol, or that contains a minuscule amount that cannot intoxicate no matter how much is drunk, is permissible. A Hanafi answer on SeekersGuidance allows incidental traces of non-wine alcohol that are not used to intoxicate.",
+          "accordingTo": "IslamQA fatwa 33763; SeekersGuidance Hanafi answer on 0% alcohol labels",
+          "sources": [
+            {
+              "authority": "IslamQA / Shaykh Muhammad ibn Salih al-Uthaymeen",
+              "name": "Drinking beer (fatwa 33763)",
+              "stance": "halal",
+              "url": "https://islamqa.info/en/answers/33763",
+              "excerpt": "Beer that is not intoxicating, either because it is completely free of alcohol or because the amount cannot intoxicate no matter how much is drunk, has been ruled permissible."
+            },
+            {
+              "authority": "SeekersGuidance (Hanafi)",
+              "name": "Products labeled 0% alcohol",
+              "stance": "halal",
+              "url": "https://seekersguidance.org/answers/hanafi-fiqh/can-we-drink-or-sell-products-with-a-label-of-0-alcohol/",
+              "excerpt": "Drinks with incidental traces of non-wine alcohol are permitted when they are not used to intoxicate, not used as intoxicants are used, and not used in an intoxicating amount."
+            }
+          ]
+        },
+        {
+          "stance": "haram",
+          "title": "Still unlawful: trace alcohol, or imitating beer",
+          "summary": "SeekersGuidance's Shafi'i answer treats even a fraction of a percent in beer as filthy and impermissible, and says products that imitate intoxicants should be avoided. A separate answer says de-alcoholized beer remains impure after the alcohol is removed.",
+          "accordingTo": "SeekersGuidance / Shaykh Irshaad Sedick",
+          "sources": [
+            {
+              "authority": "SeekersGuidance / Shaykh Irshaad Sedick",
+              "name": "Non-alcoholic craft beer at about 0.4%",
+              "stance": "haram",
+              "url": "https://seekersguidance.org/answers/halal-and-haram/would-this-non-alcoholic-craft-beer-be-lawful/",
+              "excerpt": "Even a tiny amount of alcohol in the beer is considered filth and impermissible to consume. Products that imitate intoxicants should be avoided."
+            },
+            {
+              "authority": "SeekersGuidance / Shaykh Irshaad Sedick",
+              "name": "De-alcoholized beer labeled 0.0%",
+              "stance": "haram",
+              "url": "https://seekersguidance.org/answers/halal-and-haram/is-it-permissible-to-drink-de-alcoholized-beer-with-0-0-alcohol-content/",
+              "excerpt": "Dealcoholized drinks are strictly prohibited. A 0.0% label can still hide alcohol under 0.5%, and removing the alcohol does not purify what remains."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "soy-sauce",
+      "aliases": [
+        "soy sauce",
+        "soya sauce",
+        "shoyu",
+        "tamari"
+      ],
+      "verdict": "unclear",
+      "confidence": 0.66,
+      "conflict": false,
+      "title": "Soy sauce",
+      "summary": "Brewed soy sauce can contain a small amount of alcohol from fermentation. IslamQA does not give one ruling for every bottle: if the alcohol is fully absorbed and leaves no taste, color, or smell, the food may be eaten; if the alcohol can still be detected, it may not.",
+      "accordingTo": "IslamQA fatwas 201520 and 249339.",
+      "caveats": [
+        "Chemically brewed or labeled alcohol-free soy sauce avoids the question.",
+        "This is a condition on the same desk, not two schools picking a winner."
+      ],
+      "sources": [
+        {
+          "authority": "IslamQA",
+          "name": "Alcohol in food (fatwa 201520)",
+          "stance": "unclear",
+          "url": "https://islamqa.info/en/answers/201520",
+          "excerpt": "If alcohol is fully absorbed so that no trace remains in color, taste, or odor, the food may be eaten. If the essence of the alcohol remains, it is haram."
+        },
+        {
+          "authority": "IslamQA",
+          "name": "Adding a small amount of alcohol to food (fatwa 249339)",
+          "stance": "unclear",
+          "url": "https://islamqa.info/en/answers/249339",
+          "excerpt": "It is not permissible to deliberately add alcohol to food. Food already mixed with a trace that leaves no discernible effect and does not intoxicate may be consumed."
+        }
+      ]
+    },
+    {
+      "id": "cooking-wine",
+      "aliases": [
+        "cooking wine",
+        "cooking sherry",
+        "wine in cooking",
+        "food cooked with wine",
+        "rum cake",
+        "beer batter",
+        "mirin",
+        "cooking with alcohol"
+      ],
+      "verdict": "unclear",
+      "confidence": 0.64,
+      "conflict": false,
+      "title": "Cooking wine, mirin, and food cooked with alcohol",
+      "summary": "IslamQA forbids deliberately adding wine or other intoxicants to food. If a finished dish still shows the alcohol in taste, smell, or color, it is not to be eaten. If the alcohol has disappeared completely into the food and a large amount would not intoxicate, that desk allows the food.",
+      "accordingTo": "IslamQA fatwas 201520 and 249339.",
+      "caveats": [
+        "A splash of wine that you can still taste is the prohibited case on this page.",
+        "Search wine or beer for the drink itself."
+      ],
+      "sources": [
+        {
+          "authority": "IslamQA",
+          "name": "Alcohol in food (fatwa 201520)",
+          "stance": "unclear",
+          "url": "https://islamqa.info/en/answers/201520",
+          "excerpt": "Cooking food with alcohol leaves the essence present, so the food is haram. Alcohol that has fully disappeared, with no detectable trace, is a different case."
+        },
+        {
+          "authority": "IslamQA",
+          "name": "Adding wine or alcohol to food (fatwa 249339)",
+          "stance": "haram",
+          "url": "https://islamqa.info/en/answers/249339",
+          "excerpt": "Alcohol is an intoxicant and it is not permissible to deliberately add it to food, medicine, or anything else."
+        }
+      ]
+    },
+    {
+      "id": "horse-meat",
+      "aliases": [
+        "horse meat",
+        "horsemeat",
+        "horse flesh",
+        "eating horse",
+        "horse"
+      ],
+      "verdict": "unclear",
+      "confidence": 0.7,
+      "conflict": true,
+      "title": "Horse meat",
+      "summary": "The majority view, based on hadith from Khaybar and from Asma', is that eating horse is permitted. Abu Hanifa and his two companions held it to be makruh. This page shows both and does not pick a winner. Riding a horse is not the question.",
+      "accordingTo": "Sahih al-Bukhari 5519 and 5520, and IslamQA fatwa 70320, versus Abu Hanifa's makruh view as reported there, using Qur'an 16:8.",
+      "caveats": [
+        "Domestic donkey remains prohibited. That is a different entry."
+      ],
+      "positions": [
+        {
+          "stance": "halal",
+          "title": "Majority: horse meat is permitted",
+          "summary": "Bukhari records that the companions ate horse during the Prophet's life, and that at Khaybar he forbade domestic donkey and allowed horse. IslamQA presents this as the majority view.",
+          "accordingTo": "Sahih al-Bukhari 5519 and 5520; IslamQA fatwa 70320",
+          "sources": [
+            {
+              "authority": "Sahih al-Bukhari",
+              "name": "Asma' ate horse (Bukhari 5519)",
+              "stance": "halal",
+              "url": "https://sunnah.com/bukhari:5519",
+              "excerpt": "We slaughtered a horse during the lifetime of the Messenger of Allah and ate it."
+            },
+            {
+              "authority": "Sahih al-Bukhari",
+              "name": "Concession for horse at Khaybar (Bukhari 5520)",
+              "stance": "halal",
+              "url": "https://sunnah.com/bukhari:5520",
+              "excerpt": "On the day of Khaybar the Prophet forbade the flesh of donkeys and allowed the eating of horse flesh."
+            },
+            {
+              "authority": "IslamQA",
+              "name": "Is horse meat halal? (fatwa 70320)",
+              "stance": "halal",
+              "url": "https://islamqa.info/en/answers/70320",
+              "excerpt": "The majority of scholars are of the view that it is permissible to eat horses, because of the sound hadiths that have been narrated concerning that."
+            }
+          ]
+        },
+        {
+          "stance": "unclear",
+          "title": "Hanafi: makruh (disliked), not the majority concession",
+          "summary": "IslamQA reports that Abu Hanifa and his two companions held eating horse to be makruh. They cited Qur'an 16:8, which mentions horses for riding and adornment, and a hadith IslamQA notes as weak. This page does not relabel makruh as a flat haram.",
+          "accordingTo": "Abu Hanifa, as reported by IslamQA fatwa 70320; Qur'an 16:8",
+          "sources": [
+            {
+              "authority": "IslamQA",
+              "name": "Abu Hanifa's view on horse meat (fatwa 70320)",
+              "stance": "unclear",
+              "url": "https://islamqa.info/en/answers/70320",
+              "excerpt": "Abu Hanifa and his two companions were of the view that it is makruh to eat horse meat. They quoted a Quranic verse and a hadith as evidence."
+            },
+            {
+              "authority": "The Qur'an",
+              "name": "Surah al-Nahl 16:8",
+              "stance": "unclear",
+              "url": "https://quran.com/16/8",
+              "excerpt": "And horses, mules, and donkeys for you to ride, and as adornment. The Hanafi dislike of eating horse appeals to this verse."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "carmine-e120",
+      "aliases": [
+        "carmine",
+        "cochineal",
+        "e120",
+        "e 120",
+        "natural red 4",
+        "carmine dye"
+      ],
+      "verdict": "halal",
+      "confidence": 0.74,
+      "conflict": false,
+      "title": "Carmine (E120, cochineal)",
+      "summary": "Carmine is a red food dye from scale insects. IslamQA allows it when the insect extract has been chemically transformed into a new coloring substance, on the same istihala reasoning used for some other transformed ingredients.",
+      "accordingTo": "IslamQA fatwas 382570 and 162658.",
+      "caveats": [
+        "This is the transformation (istihala) view on those two fatwas. Someone who rejects that transformation for insects should avoid E120.",
+        "Eating an insect itself is not what these fatwas permit."
+      ],
+      "sources": [
+        {
+          "authority": "IslamQA",
+          "name": "Shellac and carmine from insects (fatwa 382570)",
+          "stance": "halal",
+          "url": "https://islamqa.info/en/answers/382570",
+          "excerpt": "Carmine used as a dye has been subjected to a chemical process that changes its nature, and there is nothing wrong with consuming fruit in which it has been used if it causes no harm."
+        },
+        {
+          "authority": "IslamQA",
+          "name": "Carmine in sweets (fatwa 162658)",
+          "stance": "halal",
+          "url": "https://islamqa.info/en/answers/162658",
+          "excerpt": "If carmine is derived from insects and the sweet is not harmful, there is nothing wrong with eating it, because the prohibited substance has been transformed."
+        }
+      ]
+    },
+    {
+      "id": "cryptocurrency",
+      "aliases": [
+        "bitcoin",
+        "btc",
+        "cryptocurrency",
+        "crypto currency",
+        "crypto",
+        "ethereum",
+        "digital currency"
+      ],
+      "verdict": "unclear",
+      "confidence": 0.58,
+      "conflict": true,
+      "title": "Bitcoin and cryptocurrency",
+      "summary": "Named bodies disagree. Egypt's Dar al-Ifta prohibited trading Bitcoin. The Assembly of Muslim Jurists of America later said dealing in cryptocurrency is closer to permissible when issuance, purpose, and the underlying project are lawful. This page does not pick a winner and is not investment advice.",
+      "accordingTo": "Dar al-Ifta Egypt, fatwa 14139, versus the Assembly of Muslim Jurists of America, 18th Annual Imams' Conference (2022).",
+      "caveats": [
+        "A token whose purpose is gambling, fraud, or another prohibited activity follows that activity on both sides.",
+        "AMJA's permission is not an encouragement to speculate, and it warns about scams and volatility."
+      ],
+      "positions": [
+        {
+          "stance": "haram",
+          "title": "Dar al-Ifta Egypt: trading Bitcoin is not allowed",
+          "summary": "The Egyptian Fatwa Secretariat prohibited buying, selling, leasing, and otherwise dealing in Bitcoin, citing harm to market stability, lack of legal protection and financial oversight, and gharar in its standard and value.",
+          "accordingTo": "Dar al-Ifta Egypt, fatwa 14139",
+          "sources": [
+            {
+              "authority": "Dar al-Ifta Egypt",
+              "name": "Ruling on trading Bitcoin (fatwa 14139)",
+              "stance": "haram",
+              "url": "https://www.dar-alifta.org/ar/fatwa/details/14139/%D8%AD%D9%83%D9%85-%D8%AA%D8%AF%D8%A7%D9%88%D9%84-%D8%B9%D9%85%D9%84%D8%A9-%D8%A7%D9%84%D8%A8%D9%8A%D8%AA%D9%83%D9%88%D9%8A%D9%86-%D9%88%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%85%D9%84-%D8%A8%D9%87%D8%A7",
+              "excerpt": "The Fatwa Secretariat concluded that trading Bitcoin and dealing in it by sale, purchase, lease, and similar contracts is not permissible, because of gharar, missing oversight, and harm."
+            }
+          ]
+        },
+        {
+          "stance": "halal",
+          "title": "AMJA: permissible when the project and the contract are lawful",
+          "summary": "AMJA's 2022 conference said cryptocurrency is closer to permissible than prohibited when the purpose, issuance, and funded activities are legal, the offering is a real project, and currency exchange is hand-to-hand. That is not advice to invest.",
+          "accordingTo": "Assembly of Muslim Jurists of America, 2022 Imams' Conference",
+          "sources": [
+            {
+              "authority": "Assembly of Muslim Jurists of America (AMJA)",
+              "name": "18th Annual Imams' Conference (2022), cryptocurrency section",
+              "stance": "halal",
+              "url": "https://www.amjaonline.org/declaration-articles/amja-18th-annual-imams-conference-2022-shareeah-rulings-for-contemporary-issues-related-to-technological-advancements",
+              "excerpt": "Dealing with cryptocurrency is closer to being permissible than prohibited when the Shareeah parameters are met. That does not encourage investment, and it does not deny the risks of speculation and scams."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mixed-stocks",
+      "aliases": [
+        "stocks",
+        "shares",
+        "stock market",
+        "buying shares",
+        "equity shares",
+        "mixed shares",
+        "halal stocks",
+        "stock investing"
+      ],
+      "verdict": "unclear",
+      "confidence": 0.6,
+      "conflict": true,
+      "title": "Shares in companies that also deal in riba",
+      "summary": "Owning shares is not one ruling. If the company's business itself is prohibited, the cited bodies agree not to buy. If the main business is lawful but the company borrows or deposits with interest, named councils prohibit the shares, while some Shariah boards allow them after screening and purification. Both are shown.",
+      "accordingTo": "IslamQA fatwa 112445 and the International Islamic Fiqh Academy, as quoted by Islamweb fatwa 424702, versus the Shariah Supervisory Board of Al-Rajhi (decision 485) and Dar al-Ifta of Jordan.",
+      "caveats": [
+        "A bank, brewery, or casino is the prohibited-business case on both sides.",
+        "Screening ratios such as 5% and 30% or 25% are board rules, not a verse."
+      ],
+      "positions": [
+        {
+          "stance": "haram",
+          "title": "Prohibited if the company deals in riba at all",
+          "summary": "IslamQA: the basic rule allows shares only when the company does not deal in riba or other haram. Islamweb reports the OIC Fiqh Academy's principle that shares are prohibited when the company sometimes deals in riba even if its main work is lawful.",
+          "accordingTo": "IslamQA fatwa 112445; Islamweb fatwa 424702, quoting the International Islamic Fiqh Academy",
+          "sources": [
+            {
+              "authority": "IslamQA",
+              "name": "Buying shares (fatwa 112445)",
+              "stance": "haram",
+              "url": "https://islamqa.info/en/answers/112445",
+              "excerpt": "It is permissible to hold shares in a company if it does not deal with haram things such as riba. If it does deal in riba, it is not permissible to hold shares in it."
+            },
+            {
+              "authority": "Islamweb / International Islamic Fiqh Academy",
+              "name": "Shares in companies that deal with riba (fatwa 424702)",
+              "stance": "haram",
+              "url": "https://www.islamweb.net/en/fatwa/424702/impermissible-to-buy-shares-in-companies-that-deal-with-riba-except-with-some-conditions",
+              "excerpt": "The basic principle is the prohibition of buying shares in companies that occasionally deal with what is forbidden, such as riba, although their main activities are lawful."
+            }
+          ]
+        },
+        {
+          "stance": "halal",
+          "title": "Permitted for a lawful business after screening and purification",
+          "summary": "Islamweb also records the Al-Rajhi Shariah board: if the main activity is lawful and the riba is incidental borrowing or bank interest, the shares may be owned if that interest is calculated and given away. Jordan's Iftaa department allows mixed companies under a loan cap and a 5% impure-revenue cap, and forbids margin and derivatives.",
+          "accordingTo": "Shariah Supervisory Board of Al-Rajhi, decision 485, via Islamweb; Dar al-Ifta of Jordan",
+          "sources": [
+            {
+              "authority": "Islamweb / Shariah Supervisory Board of Al-Rajhi",
+              "name": "Al-Rajhi decision 485, quoted in fatwa 424702",
+              "stance": "halal",
+              "url": "https://www.islamweb.net/en/fatwa/424702/impermissible-to-buy-shares-in-companies-that-deal-with-riba-except-with-some-conditions",
+              "excerpt": "If the company deposits money in riba-based banks or takes such loans, some boards allow owning the shares provided the buyer calculates the interest and disposes of it in charity."
+            },
+            {
+              "authority": "Dar al-Ifta of Jordan",
+              "name": "Sharia rules for stocks and market contracts",
+              "stance": "halal",
+              "url": "https://aliftaa.jo/research-fatwa-english/3961/CatQuestionEn.aspx?Id=239",
+              "excerpt": "Mixed companies may be traded when riba loans or deposits stay within the stated cap and incidental prohibited revenue stays within 5%, and the purchase is a real purchase rather than margin or derivatives."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "credit-card",
+      "aliases": [
+        "credit card",
+        "credit cards",
+        "visa card",
+        "mastercard",
+        "master card"
+      ],
+      "verdict": "unclear",
+      "confidence": 0.62,
+      "conflict": true,
+      "title": "Credit cards that charge interest if you pay late",
+      "summary": "Named scholars disagree about signing a card contract that stipulates interest on a late balance. One side forbids the contract even if you plan to pay in full. Another allows the card when you are sure you will pay before interest is charged. This page does not pick a winner.",
+      "accordingTo": "IslamQA fatwa 96613 (Shaykh Ibn Uthaymeen) versus Mufti Muhammad Taqi Usmani, as cited by Darul Uloom Trinidad and Tobago.",
+      "caveats": [
+        "Actually paying interest is riba on both sides. Search riba.",
+        "A card with no interest clause, and fees limited to the bank's actual cost, is a different contract."
+      ],
+      "positions": [
+        {
+          "stance": "haram",
+          "title": "The contract is prohibited even if you intend to pay on time",
+          "summary": "Shaykh Ibn Uthaymeen: entering a card agreement that commits you to riba if you miss the deadline is haram, because circumstances can change and you do not know the future.",
+          "accordingTo": "IslamQA fatwa 96613; Shaykh Muhammad ibn Salih al-Uthaymeen",
+          "sources": [
+            {
+              "authority": "IslamQA / Shaykh Muhammad ibn Salih al-Uthaymeen",
+              "name": "Credit card with a late-payment interest clause (fatwa 96613)",
+              "stance": "haram",
+              "url": "https://islamqa.info/en/answers/96613",
+              "excerpt": "It is not permissible to use credit cards that stipulate payment of interest even if a person intends to pay on time, because it is not permissible to approve of riba or enter a contract that includes it."
+            }
+          ]
+        },
+        {
+          "stance": "halal",
+          "title": "Allowed if you pay before any interest is due",
+          "summary": "Darul Uloom Trinidad and Tobago cites Mufti Taqi Usmani and Mufti Khalid Saifullah: the card may be used when the holder pays within the interest-free period and does not incur interest.",
+          "accordingTo": "Mufti Muhammad Taqi Usmani, cited by Darul Uloom Trinidad and Tobago",
+          "sources": [
+            {
+              "authority": "Mufti Muhammad Taqi Usmani / Darul Uloom Trinidad and Tobago",
+              "name": "Using a credit card if the balance is paid on time",
+              "stance": "halal",
+              "url": "https://islamqa.org/hanafi/darululoomtt/52229/using-a-credit-card/",
+              "excerpt": "If the holder is confident of paying within the fixed period, without delay, the card may be used. Interest must not be allowed to fall on the account."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "commercial-insurance",
+      "aliases": [
+        "insurance",
+        "commercial insurance",
+        "conventional insurance",
+        "life insurance",
+        "car insurance",
+        "auto insurance",
+        "health insurance",
+        "home insurance"
+      ],
+      "verdict": "haram",
+      "confidence": 0.9,
+      "conflict": false,
+      "title": "Commercial insurance",
+      "summary": "IslamQA and the fiqh councils it cites prohibit commercial insurance of life, health, and property because of gharar, maysir, and riba. Cooperative takaful is a different contract. Search takaful.",
+      "accordingTo": "IslamQA fatwas 130761 and 36955, citing the Council of Senior Scholars and the Fiqh Councils in Jeddah and Makkah.",
+      "caveats": [
+        "IslamQA 170654 allows dealing with commercial health or compulsory insurance when a person is forced or in serious need, and puts the sin on whoever compels it.",
+        "This entry is not a ruling that every payout may be kept."
+      ],
+      "sources": [
+        {
+          "authority": "IslamQA / Islamic Fiqh Councils",
+          "name": "Why commercial insurance is prohibited (fatwa 130761)",
+          "stance": "haram",
+          "url": "https://islamqa.info/en/answers/130761",
+          "excerpt": "Commercial insurance is a prohibited contract, whether it covers life or possessions, because of ambiguity, gambling, and riba. The Fiqh Councils stated that it is prohibited."
+        },
+        {
+          "authority": "IslamQA",
+          "name": "Commercial versus cooperative insurance (fatwa 36955)",
+          "stance": "haram",
+          "url": "https://islamqa.info/en/answers/36955",
+          "excerpt": "The majority of contemporary scholars hold that commercial insurance is haram and cooperative insurance is permissible. That view was adopted by the Council of Senior Scholars and the Fiqh Councils."
+        },
+        {
+          "authority": "IslamQA",
+          "name": "Health insurance when compelled (fatwa 170654)",
+          "stance": "unclear",
+          "url": "https://islamqa.info/en/answers/170654",
+          "excerpt": "Commercial insurance is prohibited, but dealing with it is allowed when a person is forced, such as compulsory car insurance, or is in serious need of health cover."
+        }
+      ]
+    },
+    {
+      "id": "takaful",
+      "aliases": [
+        "takaful",
+        "islamic insurance",
+        "cooperative insurance",
+        "shariah insurance",
+        "sharia insurance",
+        "takaful insurance"
+      ],
+      "verdict": "halal",
+      "confidence": 0.84,
+      "conflict": false,
+      "title": "Cooperative insurance (takaful)",
+      "summary": "IslamQA distinguishes takaful from commercial insurance. Cooperative cover, structured as a donation among people who share a risk, is treated as permissible by the councils named on these fatwas. A commercial policy is not made lawful by calling it Islamic.",
+      "accordingTo": "IslamQA fatwas 205100 and 36955, citing the Islamic Fiqh Councils.",
+      "caveats": [
+        "The fund has to be a donation pool, not a sale of risk to shareholders, and investments must avoid riba.",
+        "Search insurance for the commercial contract."
+      ],
+      "sources": [
+        {
+          "authority": "IslamQA / Islamic Fiqh Council",
+          "name": "Cooperative and commercial insurance (fatwa 205100)",
+          "stance": "halal",
+          "url": "https://islamqa.info/en/answers/205100",
+          "excerpt": "In Islamic insurance the subscriptions remain a donation used to compensate subscribers. They are not owned by the administrators the way commercial premiums are."
+        },
+        {
+          "authority": "IslamQA",
+          "name": "Cooperative insurance is the permitted form (fatwa 36955)",
+          "stance": "halal",
+          "url": "https://islamqa.info/en/answers/36955",
+          "excerpt": "Cooperative insurance is permissible because it is based on mutual support, unlike commercial insurance, which involves ambiguity, gambling, and consuming wealth unlawfully."
+        }
+      ]
+    },
+    {
+      "id": "tattoos",
+      "aliases": [
+        "tattoo",
+        "tattoos",
+        "tattooing",
+        "permanent tattoo"
+      ],
+      "verdict": "haram",
+      "confidence": 0.95,
+      "conflict": false,
+      "title": "Permanent tattoos",
+      "summary": "Piercing the skin and inserting dye to leave a permanent tattoo is prohibited. IslamQA cites the hadith in which the one who tattoos and the one who seeks it are cursed, and it reports scholarly agreement on that prohibition.",
+      "accordingTo": "Sahih Muslim 2125a; IslamQA fatwa 20283.",
+      "caveats": [
+        "Henna and stick-on designs that do not puncture the skin are a different entry. Search henna.",
+        "Medical tattooing, such as reconstructing an areola, is a case for a mufti who knows the procedure."
+      ],
+      "sources": [
+        {
+          "authority": "Sahih Muslim",
+          "name": "Curse on tattooing (Muslim 2125a)",
+          "stance": "haram",
+          "url": "https://sunnah.com/muslim:2125a",
+          "excerpt": "Allah has cursed those women who tattoo and those who have themselves tattooed, and those who change the creation of Allah."
+        },
+        {
+          "authority": "IslamQA",
+          "name": "Are tattoos haram? (fatwa 20283)",
+          "stance": "haram",
+          "url": "https://islamqa.info/en/answers/20283",
+          "excerpt": "Tattooing, in which the skin is pierced and dye is inserted, is haram in all forms, because it changes the creation of Allah and because of the curse reported in the hadith."
+        }
+      ]
+    },
+    {
+      "id": "henna",
+      "aliases": [
+        "henna",
+        "henna tattoo",
+        "temporary tattoo",
+        "mehndi",
+        "mehendi",
+        "stick on tattoo"
+      ],
+      "verdict": "halal",
+      "confidence": 0.86,
+      "conflict": false,
+      "title": "Henna and temporary skin designs",
+      "summary": "IslamQA distinguishes a stain that wears off, such as henna or kohl used for adornment, from a permanent tattoo. The temporary design is not the tattoo that the hadith curses.",
+      "accordingTo": "IslamQA fatwa 20283.",
+      "caveats": [
+        "A design that punctures the skin and stays is the tattoo entry.",
+        "Images of animate beings, and men imitating women, are separate questions."
+      ],
+      "sources": [
+        {
+          "authority": "IslamQA",
+          "name": "What is not a permanent tattoo (fatwa 20283)",
+          "stance": "halal",
+          "url": "https://islamqa.info/en/answers/20283",
+          "excerpt": "What is not permanent, such as kohl used for adornment, is permitted by the scholars and is not a tattoo that changes the creation of Allah."
+        }
+      ]
+    },
+    {
+      "id": "gold-silk-men",
+      "aliases": [
+        "gold for men",
+        "men wear gold",
+        "men wearing gold",
+        "gold ring for men",
+        "mens gold",
+        "gold watch for men",
+        "silk for men",
+        "men wear silk",
+        "men wearing silk",
+        "mens silk",
+        "gold and silk for men"
+      ],
+      "verdict": "haram",
+      "confidence": 0.95,
+      "conflict": false,
+      "title": "Gold and silk for men",
+      "summary": "The Prophet named gold and silk as forbidden for males of his community and lawful for females. IslamQA applies that to men's gold rings and gold watches. This entry is about men wearing them, not about women, and not about owning gold as money.",
+      "accordingTo": "Sunan Abi Dawud 4057; IslamQA fatwa 148476, quoting the Standing Committee.",
+      "caveats": [
+        "The same hadith permits gold and silk for women.",
+        "A small amount of silk in a woven trim is a separate fiqh detail. Ask for that case."
+      ],
+      "sources": [
+        {
+          "authority": "Sunan Abi Dawud",
+          "name": "Gold and silk forbidden for males (Abi Dawud 4057)",
+          "stance": "haram",
+          "url": "https://sunnah.com/abudawud:4057",
+          "excerpt": "The Prophet took silk in one hand and gold in the other and said: both of these are prohibited to the males of my community."
+        },
+        {
+          "authority": "IslamQA / Standing Committee (al-Lajnah ad-Daimah)",
+          "name": "Men wearing gold watches (fatwa 148476)",
+          "stance": "haram",
+          "url": "https://islamqa.info/en/answers/148476",
+          "excerpt": "It is not permissible for men to wear anything made of gold, whether it is a watch, a ring, or anything else."
+        }
+      ]
+    },
+    {
+      "id": "perfume-alcohol",
+      "aliases": [
+        "perfume",
+        "cologne",
+        "alcohol perfume",
+        "perfume with alcohol",
+        "alcohol based perfume",
+        "perfume alcohol"
+      ],
+      "verdict": "halal",
+      "confidence": 0.84,
+      "conflict": false,
+      "title": "Perfume and cologne that contain alcohol",
+      "summary": "Wearing perfume that contains alcohol is permitted by the named answers below. They treat external use as different from drinking, and they do not treat the perfume as something that invalidates the prayer. A high percentage is a matter of caution on one of these fatwas, not a declaration that it is haram.",
+      "accordingTo": "IslamQA fatwas 164448 and 1365 (Shaykh Ibn Uthaymeen); SeekersGuidance, citing Mufti Taqi Usmani.",
+      "caveats": [
+        "Drinking the perfume, or using an intoxicating amount, is not this ruling.",
+        "IslamQA 1365 says a high alcohol percentage is better avoided, and it does not call that use haram."
+      ],
+      "sources": [
+        {
+          "authority": "IslamQA / Shaykh Muhammad ibn Salih al-Uthaymeen",
+          "name": "Praying in alcohol-based perfume (fatwa 164448)",
+          "stance": "halal",
+          "url": "https://islamqa.info/en/answers/164448",
+          "excerpt": "There is nothing wrong with using alcohol-based perfumes on the body and on clothes, and that does not affect the validity of the prayer."
+        },
+        {
+          "authority": "IslamQA / Shaykh Muhammad ibn Salih al-Uthaymeen",
+          "name": "Alcohol-based perfume (fatwa 1365)",
+          "stance": "halal",
+          "url": "https://islamqa.info/en/answers/1365",
+          "excerpt": "If the percentage of alcohol in perfume is low, there is no need to worry. If it is high, it is better to avoid it, but we do not say that it is haram."
+        },
+        {
+          "authority": "SeekersGuidance / Mufti Muhammad Taqi Usmani",
+          "name": "Deodorants, creams, and perfumes that contain alcohol",
+          "stance": "halal",
+          "url": "https://seekersguidance.org/answers/hanafi-fiqh/can-we-use-deodorants-creams-and-perfumes-that-contain-alcohol/",
+          "excerpt": "It is permitted to use perfumes containing alcohol, as it is invariably synthetic alcohol and not the khamr that is absolutely impermissible and filthy."
+        }
+      ]
+    },
+    {
+      "id": "nail-polish",
+      "aliases": [
+        "nail polish",
+        "nail varnish",
+        "nail polish wudu",
+        "halal nail polish",
+        "breathable nail polish"
+      ],
+      "verdict": "unclear",
+      "confidence": 0.72,
+      "conflict": false,
+      "title": "Nail polish and wudu",
+      "summary": "SeekersGuidance: nail polish is not itself something that invalidates the prayer, but waterproof polish is a barrier, so wudu done over it is not valid until water reaches the nails. 'Breathable' or 'halal' polish is a caution, not a settled product approval, on the answer cited here.",
+      "accordingTo": "SeekersGuidance / Ustadha Shaista Maqbool, checked by Shaykh Faraz Rabbani; Qur'an 5:6.",
+      "caveats": [
+        "Wudu done first, and polish applied afterward, is valid until that wudu breaks. The next wudu needs the barrier removed.",
+        "This is not a ruling that the color or the cosmetic is forbidden to own."
+      ],
+      "sources": [
+        {
+          "authority": "SeekersGuidance / Ustadha Shaista Maqbool",
+          "name": "Praying with nail polish",
+          "stance": "unclear",
+          "url": "https://seekersguidance.org/answers/hanafi-fiqh/praying-with-nail-polish/",
+          "excerpt": "Nail polish does not prevent the prayer, but it prevents wudu, because it keeps water from reaching the nails. It must be removed for wudu to be valid."
+        },
+        {
+          "authority": "The Qur'an",
+          "name": "Surah al-Ma'idah 5:6",
+          "stance": "unclear",
+          "url": "https://quran.com/5/6",
+          "excerpt": "When you rise to prayer, wash your faces and your hands to the elbows. Washing the hands is why a coating that blocks water matters."
+        }
+      ]
+    },
+    {
+      "id": "woman-travel-mahram",
+      "aliases": [
+        "travel without mahram",
+        "woman traveling alone",
+        "woman travelling alone",
+        "women travelling without mahram",
+        "woman travel without mahram",
+        "traveling without a mahram",
+        "travelling without a mahram",
+        "solo female travel"
+      ],
+      "verdict": "unclear",
+      "confidence": 0.64,
+      "conflict": true,
+      "title": "A woman traveling without a mahram",
+      "summary": "Named authorities disagree. Some desks treat the hadith as a general ban on a woman traveling without a mahram. Dar al-Ifta Egypt treats the ban as tied to unsafe roads and allows travel when safety is assured. This page shows both and does not pick a winner.",
+      "accordingTo": "Sahih al-Bukhari 1862 and IslamQA fatwa 47029 versus Dar al-Ifta Egypt fatwa 6128.",
+      "caveats": [
+        "IslamQA still allows some cases of necessity, such as when a mahram hands her to the airport and another mahram meets the flight.",
+        "Dar al-Ifta's permission is conditional on a safe route and lawful purpose, not a claim that every journey is the same."
+      ],
+      "positions": [
+        {
+          "stance": "haram",
+          "title": "Not permitted without a mahram",
+          "summary": "IslamQA: a woman may not travel without a mahram, whether for Hajj, family, or another lawful purpose. The hadith in Bukhari is general for what counts as travel.",
+          "accordingTo": "IslamQA fatwa 47029; Sahih al-Bukhari 1862",
+          "sources": [
+            {
+              "authority": "Sahih al-Bukhari",
+              "name": "A woman should not travel except with a mahram (Bukhari 1862)",
+              "stance": "haram",
+              "url": "https://sunnah.com/bukhari:1862",
+              "excerpt": "The Prophet said, \"A woman should not travel except with a Dhu-Mahram,\" and he told a man who wanted to join an army to go with his wife for Hajj instead."
+            },
+            {
+              "authority": "IslamQA",
+              "name": "Can she travel without a mahram to visit her parents? (fatwa 47029)",
+              "stance": "haram",
+              "url": "https://islamqa.info/en/answers/47029",
+              "excerpt": "It is not permissible for a woman to travel without a mahram, whether for worship, visiting parents, or a permissible trip. The Standing Committee said the same about Hajj."
+            }
+          ]
+        },
+        {
+          "stance": "halal",
+          "title": "Permitted when the journey is safe",
+          "summary": "Dar al-Ifta Egypt: the hadiths address a lack of security. If safety is guaranteed on ordinary routes such as airports and harbors, a woman may travel without a mahram for an obligatory, recommended, or permissible purpose.",
+          "accordingTo": "Dar al-Ifta Egypt, fatwa 6128",
+          "sources": [
+            {
+              "authority": "Dar al-Ifta Egypt",
+              "name": "Can I travel alone with no mahram? (fatwa 6128)",
+              "stance": "halal",
+              "url": "https://www.dar-alifta.org/en/fatwa/details/6128/can-i-travel-alone-with-no-mahram",
+              "excerpt": "The opinion appropriate for fatwa at present is that a woman may travel alone by safe routes. The hadiths forbidding travel without a mahram pertain to a lack of security; if safety is ensured, the prohibition is lifted."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qasr-prayer",
+      "aliases": [
+        "qasr",
+        "shortening prayers",
+        "shortening prayer",
+        "shortening salah",
+        "shortened prayer",
+        "traveler prayer",
+        "traveller prayer",
+        "prayer of the traveler"
+      ],
+      "verdict": "halal",
+      "confidence": 0.9,
+      "conflict": false,
+      "title": "Shortening prayers while traveling (qasr)",
+      "summary": "A traveler may shorten the four-rak'ah prayers to two. The Qur'an removes blame for shortening on a journey, and IslamQA treats it as a confirmed sunnah once the city limits are behind you. Fajr and Maghrib are not shortened.",
+      "accordingTo": "The Qur'an 4:101; IslamQA fatwa 111894.",
+      "caveats": [
+        "Halal here means the shortening is allowed. The prayer itself is still owed.",
+        "Schools differ on the distance, on how many days of stay end the concession, and on whether shortening is obligatory (the Hanafi view) or preferable (the majority, including the relied Shafi'i view in IslamQA 111894). Completing the prayer behind a resident imam is a separate rule.",
+        "The verse mentions fear of attack. Jurists discussed whether that condition still limits the concession; IslamQA 111894 treats shortening as sunnah for travelers generally."
+      ],
+      "sources": [
+        {
+          "authority": "The Qur'an",
+          "name": "Surah al-Nisa 4:101",
+          "stance": "halal",
+          "url": "https://quran.com/4/101",
+          "excerpt": "When you travel throughout the land, there is no blame upon you for shortening the prayer if you fear that those who disbelieve may disrupt you."
+        },
+        {
+          "authority": "IslamQA",
+          "name": "Is shortening prayers while travelling sunnah? (fatwa 111894)",
+          "stance": "halal",
+          "url": "https://islamqa.info/en/answers/111894",
+          "excerpt": "Shortening the prayers when travelling is a confirmed Sunnah that one should not forsake. The correct view in the Shafi'i school is that shortening is preferable, not obligatory."
+        }
+      ]
+    },
+    {
+      "id": "combining-prayers",
+      "aliases": [
+        "combining prayers",
+        "combining salah",
+        "joining prayers",
+        "joining salah",
+        "combine zuhr and asr",
+        "combine dhuhr and asr",
+        "combine maghrib and isha"
+      ],
+      "verdict": "unclear",
+      "confidence": 0.66,
+      "conflict": true,
+      "title": "Combining prayers while traveling",
+      "summary": "Schools disagree about real combining: praying Zuhr with Asr, or Maghrib with Isha, inside one prayer time. Shafi'i, Maliki, and Hanbali fiqh allow it for a traveler. The Hanafi school does not, except at Arafat and Muzdalifah, and instead allows only apparent combining at the edge of the two times. This page does not pick a winner.",
+      "accordingTo": "IslamQA fatwa 105109 versus SeekersGuidance / Shaykh Abdul-Rahim Reasat (Hanafi).",
+      "caveats": [
+        "Shortening (qasr) is a different concession. Search qasr.",
+        "Hanafi apparent combining (jam' suri) still prays each salah inside its own time: the first at the end of its time, the second at the start of the next."
+      ],
+      "positions": [
+        {
+          "stance": "halal",
+          "title": "A traveler may join two prayers in one time",
+          "summary": "IslamQA: joining Zuhr with Asr, or Maghrib with Isha, is permissible for every traveler. The reasons for joining are broader than the reasons for shortening.",
+          "accordingTo": "IslamQA fatwa 105109",
+          "sources": [
+            {
+              "authority": "IslamQA",
+              "name": "The difference between joining and shortening prayers (fatwa 105109)",
+              "stance": "halal",
+              "url": "https://islamqa.info/en/answers/105109",
+              "excerpt": "Joining prayers is permissible for every traveller, and for the non-traveller if it is too difficult to offer every prayer on time. Shortening is only when travelling."
+            }
+          ]
+        },
+        {
+          "stance": "haram",
+          "title": "Hanafi: real combining is not valid, except on Hajj",
+          "summary": "SeekersGuidance: in the Hanafi school it is not valid to combine Zuhr with Asr, or Maghrib with Isha, unless one is in ihram at Arafat and Muzdalifah. Any other combination is only the apparent kind, delaying one prayer to the end of its time.",
+          "accordingTo": "SeekersGuidance / Shaykh Abdul-Rahim Reasat",
+          "sources": [
+            {
+              "authority": "SeekersGuidance / Shaykh Abdul-Rahim Reasat",
+              "name": "Is combining prayers in the Hanafi school possible?",
+              "stance": "haram",
+              "url": "https://seekersguidance.org/answers/hanafi-fiqh/combining-prayers-hanafi-school-possible/",
+              "excerpt": "The position of the school is that it is not valid to combine Zuhr with Asr, nor Maghrib with Isha, unless one is in ihram at Arafat and Muzdalifah. Any other combination is only superficial."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prayer-on-plane",
+      "aliases": [
+        "prayer on a plane",
+        "praying on a plane",
+        "salah on a plane",
+        "prayer on an airplane",
+        "praying on an airplane",
+        "airplane prayer",
+        "plane salah"
+      ],
+      "verdict": "halal",
+      "confidence": 0.84,
+      "conflict": false,
+      "title": "Prayer on an airplane",
+      "summary": "If the prayer time will end before landing, the prayer is still due on board. IslamQA and the Standing Committee say to pray as you are able: standing, bowing, prostrating, and facing the qiblah when you can. If the plane will land in time, or the prayer can be joined with the next one, you may wait.",
+      "accordingTo": "IslamQA fatwas 21874 and 82536, quoting al-Lajnah ad-Daimah; the Qur'an 2:144 on facing the qiblah.",
+      "caveats": [
+        "Halal here means a prayer offered on board, as you are able, is valid. It does not mean the prayer may be skipped.",
+        "IslamQA 21874 notes that some later Maliki scholars said a prayer not offered on the ground is invalid. That desk does not adopt their view.",
+        "Ask the crew for the qiblah when the plane has no marker. A voluntary prayer may be prayed in any direction."
+      ],
+      "sources": [
+        {
+          "authority": "IslamQA / Standing Committee (al-Lajnah ad-Daimah)",
+          "name": "How to pray on a plane (fatwa 82536)",
+          "stance": "halal",
+          "url": "https://islamqa.info/en/answers/82536",
+          "excerpt": "If the time may end before landing, the scholars agreed it is obligatory to pray as best you can, facing the qiblah if you can. Fatawa al-Lajnah ad-Daimah, 8/120."
+        },
+        {
+          "authority": "IslamQA",
+          "name": "Praying on board an airplane (fatwa 21874)",
+          "stance": "halal",
+          "url": "https://islamqa.info/en/answers/21874",
+          "excerpt": "If you fear the time will end before the plane lands, the scholars agree you must pray as you are able. The majority also allow praying on board when waiting until landing is possible."
+        },
+        {
+          "authority": "The Qur'an",
+          "name": "Surah al-Baqarah 2:144",
+          "stance": "halal",
+          "url": "https://quran.com/2/144",
+          "excerpt": "Turn your face toward al-Masjid al-Haram. Wherever you are, turn your faces toward it."
+        }
+      ]
+    },
+    {
+      "id": "alcohol-in-medicine",
+      "aliases": [
+        "alcohol in medicine",
+        "medicine with alcohol",
+        "medicine containing alcohol",
+        "cough syrup",
+        "cough syrup with alcohol",
+        "alcoholic cough syrup",
+        "ethanol in medicine",
+        "alcohol free medicine"
+      ],
+      "verdict": "unclear",
+      "confidence": 0.62,
+      "conflict": true,
+      "title": "Medicine that contains alcohol",
+      "summary": "Named sources do not give one rule for every bottle. A hadith forbids treating illness with khamr. IslamQA also forbids deliberately adding alcohol to medicine, then allows a medicine already mixed with a trace that is fully absorbed and would not intoxicate even in a large amount. This page shows both and does not pick a winner. An alcohol-free alternative avoids the dispute.",
+      "accordingTo": "Sahih Muslim 1984 and IslamQA fatwa 249339 versus IslamQA fatwa 215281.",
+      "caveats": [
+        "This is not the ruling on drinking wine or beer. Search alcohol for khamr.",
+        "Gelatin capsules are a different file. Search gelatin.",
+        "If a large dose of the medicine would intoxicate, IslamQA 215281 treats it as khamr and prohibits it."
+      ],
+      "positions": [
+        {
+          "stance": "haram",
+          "title": "Do not treat illness with khamr, and do not add it",
+          "summary": "The Prophet told a man who made liquor as a medicine that it is not a remedy but an ailment. IslamQA 249339 says it is not permissible to deliberately add alcohol to medicine.",
+          "accordingTo": "Sahih Muslim 1984; IslamQA fatwa 249339",
+          "sources": [
+            {
+              "authority": "Sahih Muslim",
+              "name": "Khamr is not a remedy (Muslim 1984)",
+              "stance": "haram",
+              "url": "https://sunnah.com/muslim:1984",
+              "excerpt": "Tariq ibn Suwayd said he prepared liquor as a medicine. The Prophet said: It is no medicine, but an ailment."
+            },
+            {
+              "authority": "IslamQA",
+              "name": "Adding a small amount of alcohol to food or medicine (fatwa 249339)",
+              "stance": "haram",
+              "url": "https://islamqa.info/en/answers/249339",
+              "excerpt": "It is not permissible to deliberately add alcohol to food, medicine, or anything else. The Permanent Committee said it is not permissible to mix medicines with alcohol that causes intoxication."
+            }
+          ]
+        },
+        {
+          "stance": "halal",
+          "title": "Permitted when the alcohol is absorbed and cannot intoxicate",
+          "summary": "IslamQA 215281: if alcohol mixed into a medicine no longer intoxicates in a large or small amount, a number of scholars allow that medicine because the reason for the ban is gone. If the amount is large enough to intoxicate, it stays prohibited.",
+          "accordingTo": "IslamQA fatwa 215281",
+          "sources": [
+            {
+              "authority": "IslamQA",
+              "name": "Prohibited medicines (fatwa 215281)",
+              "stance": "halal",
+              "url": "https://islamqa.info/en/answers/215281",
+              "excerpt": "If medicine is mixed with intoxicants and a large or small amount will not cause intoxication, a number of scholars allow it. If the intoxicating amount is large, it is not permissible."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vaccines",
+      "aliases": [
+        "vaccine",
+        "vaccines",
+        "vaccination",
+        "vaccinations",
+        "immunization",
+        "immunisation",
+        "childhood vaccine",
+        "flu shot"
+      ],
+      "verdict": "unclear",
+      "confidence": 0.6,
+      "conflict": true,
+      "title": "Vaccines",
+      "summary": "IslamQA permits vaccination as protection before a disease spreads. The same desk forbids a medicine that still contains untransformed pork gelatin when another medicine exists, and allows it only at the point of necessity. A named vaccine is not one global ruling. This page shows both points and does not pick a winner.",
+      "accordingTo": "IslamQA fatwa 20276 versus IslamQA fatwas 219137 and 289422 on haram gelatin in medicine.",
+      "caveats": [
+        "Check the specific product. Many vaccines have no porcine ingredient.",
+        "Necessity, when no alternative exists and the harm of the disease is serious, is the overlap IslamQA 289422 discusses. It is not a blanket permission for every formula."
+      ],
+      "positions": [
+        {
+          "stance": "halal",
+          "title": "Permissible as protection against disease",
+          "summary": "IslamQA: there is nothing wrong with vaccinating when an epidemic or similar cause makes the disease feared. Short-lived side effects can be outweighed by the disease being prevented. A vaccine shown to do more harm than good is a different case.",
+          "accordingTo": "IslamQA fatwa 20276",
+          "sources": [
+            {
+              "authority": "IslamQA",
+              "name": "Childhood immunizations and vaccinations (fatwa 20276)",
+              "stance": "halal",
+              "url": "https://islamqa.info/en/answers/20276",
+              "excerpt": "If there is fear of sickness and a person is vaccinated against an infection, there is nothing wrong with that, because it is a kind of protection. If a specific vaccine's harm outweighs that protection, it is not permissible."
+            }
+          ]
+        },
+        {
+          "stance": "haram",
+          "title": "Not permitted when pork gelatin remains and an alternative exists",
+          "summary": "IslamQA: foods, drinks, and medicines that contain gelatin from pig skin are not permissible, especially when a lawful alternative exists. If haram gelatin remains in a medicine and has not been transformed, it may be used only in extreme necessity.",
+          "accordingTo": "IslamQA fatwas 219137 and 289422",
+          "sources": [
+            {
+              "authority": "IslamQA / Standing Committee (al-Lajnah ad-Daimah)",
+              "name": "Gelatin in food and medicine (fatwa 219137)",
+              "stance": "haram",
+              "url": "https://islamqa.info/en/answers/219137",
+              "excerpt": "It is not permissible to consume foods, drinks, and medicines that contain gelatin derived from the skin of pigs or other impure substances, especially when alternatives are available."
+            },
+            {
+              "authority": "IslamQA",
+              "name": "Medicines that contain gelatin (fatwa 289422)",
+              "stance": "haram",
+              "url": "https://islamqa.info/en/answers/289422",
+              "excerpt": "If haram gelatin has remained as is, and has not been fully absorbed, it is not permissible to treat sickness with it except in extreme necessity, when no other medicine is available."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "whey-protein",
+      "aliases": [
+        "whey",
+        "whey protein",
+        "whey protein powder",
+        "whey isolate",
+        "whey concentrate"
+      ],
+      "verdict": "unclear",
+      "confidence": 0.58,
+      "conflict": true,
+      "title": "Whey protein",
+      "summary": "Whey is the liquid left after milk is curdled, often with rennet. Hanafi authorities disagree about rennet from an animal that was not slaughtered Islamically, and about how commercial powders are actually made. Pork rennet is out on both sides. This page does not pick a winner.",
+      "accordingTo": "SeekersGuidance, citing Imam Abu Hanifa, versus Askimam / Mufti Ebrahim Desai.",
+      "caveats": [
+        "Plant protein and whey from microbial or plant rennet avoid the animal-rennet dispute.",
+        "Collagen powder is not whey. Search collagen."
+      ],
+      "positions": [
+        {
+          "stance": "halal",
+          "title": "Hanafi: whey is lawful except from swine",
+          "summary": "SeekersGuidance: Imam Abu Hanifa held rennet permissible whether or not the animal was slaughtered correctly. Whey from that process follows the rennet, with swine unconditionally excluded. His two companions disagreed and treated non-slaughtered rennet as impermissible.",
+          "accordingTo": "SeekersGuidance / Imam Abu Hanifa",
+          "sources": [
+            {
+              "authority": "SeekersGuidance / Imam Abu Hanifa",
+              "name": "Are protein supplements halal?",
+              "stance": "halal",
+              "url": "https://seekersguidance.org/answers/general-counsel/are-protein-supplements-halal/",
+              "excerpt": "Rennet is permissible according to Imam Abu Hanifa whether or not the animal was slaughtered correctly. Whey follows that, except swine, which is unconditionally impermissible. His two companions held that rennet from non-slaughtered animals is impermissible."
+            }
+          ]
+        },
+        {
+          "stance": "haram",
+          "title": "Askimam: do not assume commercial whey is halal",
+          "summary": "Askimam / Mufti Ebrahim Desai: not all whey products are halal, because non-halal animal rennet is often used. They advise restricting oneself to halal-certified or carefully checked kosher whey, and note that a manufacturer can change the rennet later.",
+          "accordingTo": "Askimam / Mufti Ebrahim Desai",
+          "sources": [
+            {
+              "authority": "Askimam / Mufti Ebrahim Desai",
+              "name": "Are protein powders halal?",
+              "stance": "haram",
+              "url": "https://islamqa.org/hanafi/askimam/80466/are-protein-powders-halal/",
+              "excerpt": "Not all whey products are halal, as non-halal animal-based rennet is often used. Restrict yourself to halal or kosher certified whey, and still be cautious because the rennet source can change."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "niqab",
+      "aliases": [
+        "niqab",
+        "face veil",
+        "covering the face",
+        "is niqab obligatory",
+        "burqa",
+        "face covering"
+      ],
+      "verdict": "unclear",
+      "confidence": 0.58,
+      "conflict": true,
+      "title": "Niqab (covering the face)",
+      "summary": "Schools and fatwa desks disagree on whether a woman must cover her face in front of non-mahram men. IslamQA says the face and hands are awrah and must be covered. Dar al-Ifta Egypt says the niqab is not obligatory and that covering the face is permissible rather than required. This page shows both and does not pick a winner.",
+      "accordingTo": "IslamQA fatwa 21536 versus Dar al-Ifta Egypt fatwa 1214; both cite the Qur'an 24:31.",
+      "caveats": [
+        "Hijab of the rest of the body is not this dispute. The disagreement here is the face and hands.",
+        "A woman in ihram is a separate rule: she does not wear a niqab or gloves while in ihram."
+      ],
+      "positions": [
+        {
+          "stance": "haram",
+          "title": "Leaving the face uncovered is not allowed",
+          "summary": "IslamQA: the correct view is that a woman must cover her entire body, including the face and hands, in front of non-mahram men. The desk cites Qur'an 33:59 and 24:31 for that obligation.",
+          "accordingTo": "IslamQA fatwa 21536",
+          "sources": [
+            {
+              "authority": "IslamQA",
+              "name": "Is a woman's face awrah? (fatwa 21536)",
+              "stance": "haram",
+              "url": "https://islamqa.info/en/answers/21536",
+              "excerpt": "The correct view is that a woman is obliged to cover her entire body, even the face and hands."
+            }
+          ]
+        },
+        {
+          "stance": "halal",
+          "title": "The face and hands need not be covered",
+          "summary": "Dar al-Ifta Egypt: it is not obligatory for a woman to cover her face or wear gloves. Niqab is permissible; she is not sinful for leaving it off. The desk reads Qur'an 24:31 as allowing the face and hands to show.",
+          "accordingTo": "Dar al-Ifta Egypt, fatwa 1214; the Qur'an 24:31",
+          "sources": [
+            {
+              "authority": "Dar al-Ifta Egypt",
+              "name": "Niqab (fatwa 1214)",
+              "stance": "halal",
+              "url": "https://www.dar-alifta.org/en/fatwa/details/1214/niqab",
+              "excerpt": "It is not obligatory for a Muslim woman to cover her face and hands. Niqab is permissible; she is rewarded for wearing it and not punished for leaving it off."
+            },
+            {
+              "authority": "The Qur'an",
+              "name": "Surah al-Nur 24:31",
+              "stance": "halal",
+              "url": "https://quran.com/24/31",
+              "excerpt": "Tell the believing women to lower their gaze and guard their private parts and not expose their adornment except that which appears thereof."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "isbal",
+      "aliases": [
+        "isbal",
+        "pants below ankles",
+        "clothes below the ankle",
+        "garment below the ankles",
+        "trousers below ankles",
+        "below the ankles"
+      ],
+      "verdict": "unclear",
+      "confidence": 0.6,
+      "conflict": true,
+      "title": "Clothes below the ankles for men (isbal)",
+      "summary": "Everyone cited here forbids a man from dragging his garment out of pride. They disagree when there is no pride. IslamQA's own relied answers treat anything below the ankles as haram. The same site's survey of the four madhhabs says the majority call the non-pride case disliked, not forbidden, following al-Shafi'i and al-Nawawi. Both are shown.",
+      "accordingTo": "Sahih al-Bukhari 5787 and IslamQA fatwa 36891 versus Imam al-Nawawi as quoted in IslamQA fatwa 102260.",
+      "caveats": [
+        "This entry is about men's lower garments. It is not a ruling on women's dress length.",
+        "The non-pride position is makrooh (disliked) in al-Nawawi's wording, not a suggestion that trailing the garment is virtuous."
+      ],
+      "positions": [
+        {
+          "stance": "haram",
+          "title": "Anything below the ankles is in the Fire",
+          "summary": "Bukhari records that whatever of the lower garment hangs below the ankles is in the Fire, without adding \"only if he is proud\" in that wording. IslamQA 36891 applies that hadith as a ban.",
+          "accordingTo": "Sahih al-Bukhari 5787; IslamQA fatwa 36891",
+          "sources": [
+            {
+              "authority": "Sahih al-Bukhari",
+              "name": "Below the ankles is in the Fire (Bukhari 5787)",
+              "stance": "haram",
+              "url": "https://sunnah.com/bukhari:5787",
+              "excerpt": "The Prophet said, \"The part of an izar which hangs below the ankles is in the Fire.\""
+            },
+            {
+              "authority": "IslamQA",
+              "name": "Islamic dress code for men (fatwa 36891)",
+              "stance": "haram",
+              "url": "https://islamqa.info/en/answers/36891",
+              "excerpt": "It is haram for a man to let any garment hang down beneath his ankles. The limit for any garment is the ankles."
+            }
+          ]
+        },
+        {
+          "stance": "halal",
+          "title": "Not forbidden unless it is done out of pride",
+          "summary": "IslamQA 102260 reports the majority of the four madhhabs: below the ankles is not haram when it is not done to show off. Al-Nawawi said that case is makrooh. The hadiths that mention pride are the evidence they rely on. The chip on this side means \"not prohibited,\" and the summary keeps al-Nawawi's word makrooh.",
+          "accordingTo": "IslamQA fatwa 102260, citing Imam al-Shafi'i and Imam al-Nawawi",
+          "sources": [
+            {
+              "authority": "IslamQA / Imam al-Nawawi",
+              "name": "Isbal with and without pride (fatwa 102260)",
+              "stance": "halal",
+              "url": "https://islamqa.info/en/answers/102260",
+              "excerpt": "If it is done to show off, it is haram. If it is done for any other reason, al-Nawawi said it is makrooh. The majority from the four madhhabs held it is not haram without pride."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eyebrows",
+      "aliases": [
+        "plucking eyebrows",
+        "eyebrow plucking",
+        "threading eyebrows",
+        "eyebrow threading",
+        "shaping eyebrows",
+        "namas",
+        "eyebrows"
+      ],
+      "verdict": "haram",
+      "confidence": 0.9,
+      "conflict": false,
+      "title": "Plucking the eyebrows",
+      "summary": "Removing eyebrow hair for beauty is prohibited. Bukhari records a curse on the woman who plucks facial hair and the one who asks for it. IslamQA and the Standing Committee treat plucking, shaving, or trimming the eyebrow itself as namas.",
+      "accordingTo": "Sahih al-Bukhari 5931; IslamQA fatwas 9037 and 22393.",
+      "caveats": [
+        "IslamQA 22393, quoting the Standing Committee, permits removing hair from between the eyebrows, because that hair is not part of the eyebrow.",
+        "The same hadith discussion allows a woman to remove a beard or moustache if one grows. Search beard for the men's ruling."
+      ],
+      "sources": [
+        {
+          "authority": "Sahih al-Bukhari",
+          "name": "Curse on those who pluck facial hair (Bukhari 5931)",
+          "stance": "haram",
+          "url": "https://sunnah.com/bukhari:5931",
+          "excerpt": "Abdullah said Allah has cursed the women who practise tattooing and those who get tattooed, those who remove their face hairs, and those who file their teeth for beauty, changing the creation of Allah."
+        },
+        {
+          "authority": "IslamQA / Standing Committee (al-Lajnah ad-Daimah)",
+          "name": "Plucking eyebrows (fatwa 9037)",
+          "stance": "haram",
+          "url": "https://islamqa.info/en/answers/9037",
+          "excerpt": "Plucking the eyebrows is haram and a major sin, because the Prophet cursed those who do it. Al-Nawawi said the same, except for a beard or moustache that grows on a woman."
+        }
+      ]
+    },
+    {
+      "id": "beard",
+      "aliases": [
+        "beard",
+        "shaving beard",
+        "beard shave",
+        "trimming beard",
+        "growing a beard"
+      ],
+      "verdict": "unclear",
+      "confidence": 0.62,
+      "conflict": true,
+      "title": "The beard: shaving and trimming",
+      "summary": "The command to grow the beard is agreed in the texts below. What is disputed is cutting it. IslamQA says shaving or trimming any of it is haram. Bukhari 5892 also records that Ibn Umar, after narrating the command, used to grip his beard and cut what passed beyond his hand. Schools that follow that practice allow trimming past a fist and still forbid shaving it off. Both are shown.",
+      "accordingTo": "Sahih al-Bukhari 5892 versus IslamQA fatwa 9977.",
+      "caveats": [
+        "The permissive side is about the length beyond a fist, not about shaving the beard bare.",
+        "Dyeing the beard a flat black is a different question and is not decided here."
+      ],
+      "positions": [
+        {
+          "stance": "haram",
+          "title": "Shaving or cutting the beard is prohibited",
+          "summary": "IslamQA: letting the beard grow is obligatory, and shaving or cutting it is haram, based on the command to grow the beard and differ from others.",
+          "accordingTo": "IslamQA fatwa 9977",
+          "sources": [
+            {
+              "authority": "IslamQA",
+              "name": "Is trimming the beard haram? (fatwa 9977)",
+              "stance": "haram",
+              "url": "https://islamqa.info/en/answers/9977",
+              "excerpt": "It is obligatory to let the beard grow, and it is haram to shave it or cut it."
+            }
+          ]
+        },
+        {
+          "stance": "halal",
+          "title": "Trimming what passes a fist, as Ibn Umar did",
+          "summary": "In Bukhari 5892 the command to keep the beard is followed by Ibn Umar's practice on Hajj and Umrah: he held his beard and cut what remained outside his hand. That narration is the basis for the school view that trimming the excess is allowed.",
+          "accordingTo": "Sahih al-Bukhari 5892",
+          "sources": [
+            {
+              "authority": "Sahih al-Bukhari",
+              "name": "Keep the beards; Ibn Umar trimmed the excess (Bukhari 5892)",
+              "stance": "halal",
+              "url": "https://sunnah.com/bukhari:5892",
+              "excerpt": "The Prophet said, \"Do the opposite of what the pagans do. Keep the beards and cut the moustaches short.\" Whenever Ibn Umar performed Hajj or Umrah, he held his beard and cut whatever remained outside his hold."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
