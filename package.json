@@ -10,10 +10,10 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "test": "node --test lib/*.test.js src/client/*.test.js src/client/i18n/*.test.js"
+    "test": "node --test lib/*.test.ts src/client/*.test.ts src/client/i18n/*.test.ts"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22.18"
   },
   "dependencies": {
     "@emotion/cache": "11.14.0",

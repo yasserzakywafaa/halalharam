@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
-import { publicUrl } from "@/lib/public-pages.js";
-import { pageTitles } from "@/lib/site-metadata.js";
-import PrivacyPage from "@/src/client/pages/PrivacyPage.jsx";
+import { publicUrl } from "@/lib/public-pages.ts";
+import { pageTitles } from "@/lib/site-metadata.ts";
+import PrivacyPage from "@/src/client/pages/PrivacyPage.tsx";
 
 export const metadata: Metadata = {
   title: pageTitles["/privacy"],

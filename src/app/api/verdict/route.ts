@@ -1,4 +1,4 @@
-import { handleVerdictRequest } from "@/lib/http.js";
+import { handleVerdictRequest } from "@/lib/http.ts";
 
 export const runtime = "nodejs";
 // Keep above lib/openrouter.js REQUEST_BUDGET_MS (55s) so a slow model

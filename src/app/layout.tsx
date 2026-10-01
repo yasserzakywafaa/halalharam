@@ -1,18 +1,18 @@
 import type { Metadata, Viewport } from "next";
 import { cookies, headers } from "next/headers";
 
-import { publicUrl } from "@/lib/public-pages.js";
-import { siteMetadata } from "@/lib/site-metadata.js";
-import AppShell from "@/src/client/AppShell.jsx";
-import AppProviders from "@/src/client/providers.jsx";
-import { LATIN_FONT_STYLESHEET } from "@/src/client/fonts.js";
+import { publicUrl } from "@/lib/public-pages.ts";
+import { siteMetadata } from "@/lib/site-metadata.ts";
+import AppShell from "@/src/client/AppShell.tsx";
+import AppProviders from "@/src/client/providers.tsx";
+import { LATIN_FONT_STYLESHEET } from "@/src/client/fonts.ts";
 import {
   LANGUAGE_STORAGE_KEY,
   THEME_STORAGE_KEY,
   isLanguageCode,
   isThemeOption,
   languageMeta,
-} from "@/src/client/preferences.js";
+} from "@/src/client/preferences.ts";
 import "@/src/client/index.css";
 
 // The `lookupVerdict` server action runs inside this function. Keep it above the
@@ -95,9 +95,9 @@ const RootLayout = async ({ children }: Readonly<RootLayoutProps>) => {
 
   const storedLanguage = cookieStore.get(LANGUAGE_STORAGE_KEY)?.value;
   const storedTheme = cookieStore.get(THEME_STORAGE_KEY)?.value;
-  const language: string = isLanguageCode(storedLanguage) ? storedLanguage! : "en";
-  const themePreference: string = isThemeOption(storedTheme) ? storedTheme! : "system";
-  const direction = languageMeta(language)?.dir ?? "ltr";
+  const language = isLanguageCode(storedLanguage) ? storedLanguage : "en";
+  const themePreference = isThemeOption(storedTheme) ? storedTheme : "system";
+  const direction = languageMeta(language).dir;
   const ssrMode = themePreference === "dark" ? "dark" : "light";
 
   return (

@@ -2,9 +2,9 @@
 
 import { headers } from "next/headers";
 
-import { buildHealthPayload } from "@/lib/health.js";
-import { headerBag, runVerdict } from "@/lib/http.js";
-import { resolveLocale } from "@/lib/locale.js";
+import { buildHealthPayload } from "@/lib/health.ts";
+import { headerBag, runVerdict } from "@/lib/http.ts";
+import { resolveLocale } from "@/lib/locale.ts";
 
 /**
  * Server action behind the search box. Seed first, OpenRouter only on a miss.
